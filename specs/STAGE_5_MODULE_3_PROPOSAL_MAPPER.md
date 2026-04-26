@@ -3,9 +3,11 @@
 **Parent spec:** https://raw.githubusercontent.com/smichaelcapital-cpu/mrx-context/main/specs/STAGE_5_v01_BUILD_SPEC.md
 
 ## Goal
-Read Block H output (proposals.json + decisions.jsonl + anomalies.jsonl), join them by ID, return a clean per-turn application map plus a list of warnings.
+Read Block H output (proposals.json + decisions.jsonl + anomalies.jsonl), join them positionally (decisions[i] → proposals[i]), return a clean per-turn application map plus a list of warnings.
 
 This is the data-prep layer. Modules 4-7 consume what this produces.
+
+> **Join design note (Option A — positional):** proposal_ids in Block H output are per-batch IDs (p_0001…p_000N reset per batch), not globally unique. The decisions file is written in lockstep with proposals, so a positional join is correct and safe. See Future Work section for Option B (compound-key join).
 
 ## File to create
 
@@ -21,8 +23,8 @@ def load_proposals(path: Path) -> list[dict]:
     """Read proposals.json. Returns flat list of all 30 proposal records from batch.proposals."""
     pass
 
-def load_decisions(path: Path) -> dict[str, dict]:
-    """Read decisions.jsonl. Returns dict keyed by proposal_id → full decision record."""
+def load_decisions(path: Path) -> list[dict]:
+    """Read decisions.jsonl. Returns ordered list of decision records (positional — matches proposals order)."""
     pass
 
 def load_anomalies(path: Path) -> dict[str, dict]:
@@ -31,11 +33,12 @@ def load_anomalies(path: Path) -> dict[str, dict]:
 
 def build_application_map(
     proposals: list[dict],
-    decisions: dict[str, dict],
+    decisions: list[dict],
     anomalies: dict[str, dict],
 ) -> tuple[dict[int, list[ApplicationEntry]], list[str]]:
     """
-    Join proposals + decisions + anomalies. Filter to only outcome=='apply'.
+    Join proposals + decisions positionally (decisions[i] → proposals[i]) + anomalies by anomaly_id.
+    Filter to only outcome=='apply'.
     Returns:
         - dict keyed by turn_idx → list of ApplicationEntry (ordered by token_span.start)
         - list of warning strings (e.g., missing anomaly, etc.)
@@ -49,15 +52,17 @@ def build_application_map(
 Open the JSON file. Navigate to `data["batch"]["proposals"]`. Return as a flat list. If structure is malformed, raise ValueError with clear message.
 
 ### load_decisions
-Open the JSONL file. Parse each line as JSON. Build dict keyed by `record["proposal_id"]`. If duplicate proposal_id is found, raise ValueError.
+Open the JSONL file. Parse each line as JSON. Return as an ordered list. Do NOT deduplicate or key by proposal_id — proposal_ids are per-batch and not globally unique. If `len(decisions) != len(proposals)` the caller (`build_application_map`) will detect the mismatch via positional indexing.
 
 ### load_anomalies
-Same pattern as load_decisions but keyed by `record["anomaly_id"]`.
+Open the JSONL file. Parse each line as JSON. Build dict keyed by `record["anomaly_id"]`. anomaly_ids ARE globally unique. If duplicate anomaly_id is found, raise ValueError.
 
 ### build_application_map
-For each proposal in the proposals list:
-1. Look up the decision via `proposal_id`. If decision missing → warning: "Proposal <id> has no decision record — skipped". Continue.
-2. If decision.outcome != "apply" → skip (rejected/review proposals don't generate ApplicationEntry).
+Raises ValueError if `len(proposals) != len(decisions)` (positional join requires 1:1 correspondence).
+
+For each `(proposal, decision)` pair at index `i`:
+1. decision = decisions[i] (positional join — not keyed by proposal_id).
+2. If decision["outcome"] != "apply" → skip (rejected/review proposals don't generate ApplicationEntry).
 3. Look up the anomaly via `anomaly_id`.
    - If anomaly found → use `anomaly["confidence"]` for the ApplicationEntry's confidence field.
    - If anomaly missing → warning: "Proposal <id> references missing anomaly <id> — using confidence='unknown'". Use confidence="unknown" but still create the entry.
@@ -96,8 +101,8 @@ Cover at least: 1 REWORD high-confidence apply, 1 REWORD low-confidence apply, 1
 At minimum:
 1. load_proposals returns flat list of correct length
 2. load_proposals raises ValueError on malformed structure
-3. load_decisions returns dict keyed by proposal_id
-4. load_decisions raises ValueError on duplicate proposal_id
+3. load_decisions returns ordered list of correct length
+4. build_application_map raises ValueError if proposals/decisions length mismatch
 5. load_anomalies returns dict keyed by anomaly_id
 6. build_application_map produces correct turn_idx → entries mapping
 7. build_application_map skips proposals with no decision (warning logged)
@@ -133,3 +138,19 @@ If those files don't exist (e.g., CI), skip the test with `pytest.skip("Block H 
 - No turn rendering (that's Module 5)
 - No JSON schema validation beyond what's needed to parse — assume Block H output is well-formed (we generated it)
 - No mutation of the input JSON — read-only parsing
+
+---
+
+## Future Work — Option B (deferred)
+
+Current join is positional (decisions[i] joins to proposals[i] by file order). This works because Block H writes both files in lockstep.
+
+A more robust future design would use compound-key joins:
+- decisions.jsonl line schema would gain a `batch_id` field
+- Compound key: (batch_id, proposal_id) — globally unique
+- Join becomes hash-based, order-independent
+- Resilient to future Block H changes (parallel batch writes, partial reruns, etc.)
+
+Cost to implement: edit Stage 3.1 to emit batch_id in decisions.jsonl, re-run Block H once.
+
+Trigger to do this work: any time Block H output ordering becomes non-deterministic, OR Stage 5 needs to merge decisions from multiple Block H runs.
