@@ -101,12 +101,13 @@ shows the answer.
 
 ## File Location
 
-The full source is in Scott's repo. Sonnet should fetch it at the
-start of v0.2 work. Estimated location:
-  - C:\Users\scott\OneDrive\Documents\<earlier engine repo>\format_final.py
-  - OR an attached file in the relevant chat
-  - Scott can locate exact path tomorrow — file content was preserved
-    in chat for handoff continuity.
+The full source is at `legacy/format_final.py` in this repo.
+Fetch URL:
+  https://raw.githubusercontent.com/smichaelcapital-cpu/mrx-context/main/legacy/format_final.py
+
+Originally sourced from:
+  C:\Users\scott\OneDrive\Documents\MASTER_COPIES\mb_demo_engine_v4\format_final.py
+Saved into context repo: 2026-04-27.
 
 ## Architectural Note
 
