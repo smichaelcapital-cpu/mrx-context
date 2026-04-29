@@ -1,168 +1,253 @@
 # HANDOFF — OPUS — 2026-04-28 v01
 
+## TRUTH SOURCES (READ FIRST — NEVER LOSE THESE)
+
+MB's Halprin FINAL (truth — Oracle Covenant — READ ONLY):
+  C:\Users\scott\OneDrive\Documents\mrx-context\oracle\finals\halprin\040226yellowrock-FINAL.txt
+  (also still at original location for pipeline reads:
+   C:\Users\scott\OneDrive\Documents\mrx_engine_v1\mrx_engine_v1\io\analysis\halprin_mini\040226yellowrock-FINAL.txt)
+
+Halprin front-matter extracted (oracle):
+  C:\Users\scott\OneDrive\Documents\mrx-context\oracle\frontmatter\halprin_frontmatter.txt
+  (659 lines, pages 1-12, cuts at "EXAMINATION" line 660)
+
+Engine output OUR_FINAL (regenerated each pipeline run):
+  C:\Users\scott\OneDrive\Documents\mrx_engine_v1\mrx_engine_v1\io\analysis\halprin_mini\_stage5_out\halprin_mini.OUR_FINAL.txt
+
+Halprin source RTF (Stage 1 input):
+  C:\Users\scott\OneDrive\Documents\mrx_engine_v1\mrx_engine_v1\io\analysis\halprin_mini\040226yellowrock-ROUGH_Tsmd.rtf
+
+Halprin .sgxml (metadata + 88 paragraph timestamps):
+  C:\Users\scott\OneDrive\Documents\mrx_engine_v1\mrx_engine_v1\io\analysis\halprin_mini\040226yellowrock-ROUGH.sgxml
+
+Full Halprin package (READ ONLY — Scott's master):
+  C:\Users\scott\OneDrive\Documents\mb_040226_halprin_yellowrock\
+
+Job dictionary (RTF, byte-identical to existing test fixture):
+  C:\Users\scott\OneDrive\Documents\mb_040226_halprin_yellowrock\040226yellowrock-ROUGH.rtf
+  (existing fixture: tests/fixtures/halprin_mini/dictionary.rtf)
+
+Other MB FINALs on disk (consolidate tomorrow):
+  - Brandl 032626: C:\Users\scott\OneDrive\Documents\MASTER_COPIES\ORACLES\Brandl\
+  - 030526 depo: candidate, location in 2026-04-28_ORACLE_CONSOLIDATION.md
+  - Easley: in mb_demo_engine_v4 folder, candidate
+
+Engine repo:
+  C:\Users\scott\OneDrive\Documents\mrx_engine_v1\mrx_engine_v1
+  github.com/smichaelcapital-cpu/Court_reporting_demo
+
+Context repo:
+  C:\Users\scott\OneDrive\Documents\mrx-context
+  github.com/smichaelcapital-cpu/mrx-context
+
+Master copies:
+  C:\Users\scott\OneDrive\Documents\MASTER_COPIES\
+
 ## ONE-LINE STATE
-Stage 5 v0.1 build COMPLETE. All 8 modules shipped, 491 tests passing.
-First visual comparison vs MB's FINAL is done — Q&A engine works,
-front matter and format details are the v0.2 work. Sonnet is fresh
-and waiting. Scott is tagging out clean. Pick up calm and move.
+Recon methodology proven, dictionary thread resolved (NOT WIRED at
+runtime), defect log committed, oracle folder established, component
+reframe locked in. Tomorrow opens with component-extraction work as
+top priority.
 
 ## RAMP — READ THESE IN ORDER
-You have web_fetch. Use it. Do not wait for Scott to paste anything.
-
-1. https://raw.githubusercontent.com/smichaelcapital-cpu/mrx-context/main/CODER_MINDSET.md
-2. https://raw.githubusercontent.com/smichaelcapital-cpu/mrx-context/main/CODER_MINDSET_ADDENDUM.md
-3. https://raw.githubusercontent.com/smichaelcapital-cpu/mrx-context/main/handoffs/HANDOFF_SONNET_2026-04-28_v01.md
+1. https://raw.githubusercontent.com/smichaelcapital-cpu/mrx-context/main/MANIFEST.md
+   (NOTE: still not built — flag to Scott if missing)
+2. https://raw.githubusercontent.com/smichaelcapital-cpu/mrx-context/main/CODER_MINDSET.md
+3. https://raw.githubusercontent.com/smichaelcapital-cpu/mrx-context/main/CODER_MINDSET_ADDENDUM.md
 4. https://raw.githubusercontent.com/smichaelcapital-cpu/mrx-context/main/handoffs/HANDOFF_OPUS_2026-04-28_v01.md
+5. https://raw.githubusercontent.com/smichaelcapital-cpu/mrx-context/main/handoffs/OPUS_TO_OPUS_2026-04-29_RESUME.md
+6. https://raw.githubusercontent.com/smichaelcapital-cpu/mrx-context/main/specs/2026-04-28_DEFECT_LOG_HALPRIN_FRONT_PAGES.md
 
-After reading, confirm in ONE LINE: "Ramped from Opus handoff 2026-04-28 v01. Ready."
+After reading, confirm: "Ramped from Opus handoff 2026-04-28 v01.
+Component reframe internalized. Ready."
 
-## YOUR ROLE (PER RULE-ARCHITECT-PM-BUILDER-SEPARATION)
-You are Opus, the architect. Sonnet is the builder. Scott is the human owner.
-- You write specs, never code
-- You answer Sonnet's design questions, never bypass him
-- You catch Sonnet when he hits something the spec didn't cover
-- You report progress to Scott in plain English
-- You write handoffs at session end
+## YOUR ROLE
+Opus = architect. Sonnet = builder. Scott = human owner.
 
-## WHAT WE DID THIS SESSION (2026-04-27 EOD → 2026-04-28 v01)
+## ARTIFACTS TOUCHED THIS SESSION
 
-Built Stage 5 v0.1 end-to-end — Modules 5, 6, 7, 8 all specced, built, tested, shipped in one session. Started at 391 tests, finished at 491. All canaries green on real Halprin Block H data. The pipeline ran. Three output files produced. Visual comparison done.
+Created:
+  - mrx-context/specs/2026-04-28_HALPRIN_RECON_FULL.md
+  - mrx-context/specs/results/2026-04-28_HALPRIN_RECON_RESULTS.md
+  - mrx-context/specs/results/2026-04-28_HALPRIN_PACKAGE_INSPECTION.md
+  - mrx-context/specs/results/2026-04-28_DICTIONARY_RUNTIME_WIRING.md
+  - mrx-context/specs/results/2026-04-28_ORACLE_CONSOLIDATION.md
+  - mrx-context/specs/2026-04-28_DEFECT_LOG_HALPRIN_FRONT_PAGES.md
+  - mrx-context/oracle/README.md
+  - mrx-context/oracle/.gitignore
+  - mrx-context/oracle/finals/halprin/040226yellowrock-FINAL.txt (copied)
+  - mrx-context/oracle/finals/halprin/040226yellowrock-FINAL.sgxml (copied)
+  - mrx-context/oracle/frontmatter/halprin_frontmatter.txt (extracted)
+  - mrx-context/handoffs/OPUS_TO_OPUS_2026-04-29_RESUME.md
+  - mrx-context/handoffs/HANDOFF_OPUS_2026-04-28_v01.md
 
-Module-by-module recap:
-  - Module 5 (turn_renderer.py) — clean build, integration smoke green
-  - Module 6 (document_composer.py) — recon caught spec mismatch on
-    paragraph_style codes (s1/s2/s3/s5/s7 vs human-readable names),
-    fixed before code, FINAL.txt evidence used to lock s2 indent=14
-    via QA_Q_CONTINUATION new LineKind
-  - Module 7 (page_layout.py) — recon caught THREE format constant
-    bugs in spec (LINE_NUMBER_FIELD_WIDTH was 5 not 6,
-    PAGE_NUMBER_COLUMN was 61 not 60, PAGE_SEPARATOR \x0c missing
-    entirely). All patched before build. Form feed tests passing.
-  - Module 8 (assemble_final.py) — clean wiring, CLI works, three
-    output files produced on real Halprin run.
+Modified: none (engine repo untouched)
 
-## VISUAL COMPARISON RESULTS
+Commits (mrx-context, all pushed):
+  - 26f8d43 — recon spec + results
+  - d02dced — dictionary runtime wiring + defect log populated
+  - 022a96f — Oracle folder + Halprin consolidation
+  - [final commit] — handoff docs
 
-Q&A body (487 of 551 turns) renders nearly word-for-word identical to
-MB's FINAL. That's the heart of the deposition. The engine works.
+Engine repo: clean, untouched this session.
 
-What's different (priorities for v0.2):
+## RECON VERDICTS LOCKED IN
 
-GROUP A — format details (small fixes)
-  - Line numbers mashed against content when indent=0 (cover,
-    appearances). Probably needs a minimum spacer in Module 7.
-  - "EXAMINATION BY MR. CAUGHEY:" splits across two lines instead
-    of one. BYLINE merge logic.
-  - Q. / A. uses 4 spaces, MB uses 1. Format constant.
-  - Line endings LF vs CRLF. Decision pending.
+| Defect | Verdict | Status |
+|---|---|---|
+| 0428-1 (caption) | Layout — confirmed | Maps to component template work |
+| 0428-2 (videotaped block) | Layout — confirmed cascade | Same |
+| 0428-3 (appearances) | Layout — confirmed cascade | Same |
+| 0428-5 (stipulation strip) | B (pipeline bug) | Confirmed; needs Stage 1→5 trace |
+| B1 (dashes) | A — MB polish, 441 occurrences | Parked |
+| B2 (under paid) | A-anomaly | Pipeline introduces split; needs Stage 1/2 trace |
+| B3 (sentence merge) | A-anomaly | Pipeline merges differently; needs Stage 2/3 trace |
+| B4a (I no/know) | A — MB correction | Closed |
+| B4b (Warren seal) | A — both forms match MB | Closed |
+| B5 (W&T Offshore) | A-anomaly | Stroke W-T translates to "with"; needs tokenizer trace |
 
-GROUP B — structural (architectural fixes)
-  - Cover content not centered (template/indent issue).
-  - Section ordering: our stipulation lands page 3, MB's lands page 11.
-    Means our cover/appearances/index pages are compressed. Likely
-    cause: hardcoded turn ranges in Module 6 don't reflect MB's
-    actual document structure.
-  - Index page is missing entirely (deferred to v0.2 per parent spec).
-  - s2 semantics — Sonnet flagged that 28 of 33 s2 turns follow A
-    turns, not Q turns. Means our "Q continuation" model is partial
-    or wrong. Verify against rendered output.
+## DICTIONARY VERDICT: NOT WIRED
 
-## v0.2 ARCHITECTURE — THE BIG UNLOCK
+- dictionary_loader.py exists, tested
+- Fixture dictionary.rtf is byte-identical to package's job dict
+- Stage 3 accepts dictionary parameter
+- _run_halprin_mini.py line 267 passes {} (empty dict) to LLM
+- Every Halprin run to date has had ZERO job-specific dict context
+- Two-line fix available
+- WARNING: wiring won't fix B2/B5 (those are NOT in job dict)
 
-Scott has licensed CaseCATalyst on his Windows laptop AND the source
-job files (Halprin .sgxr2, Brandl, plus older MB depos). Tomorrow he
-opens CAT and documents MB's actual page format settings — her
-"house style" file. This is the unlock for productizing across any CR.
+## AUDIO DECISION: COLLAPSED
 
-The v0.2 architecture:
-  - case_info.json gains a format_profile field
-  - New FormatProfile dataclass captures: page width, lines per page,
-    line number column, indent values per LineKind, cover template,
-    cert template, errata template, etc.
-  - Module 7 reads FormatProfile instead of FORMAT-LOCKED-V01 constants
-  - Module 6 uses FormatProfile for cover/appearances/cert template
-    rendering
-  - CR onboarding intake adds the format file as a required artifact
+- .sgxml has 88 paragraph-level timestamp pairs
+- Sufficient for Scott's nav goal (within 2-3 sentences)
+- AUDIO_SYNC_RECON spec is no longer needed
+- Whisper whole-file fallback no longer needed as design decision
+- Audio work shelved until front-matter ships
 
-The pitch this enables: "Send us your format file and your first depo,
-and the second depo we hand back will look like you wrote it."
+## DEFECT SUPERSET — TIER STATUS
 
-## YOUR FIRST DELIVERABLES TOMORROW
+REFRAMED: front-matter is a TEMPLATE problem, not a layout primitive
+problem. The defect superset still applies but the architectural
+approach is different.
 
-When Scott says go:
+### Component template work (NEW TOP PRIORITY)
 
-1. SPEC — Structural diff tool. Small Python script (or Sonnet-built
-   module) that reads MB's FINAL.txt and our OUR_FINAL.txt, identifies
-   section boundaries, produces side-by-side mapping. Output drives
-   v0.2 priority list.
+C0 — Component inventory pass
+  Compare front-matter across MB depos. Identify reusable templates
+  with slot variables. Output: COMPONENTS.md in oracle/.
 
-2. SPEC — FormatProfile dataclass. Capture every constant currently
-   FORMAT-LOCKED-V01 in Module 7 plus the indent/template constants
-   in Module 6. This is the v0.2 architecture skeleton.
+C1 — Cover component
+  Template for case caption + venue + date + witness + reporter.
+  Slot variables: state, parish, district, plaintiffs[], defendants[],
+  docket, division, witness, date, time, firm, address, city, state,
+  reporter.
 
-3. SPEC — Module 7 v0.2: read FormatProfile instead of constants.
+C2 — Stipulation component
+  State-specific boilerplate. Louisiana = Article 1434 territory.
+  Slot variables: counsel name, witness name.
 
-Do these in this order. Don't draft beyond #1 until Scott has spent
-time in CaseCATalyst documenting MB's actual format settings — his
-field work feeds the FormatProfile spec.
+C3 — Appearances component
+  Firm blocks + attorney lists. Multi-attorney "BY:" grouping.
+  "(Zoom)" suffix support. Slot variables: per-firm address, attorneys[],
+  emails[], remote_flag[].
 
-## CRITICAL DESIGN DECISIONS LOCKED (DO NOT REVISIT)
+C4 — Index component
+  TOC + exhibit list. Slot variables: section_page_refs[], exhibits[].
 
-  - Positional joins for proposals/decisions/anomalies (i, not ID)
-  - Whitespace tokenization for v0.1 (canary green on real data)
-  - Right-to-left application of multiple ops per turn
-  - Tag rules per Module 4
-  - Format constants per Module 7 (LINE_NUMBER_FIELD_WIDTH=6,
-    PAGE_NUMBER_COLUMN=60, PAGE_SEPARATOR=\x0c) — these become
-    FormatProfile defaults in v0.2, not constants
+C5 — Witness Certificate component
+  Signature block + exhibit references.
 
-## NEW RULE DRAFTED (NOT YET ADDED TO ADDENDUM)
+C6 — Reporter Certificate component
+  State-specific verbatim. R.S. 37:2554 for LA.
 
-RULE-FORMAT-CONSTANTS-VERIFY (draft) — any spec claiming a layout
-constant must include a recon step that verifies the value against
-the truth source (MB's FINAL or equivalent), byte-level, before
-build. Recon report must include the exact filepath of the truth
-source used, not just findings.
+C7 — Errata component
+  3 lines × 7 entries × N pages.
 
-Background: Module 7 spec had THREE wrong layout constants. Sonnet
-caught all three in recon. Architect cannot verify byte-level format
-details from training data — must come from truth source.
+### Pipeline bugs (independent of component work)
 
-Add to CODER_MINDSET_ADDENDUM at next housekeeping pass. Discuss
-with Scott to refine wording.
+P1 — Stipulation strip-out (0428-5)
+  Stage 1→5 trace needed to localize where "It is stipulated and
+  agreed" gets dropped from raw RTF.
+
+P2 — B2/B3/B5 anomaly trace
+  Pipeline produces text not in raw RTF. Stage 1/2 tokenization or
+  brief expansion. Investigate.
+
+P3 — Dictionary wiring
+  Two-line fix in _run_halprin_mini.py to load dict into LLM context.
+
+### Parked (per Scott's instruction)
+
+- B1 dash pattern decode (441 examples, decodable rule, parked)
+- MB Style Rules workstream (parked until tech debt cleared)
+- Audio architecture (paragraph timestamps sufficient)
+- M0/M0a/M2 sub-row layout primitive (SUPERSEDED by component work)
+
+## DRAFT RULES PARKED FOR ADDENDUM v2 BUMP
+
+1. RULE-FORMAT-CONSTANTS-VERIFY (carried from prior session)
+2. RULE-HANDOFF-ARTIFACT-MANIFEST (carried)
+3. RULE-OPERATION-DOC (carried — MANIFEST.md still not built)
+4. RULE-RECON-BEFORE-SPEC (NEW — proven tonight)
+   Architect runs structural recon (raw → MB → ours three-way diff)
+   BEFORE writing any architectural spec. No spec without evidence
+   from real files.
+5. RULE-DIFF-BEFORE-DECLARE (NEW — proven needed tonight)
+   Before declaring any format work "shipped," run structured diff
+   between OUR_FINAL and MB FINAL. Architect presents delta list to
+   Scott. Scott never finds defects himself.
+6. RULE-COMPONENTS-NOT-PRIMITIVES (NEW — emerged tonight)
+   Front-matter sections are templates, not layout problems. When
+   designing front-matter work, ask first: "is this structure
+   repeated across instances?" If yes, it's a component template,
+   not a primitive.
+
+## MANIFEST.md / OPERATION DOC — STILL NOT BUILT
+
+Carried from 2026-04-27. Not built tonight (correctly deprioritized).
+Tomorrow: still on the list, but component work takes priority. Build
+after component spec ships.
+
+## TOMORROW MORNING CHECKLIST (FOR FRESH OPUS)
+
+When Scott opens with "ramped":
+
+Response template:
+Ramped from 2026-04-28 v01. Component reframe internalized.
+Three things on deck:
+
+Spec for Sonnet: extract front-matter from Brandl + 030526 + Easley.
+Same method as Halprin (cutoff at EXAMINATION). Outputs to
+oracle/frontmatter/.
+Then: I do the component-extraction comparison. Diff sections
+across depos. Identify templates + slot variables. Output:
+oracle/COMPONENTS.md.
+Parallel: spec dictionary wiring fix for Sonnet (line 267 of
+_run_halprin_mini.py). 10-min fix.
+
+Starting with #1. Spec ready below — review and approve.
+
+DO NOT propose unprompted:
+- Architecture for layout primitives
+- Audio work
+- B1 dash decode
+- B2/B3/B5 trace work (parked)
+
+DO ask Scott:
+- Confirm 030526 depo is an MB FINAL (not yet verified)
+- Confirm consolidate Easley FINAL into oracle/
 
 ## SCOTT'S WORKING STYLE (UNCHANGED)
-- Treat as 12-year-old until told otherwise
-- Plain English. Short answers.
-- ONE question at a time. NOT three.
-- Inline A/B/C ONLY when there's a real choice. When there's a clear
-  right answer, give it.
-- He hates file dialogs. Sonnet writes files. Scott does not
-  copy-paste into Notepad. Ever.
-- He hates fire-hose responses. Keep messages tight.
-- He pushes back. His pushback is usually right.
-- He's been doing this for two-plus weeks. Respect the fatigue.
 
-## SCOTT'S MOOD AT SESSION CLOSE
+- 12-year-old reading level until told otherwise
+- Plain English, short answers
+- ONE question at a time, NOT three
+- Inline A/B/C only when there's a real choice
+- Hates file dialogs — Sonnet writes files
+- Hates fire-hose responses — keep messages tight
+- Pushes back — pushback is usually right (proven again tonight)
+- ALWAYS full absolute paths, never abbreviated
+- Coder Mindset / Oracle Covenant / Architect-PM-Builder Separation
+  remain the operative rules
 
-Long session, big shipping milestone. Stage 5 v0.1 done end-to-end
-with all 8 modules, 491 tests passing, three output files produced
-from real Halprin Block H data. Real moment of frustration when first
-visual comparison showed the cover/stipulation issues — talked through
-together, recovered to "this is exactly the v0.1 outcome we expected,"
-identified the FormatProfile architectural unlock, parked v0.2 work
-for fresh eyes tomorrow. Tagged out clean. Open calm. The Q&A engine
-works. The product has a shape. Move accordingly.
-
-## REVISIT LIST (NOT BLOCKING)
-
-- [ ] RULE-FORMAT-CONSTANTS-VERIFY — formalize and add to addendum
-- [ ] Onboarding bundle: add format file as required intake artifact
-- [ ] Replace hardcoded "halprin_mini" filename stem in Module 8
-- [ ] Replace hardcoded turn ranges in Module 6
-- [ ] Index page generation (was deferred from v0.1)
-- [ ] Stage 4 audio architecture (after v0.2 ships)
-- [ ] s2 semantics deep-dive after format file analysis
-- [ ] Tighten parent spec language re: column vs field-width semantics
-
-— End of Opus handoff —
+— End of Opus handoff 2026-04-28 v01 —
