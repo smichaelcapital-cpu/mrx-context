@@ -1,0 +1,498 @@
+STATE OF LOUISIANA
+PARISH OF CALCASIEU
+ 14TH JUDICIAL DISTRICT
+* * * * * * * * * * * * * * * * * * * * * * * *
+YELLOW ROCK, LLC, et al,
+Plaintiffs,
+Docket No. 202-001594
+Division "H"
+v.
+WESTLAKE US 2 LLC f/k/a EAGLE US 2 LLC et al.,
+Defendant.
+* * * * * * * * * * * * * * * * * * * * * * * *
+VIDEOTAPED DEPOSITION
+BRAD SHAY BRANDL
+taken on
+Thursday, March 26, 2026
+commencing at 9:25 a.m.
+at the
+THE POST OAK HOTEL
+1600 West Loop South
+Houston, Texas 77027
+Reported By: MARYBETH E. MUIR, CCR, RPR
+* * * * * * * * * * * * * * * * * * * * * * * *
+
+I N D E X
+
+Page
+Caption
+Appearances
+Stipulation
+ 10
+Examination
+Mr. Peacock
+Reporter's Certificate
+Witness's Certificate
+* * * * * * * *
+
+EXHIBITS
+
+Exhibit No. 220
+Notice of Deposition of
+Brad Brandl
+ 13
+Exhibit No. 221
+Brad Brandl's LinkedIn page 21
+Exhibit No. 222
+White Top Energy, LLC
+Functional Organization Chart
+YR-323002
+ 119
+Exhibit No. 223
+Invoice, 10/30/20
+YR-453374 160
+Exhibit No. 224
+Sulphur Mines map
+YR-336537 192
+Exhibit No. 225
+Jack Stilly & Associates map
+YR-029357 194
+Exhibit No. 226
+E-mail chain, 5/24/18
+YR-291419-432 250
+Exhibit No. 227
+E-mail chain, 5/28/18
+YR-291442-443 278
+Exhibit No. 228
+E-mail chain, 7/20/18
+YR-291625-647 290
+
+E X H I B I T S
+
+Exhibit No. 229
+E-mail chain, 2/6/19
+YR-292961-966 305
+Exhibit No. 230
+E-mail chain, 9/10/18
+YR-440894-896 with attachment 308
+Exhibit No. 231
+E-mail chain, 8/14/18
+YR-440869
+ 315
+Exhibit No. 232 E-mail chain, 9/11/18
+YR-291784
+ 319
+Exhibit No. 233
+E-mail chain, 10/17/18
+YR-451004-005
+ 319
+Exhibit No. 234
+E-mail chain, 11/15/18
+YR-292005
+ 322
+Exhibit No. 235 E-mail chain, 7/30/19
+YR-294194-189
+ 328
+
+A P P E A R A N C E S:
+
+ATTORNEY FOR PLAINTIFF:
+SHER GARNER CAHILL RICHTER KLEIN & HILBERT, L.L.C.
+909 Poydras Street
+Suite 2800
+New Orleans, Louisiana 70112
+504.299.2100
+khandy@shergarner.com
+tmadigan@shergarner.com
+jkessler@shergarner.com
+jgarner@shergarner.com
+BY: KAYLYN BLOSSER HANDY, ESQ.
+ THOMAS J. MADIGAN, ESQ.
+ JEFFREY D. KESSLER, ESQ.
+ (Zoom)
+ JAMES M. GARNER, ESQ. (Zoom)
+
+FOR THE DEFENDANTS, WESTLAKE US 2 LLC, WESTLAKE
+CORPORATION AND WESTLAKE CHLOR-VINYLS CORPORATION:
+SUSMAN GODFREY LLP
+1000 Louisiana Street
+Suite 5100
+Houston, Texas
+ 77002-5096
+713.651.9366
+tpeacock@susmangodfrey.com
+BY: J. HOKE (TREY) PEACOCK, III, ESQ.
+
+FOR THE DEFENDANTS, PPG:
+JONES WALKER
+445 North Boulevard
+Suite 800
+Baton Rouge, Louisiana
+ 70802
+225.248.2056
+jobrien@joneswalker.com
+BY: JAY M. O'BRIEN, ESQ. (Zoom)
+
+FOR THE DEFENDANTS, LONQUIST & COMPANY, LONQUIST FIELD
+SERVICE:
+KELLY HART & HALLMAN
+400 Poydras Street
+Suite
+New Orleans, Louisiana
+ 70130
+504.522.1812
+loulan.pitre@kellyhart.com
+BY: LOULAN PITRE, ESQ.
+
+A P P E A R A N C E S:
+
+FOR THE DEFENDANT, ALL STATE INSURANCE COMPANY, solely as successor-in-interest to NORTHBROOK EXCESS AND SURPLUS INSURANCE COMPANY,formerly NORTHBROOK INSURANCE COMPANY:
+WINDELS MARX
+180 Park Avenue
+Florham Park, New Jersey
+ 07932-1054
+973.966.3207
+asirianni@@windelsmarx.com
+NOT PRESENT
+
+FOR THE DEFENDANT, NATIONAL CASUALTY COMPANY:
+PHELPS DUNBAR
+365 Canal Street
+Suite 2000
+New Orleans, Louisiana
+ 70130-6534
+504.679.5686
+aubrey.rector@phelps.com
+BY: AUBREY D. RECTOR, ESQ. (Zoom)
+
+FOR THE DEFENDANT, CERTAIN UNDERWRITERS AT LLOYDS, LONDON, BERKSHIRE HATHAWAY SPECIALTY INSURANCE COMPANY, THE CONTINENTAL INSURANCE COMPANY, GOVERNMENT EMPLOYEES INSURANCE COMPANY, COLUMBIA CASUALTY COMPANY, CNA, GEICO, STONEWALL INSURANCE COMPANY AND GENERAL REINSURANCE CORPORATION:
+TAYLOR, WELLONS, POLITZ & DUHE, LLC
+1555 Poydras Street
+Suite 2000
+New Orleans, Louisiana
+ 70112
+504.525.9888
+srosamond@twpdlaw.com
+BY: SAMUEL M. ROSAMOND, III, ESQ. (Zoom)
+
+FOR THE DEFENDANT, STARR INDEMNITY AND LIABILITY COMPANY:
+TREADAWAY BOLLINGER, LLC
+406 North Florida Street
+Suite 2
+Covington, Louisiana
+ 70433
+504.833.7300
+darren@ztalaw.com
+BY: DARREN M. GUILLOT, ESQ. (Zoom)
+
+A P P E A R A N C E S:
+
+FOR THE DEFENDANT, GEMINI INSURANCE COMPANY:
+PHELPS DUNBAR
+365 Canal Street
+Suite 2000
+New Orleans, Louisiana
+ 70130-6534
+504.679.5685
+bennett.matson@phelps.com
+BY: BENNETT MATSON, ESQ. (Zoom)
+
+FOR THE DEFENDANT, ALLSTATE INSURANCE COMPANY:
+MUSGRAVE, MCLACHLAN & PENN, LLC
+1555 Poydras Street
+Suite 2100
+New Orleans, Louisiana
+ 70112
+504.799.4300
+lmd@mmpfirm.com
+NOT PRESENT
+
+FOR THE DEFENDANT, AIG ENTITIES:
+MCDOWELL HETHERINGTON
+1001 Fannin Street
+Suite 2400
+Houston, Texas
+ 77002
+benton.surrett@mhllp.com
+BY: BENTON SURRETT, ESQ. (Zoom)
+
+FOR THE DEFENDANT, GREAT AMERICAN INSURANCE COMPANY:
+DUPLASS, APLC
+433 Metairie Road
+Suite 600
+Metairie, Louisiana
+ 70005
+504.832.3700
+agallagher@duplass.com
+BY: AIDAN P. GALLAGHER, ESQ. (Zoom)
+
+FOR THE DEFENDANT, OLD REPUBLIC INSURANCE COMPANY:
+KENNEDYS LAW LLP
+400 Connell Drive
+Suite 700
+Berkeley Heights, New Jersey
+ 07922
+564.224.9104
+sally.clements@kenndyslaw.com
+BY: SALLY CLEMENTS, ESQ. (Zoom)
+
+A P P E A R A N C E S:
+
+FOR THE DEFENDANT, TIG:
+MOULEDOUX, BLAND, LEGRAND & BRACKETT
+701 Poydras Street
+Suite 600
+New Orleans, Louisiana
+ 70139
+504.522.2121
+pdominick@mblb.com
+BY: PAIGE M. DOMINICK, ESQ. (zoom)
+
+FOR THE DEFENDANT, LIBERTY SURPLUS INSURANCE CORPORATION:
+BARRASSO USDIN KUPPERMAN FREEMAN & SARVER
+909 Poydras Street
+Suite 2350
+New Orleans, Louisiana
+ 70112
+504.589.9762
+mpilcher@barrassousdin.com
+BY: MORGAN L. PILCHER, ESQ. (Zoom)
+
+FOR THE DEFENDANT, HAMILTON INSURANCE DESIGNATED ACTIVITY COMPANY:
+COSMICH, SIMMONS & BROWN
+650 Poydras Street
+Suite 2215
+New Orleans, Louisiana
+ 70130
+601.863.2100
+kenan.rand@cs-law.com
+BY: KENAN S. RAND, JR., ESQ. (Zoom)
+
+FOR THE DEFENDANT, ZURICH REINSURANCE LTD F/K/A ZURICH INTERNATIONAL (BERMUDA) LTD:
+SKARZYNSKI MARICK & BLACK
+500 West Madison Street
+Suite 3600
+Chicago, Illinois
+ 60661
+312.946.4239
+acandela@skarzynski.com
+NOT PRESENT
+
+FOR THE DEFENDANT, TRAVELERS CASUALTY & SURETY CO.:
+LUGENBUHL WHEATON PECK RANKIN & HUBBARD
+601 Poydras Street
+Suite 2775
+New Orleans, Louisiana
+504.568.1990
+kmcglone@lawla.com
+BY: KEVIN MCGLONE, ESQ. (Zoom)
+
+A P P E A R A N C E S:
+
+FOR THE DEFENDANT, ZURICH as alleged insurer of PPG:
+SALLEY HITE MERCER AND RESOR
+One Canal Place
+365 Canal Street
+Suite 1710
+New Orleans, Louisiana
+ 70130
+504.566.8815
+istern@shmrlaw.com
+NOT PRESENT
+
+FOR THE DEFENDANT, ENDURANCE AMERICAN INSURANCE COMPANY:
+CHAFFE MCCALL LLP
+1100 Poydras Street
+Suite 2300
+New Orleans, Louisiana
+ 70163
+504.585.7081
+lfitzpatrick@chaffe.com
+BY: LISA FITZPATRICK, ESQ. (
+via Zoom)
+
+FOR THE DEFENDANT, SWISS RE CORPORATE SOLUTIONS AMERICA INSURANCE CORPORATION f/k/a PURITAN INSURANCE COMPANY:
+GALLOWAY JOHNSON
+One Shell Square
+701 Poydras Street
+Suite 4040
+New Orleans, Louisiana 70139
+504.525.6802
+seckholdt@gallowayjohnson.com
+BY: STEPHEN J. ECKHOLDT, ESQ. (
+via Zoom)
+
+FOR THE DEFENDANT, RLI INSURANCE COMPANY, named as excess insurer of PPG INDUSTRIES, INC.:
+LUGENBUHL WHEATON PECK RANKIN & HUBBARD
+601 Poydras Street
+Suite 2775
+New Orleans, Louisiana
+504.568.1990
+sschmeeckle@lawla.com
+zlamachio@lawla.com
+BY: SETH SCHMEECKLE, ESQ. (Zoom)
+ZACHARY T. LAMACHIO, ESQ. (zoom)
+
+A P P E A R A N C E S
+
+ALSO PRESENT:
+Jonathan Love
+Bryan Smith, Videographer
+Reported by: marybeth E. Muir,
+ Certified Court Reporter
+ in and for the State of
+ Louisiana and Registered
+ Professional Reporter
+
+S T I P U L A T I O N
+
+It is stipulated and agreed by and between Counsel that the testimony of the witness, BRAD SHAY BRANDL, is hereby being taken pursuant to Notice under the Louisiana Code of Civil Procedure for all purposes permitted under law.
+The witness waives the right to read and sign the deposition. The original is to be delivered to and retained by: "TREY" PEACOCK, ESQ., for proper filing with the Clerk of Court.
+All objections, except those as to the form of the questions and/or responsiveness of the answers, are reserved until the time of the trial of this cause.
+* * * * *
+Marybeth E. Muir, Certified Court Reporter in and for the State of Louisiana and Registered Professional Reporter, officiated in administering the oath to the witness.
+
+MR. GUILLOT:
+this is
+Darren Guillot
+behalf
+Starr Indemnity
+Liability
+Company
+reserve
+rights
+including
+limited
+to, the
+right
+re-depose
+this witness
+if and when
+we've
+opportunity
+conduct
+meaningful
+discovery
+have
+benefit of
+meaningful
+discovery
+we'd
+also
+like
+just
+ add two
+stipulations
+if it's
+agreeable
+the first
+objections
+reserved
+except
+for the
+form of the question
+ the
+responsiveness
+of an
+answer
+are there any
+objections
+that
+stipulation
+
+MR. MADIGAN:
+agreed
+
+MR. GUILLOT:
+thank you
+other
+stipulation is
+one
+objection is
+good
+present
+unless
+somebody
+ opts
+
+MR. MADIGAN:
+agreed
+
+MR. PITRE:
+agreed
+
+MR. MADIGAN:
+agree
+to your
+Reservation of Rights
+object
+that
+let's
+move forward
+
+MR. PEACOCK:
+I agree
+are there any
+other
+stipulations
+okay
+we're
+ready
+to go
+
+THE VIDEOGRAPHER:
+good
+morning
+we are
+on the
+record
+name
+Brian Smith
+videographer
+with
+Lexitas
+today's
+date
+March
+26th, 2026
+video
+time
+9:25
+a.m.
+Central
+this
+deposition is
+being held
+1600
+West
+Loop
+South
+Houston
+Texas
+in the
+matter
+Yellow Rock, LLC
+et al.
+Westlake
+ et al
+deponent
+Brad
+Brandl
+counsel
+will be
+note
+on the
+stenographic
+record
+court reporter
+Marybeth
+Muir
+will
+swear
+in the
+witness
+ BRAD SHAY BRANDL,
+32 County Road 269, Moulton, Texas
+77975, brad.brandl@yahoo.com,
+having been first duly sworn, was examined and testified as follows:
+
