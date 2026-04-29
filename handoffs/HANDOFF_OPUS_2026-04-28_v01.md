@@ -225,4 +225,50 @@ DO ask Scott:
 - ALWAYS full absolute paths, never abbreviated
 - Coder Mindset / Oracle Covenant / Architect-PM-Builder Separation remain the operative rules
 
+## TALKING POINT FOR TOMORROW — MODULAR HANDOFF DESIGN
+
+Scott raised end-of-session: handoffs are accumulating overlap. Each
+session re-states the same stable content (truth sources, working
+style, mindset rules) alongside the new session-specific delta.
+
+His instinct: same pattern as the front-page reframe. Repeated
+structure across instances = templates + variables. Stable parts
+become reference files. Each session's handoff is just the delta.
+
+Proposed structure to discuss tomorrow:
+- mrx-context/handoffs/_stable/ — folder for content that rarely
+  changes (truth source paths, working style, mindset rules,
+  coder mindset, oracle covenant)
+- mrx-context/handoffs/sessions/ — folder for session-specific
+  handoffs (just the delta — what changed, what shipped, what's
+  open)
+- mrx-context/handoffs/INDEX.md — pointer to current state
+  (links stable references + most recent session handoff)
+
+What this would solve:
+- Tomorrow's Opus reads ~3 files instead of one fat document
+- Each file has clear ownership (Sonnet updates session deltas;
+  stable refs only update when truly stable content changes)
+- Pattern frequency analysis becomes possible — we can look at
+  6 weeks of session deltas and see what's repeatedly broken vs
+  one-off
+
+What this connects to:
+- RULE-OPERATION-DOC (still unbuilt) — MANIFEST.md was supposed
+  to be this index. May naturally subsume into the handoff
+  modularization work.
+- Component-not-primitive thinking — same architectural pattern
+  applied to documentation.
+
+Action for tomorrow: discuss with Scott early. Likely worth a
+small Sonnet job to:
+  1. Analyze last 2 weeks of handoffs for repeated content
+  2. Draft proposed folder structure
+  3. Migrate one or two handoffs as proof
+Before doing anything, get Scott's review.
+
+NOT urgent. Component extraction + dolphin trace remain priority.
+But this is the kind of tech-debt cleanup Scott is actively
+asking for. Keep it visible.
+
 — End of Opus handoff 2026-04-28 v01 —
