@@ -1,4 +1,6 @@
-# HANDOFF — OPUS — 2026-04-28 v01
+PART 2 — STRUCTURED SESSION FINDINGS + TOMORROW CHECKLIST
+Save to: C:\Users\scott\OneDrive\Documents\mrx-context\handoffs\HANDOFF_OPUS_2026-04-28_v01.md
+markdown# HANDOFF — OPUS — 2026-04-28 v01
 
 ## TRUTH SOURCES (READ FIRST — NEVER LOSE THESE)
 
@@ -44,7 +46,10 @@ Master copies:
   C:\Users\scott\OneDrive\Documents\MASTER_COPIES\
 
 ## ONE-LINE STATE
-Recon methodology proven, dictionary thread resolved (NOT WIRED at runtime), defect log committed, oracle folder established, component reframe locked in. Tomorrow opens with component-extraction work as top priority.
+Recon methodology proven, dictionary thread resolved (NOT WIRED at
+runtime), defect log committed, oracle folder established, component
+reframe locked in. Tomorrow opens with component-extraction work as
+top priority.
 
 ## RAMP — READ THESE IN ORDER
 1. https://raw.githubusercontent.com/smichaelcapital-cpu/mrx-context/main/MANIFEST.md
@@ -55,7 +60,8 @@ Recon methodology proven, dictionary thread resolved (NOT WIRED at runtime), def
 5. https://raw.githubusercontent.com/smichaelcapital-cpu/mrx-context/main/handoffs/OPUS_TO_OPUS_2026-04-29_RESUME.md
 6. https://raw.githubusercontent.com/smichaelcapital-cpu/mrx-context/main/specs/2026-04-28_DEFECT_LOG_HALPRIN_FRONT_PAGES.md
 
-After reading, confirm: "Ramped from Opus handoff 2026-04-28 v01. Component reframe internalized. Ready."
+After reading, confirm: "Ramped from Opus handoff 2026-04-28 v01.
+Component reframe internalized. Ready."
 
 ## YOUR ROLE
 Opus = architect. Sonnet = builder. Scott = human owner.
@@ -83,8 +89,7 @@ Commits (mrx-context, all pushed):
   - 26f8d43 — recon spec + results
   - d02dced — dictionary runtime wiring + defect log populated
   - 022a96f — Oracle folder + Halprin consolidation
-  - 54d6d4f — Opus-to-Opus resume note
-  - [this commit] — handoff doc
+  - [final commit] — handoff docs
 
 Engine repo: clean, untouched this session.
 
@@ -123,21 +128,30 @@ Engine repo: clean, untouched this session.
 
 ## DEFECT SUPERSET — TIER STATUS
 
-REFRAMED: front-matter is a TEMPLATE problem, not a layout primitive problem. The defect superset still applies but the architectural approach is different.
+REFRAMED: front-matter is a TEMPLATE problem, not a layout primitive
+problem. The defect superset still applies but the architectural
+approach is different.
 
 ### Component template work (NEW TOP PRIORITY)
 
 C0 — Component inventory pass
-  Compare front-matter across MB depos. Identify reusable templates with slot variables. Output: COMPONENTS.md in oracle/.
+  Compare front-matter across MB depos. Identify reusable templates
+  with slot variables. Output: COMPONENTS.md in oracle/.
 
 C1 — Cover component
-  Template for case caption + venue + date + witness + reporter. Slot variables: state, parish, district, plaintiffs[], defendants[], docket, division, witness, date, time, firm, address, city, state, reporter.
+  Template for case caption + venue + date + witness + reporter.
+  Slot variables: state, parish, district, plaintiffs[], defendants[],
+  docket, division, witness, date, time, firm, address, city, state,
+  reporter.
 
 C2 — Stipulation component
-  State-specific boilerplate. Louisiana = Article 1434 territory. Slot variables: counsel name, witness name.
+  State-specific boilerplate. Louisiana = Article 1434 territory.
+  Slot variables: counsel name, witness name.
 
 C3 — Appearances component
-  Firm blocks + attorney lists. Multi-attorney "BY:" grouping. "(Zoom)" suffix support. Slot variables: per-firm address, attorneys[], emails[], remote_flag[].
+  Firm blocks + attorney lists. Multi-attorney "BY:" grouping.
+  "(Zoom)" suffix support. Slot variables: per-firm address, attorneys[],
+  emails[], remote_flag[].
 
 C4 — Index component
   TOC + exhibit list. Slot variables: section_page_refs[], exhibits[].
@@ -154,10 +168,12 @@ C7 — Errata component
 ### Pipeline bugs (independent of component work)
 
 P1 — Stipulation strip-out (0428-5)
-  Stage 1→5 trace needed to localize where "It is stipulated and agreed" gets dropped from raw RTF.
+  Stage 1→5 trace needed to localize where "It is stipulated and
+  agreed" gets dropped from raw RTF.
 
 P2 — B2/B3/B5 anomaly trace
-  Pipeline produces text not in raw RTF. Stage 1/2 tokenization or brief expansion. Investigate.
+  Pipeline produces text not in raw RTF. Stage 1/2 tokenization or
+  brief expansion. Investigate.
 
 P3 — Dictionary wiring
   Two-line fix in _run_halprin_mini.py to load dict into LLM context.
@@ -175,31 +191,41 @@ P3 — Dictionary wiring
 2. RULE-HANDOFF-ARTIFACT-MANIFEST (carried)
 3. RULE-OPERATION-DOC (carried — MANIFEST.md still not built)
 4. RULE-RECON-BEFORE-SPEC (NEW — proven tonight)
-   Architect runs structural recon (raw → MB → ours three-way diff) BEFORE writing any architectural spec. No spec without evidence from real files.
+   Architect runs structural recon (raw → MB → ours three-way diff)
+   BEFORE writing any architectural spec. No spec without evidence
+   from real files.
 5. RULE-DIFF-BEFORE-DECLARE (NEW — proven needed tonight)
-   Before declaring any format work "shipped," run structured diff between OUR_FINAL and MB FINAL. Architect presents delta list to Scott. Scott never finds defects himself.
+   Before declaring any format work "shipped," run structured diff
+   between OUR_FINAL and MB FINAL. Architect presents delta list to
+   Scott. Scott never finds defects himself.
 6. RULE-COMPONENTS-NOT-PRIMITIVES (NEW — emerged tonight)
-   Front-matter sections are templates, not layout problems. When designing front-matter work, ask first: "is this structure repeated across instances?" If yes, it's a component template, not a primitive.
+   Front-matter sections are templates, not layout problems. When
+   designing front-matter work, ask first: "is this structure
+   repeated across instances?" If yes, it's a component template,
+   not a primitive.
 
 ## MANIFEST.md / OPERATION DOC — STILL NOT BUILT
 
-Carried from 2026-04-27. Not built tonight (correctly deprioritized). Tomorrow: still on the list, but component work takes priority. Build after component spec ships.
+Carried from 2026-04-27. Not built tonight (correctly deprioritized).
+Tomorrow: still on the list, but component work takes priority. Build
+after component spec ships.
 
 ## TOMORROW MORNING CHECKLIST (FOR FRESH OPUS)
 
 When Scott opens with "ramped":
 
 Response template:
-
 Ramped from 2026-04-28 v01. Component reframe internalized.
-
 Three things on deck:
 
-1. Spec for Sonnet: extract front-matter from Brandl + 030526 + Easley. Same method as Halprin (cutoff at EXAMINATION). Outputs to oracle/frontmatter/.
-
-2. Then: I do the component-extraction comparison. Diff sections across depos. Identify templates + slot variables. Output: oracle/COMPONENTS.md.
-
-3. Parallel: spec dictionary wiring fix for Sonnet (line 267 of _run_halprin_mini.py). 10-min fix.
+Spec for Sonnet: extract front-matter from Brandl + 030526 + Easley.
+Same method as Halprin (cutoff at EXAMINATION). Outputs to
+oracle/frontmatter/.
+Then: I do the component-extraction comparison. Diff sections
+across depos. Identify templates + slot variables. Output:
+oracle/COMPONENTS.md.
+Parallel: spec dictionary wiring fix for Sonnet (line 267 of
+_run_halprin_mini.py). 10-min fix.
 
 Starting with #1. Spec ready below — review and approve.
 
@@ -223,52 +249,7 @@ DO ask Scott:
 - Hates fire-hose responses — keep messages tight
 - Pushes back — pushback is usually right (proven again tonight)
 - ALWAYS full absolute paths, never abbreviated
-- Coder Mindset / Oracle Covenant / Architect-PM-Builder Separation remain the operative rules
-
-## TALKING POINT FOR TOMORROW — MODULAR HANDOFF DESIGN
-
-Scott raised end-of-session: handoffs are accumulating overlap. Each
-session re-states the same stable content (truth sources, working
-style, mindset rules) alongside the new session-specific delta.
-
-His instinct: same pattern as the front-page reframe. Repeated
-structure across instances = templates + variables. Stable parts
-become reference files. Each session's handoff is just the delta.
-
-Proposed structure to discuss tomorrow:
-- mrx-context/handoffs/_stable/ — folder for content that rarely
-  changes (truth source paths, working style, mindset rules,
-  coder mindset, oracle covenant)
-- mrx-context/handoffs/sessions/ — folder for session-specific
-  handoffs (just the delta — what changed, what shipped, what's
-  open)
-- mrx-context/handoffs/INDEX.md — pointer to current state
-  (links stable references + most recent session handoff)
-
-What this would solve:
-- Tomorrow's Opus reads ~3 files instead of one fat document
-- Each file has clear ownership (Sonnet updates session deltas;
-  stable refs only update when truly stable content changes)
-- Pattern frequency analysis becomes possible — we can look at
-  6 weeks of session deltas and see what's repeatedly broken vs
-  one-off
-
-What this connects to:
-- RULE-OPERATION-DOC (still unbuilt) — MANIFEST.md was supposed
-  to be this index. May naturally subsume into the handoff
-  modularization work.
-- Component-not-primitive thinking — same architectural pattern
-  applied to documentation.
-
-Action for tomorrow: discuss with Scott early. Likely worth a
-small Sonnet job to:
-  1. Analyze last 2 weeks of handoffs for repeated content
-  2. Draft proposed folder structure
-  3. Migrate one or two handoffs as proof
-Before doing anything, get Scott's review.
-
-NOT urgent. Component extraction + dolphin trace remain priority.
-But this is the kind of tech-debt cleanup Scott is actively
-asking for. Keep it visible.
+- Coder Mindset / Oracle Covenant / Architect-PM-Builder Separation
+  remain the operative rules
 
 — End of Opus handoff 2026-04-28 v01 —
