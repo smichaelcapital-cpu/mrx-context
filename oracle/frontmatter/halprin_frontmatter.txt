@@ -1,0 +1,659 @@
+
+
+                                                           1
+
+
+     1                  STATE OF LOUISIANA
+
+     2                  PARISH OF CALCASIEU
+
+     3                 14TH JUDICIAL DISTRICT
+
+     4     * * * * * * * * * * * * * * * * * * * * * * * *
+         YELLOW ROCK, LLC, et               Docket No.
+     5   al,                                202-001594
+                Plaintiffs,                 Division "H"
+     6      v.
+         WESTLAKE US 2 LLC f/k/a
+     7   EAGLE US 2 LLC et al.,
+                Defendants.
+     8
+
+     9
+           * * * * * * * * * * * * * * * * * * * * * * * *
+    10
+
+    11
+                       VIDEOTAPED DEPOSITION
+    12                           OF
+                          RICHARD HALPRIN
+    13
+                              taken on
+    14                 Thursday, April 2, 2026
+
+    15                commencing at 9:04 a.m.
+
+    16                   at the offices of
+                             SHER GARNER
+    17                   909 Poydras Street
+                       New Orleans, Louisiana
+    18
+              Reported By:  MARYBETH E. MUIR, CCR, RPR
+    19
+           * * * * * * * * * * * * * * * * * * * * * * * *
+    20
+
+    21
+
+    22
+
+    23
+
+    24
+
+    25
+
+
+                                                           2
+
+
+     1                        I N D E X
+                                                    Page
+     2  Caption                                       1
+
+     3  Appearances                                   5
+
+     4  Stipulation                                  11
+
+     5  Examination
+            Mr. Caughey                              13
+     6
+
+     7
+        Reporter's Certificate                      296
+     8
+        Witness's Certificate                       298
+     9
+                           * * * * * * * *
+    10
+
+    11                      EXHIBITS
+
+    12  Exhibit No. 236 E-mail, 5/25/17
+                        YR-325674-677                60
+    13
+        Exhibit No. 237 Letter, undated
+    14                  YR-460028-029                81
+
+    15  Exhibit No. 238 Brief History of the
+                        "White Top" Field
+    16                  YR-460035-                   99
+
+    17  Exhibit No. 239 E-mail, 2/28/18
+                        YR-455297-298               105
+    18
+        Exhibit No. 240 E-mail, 4/9/20
+    19                  YR-428748-750               110
+
+    20  Exhibit No. 241 E-mail, 7/2/20
+                        YR-330670-719               135
+    21
+        Exhibit No. 242 E-mail, 10/7/22
+    22                  YR-283212                   184
+
+    23  Exhibit No. 243 E-mail, 12/9/22
+                        YR-285451-516
+    24                  (Retained by Court Reporter
+                        at Counsel's request)       195
+    25
+
+
+                                                           3
+
+
+     1
+                        E X H I B I T S
+     2
+        Exhibit No. 244 E-mail, 12/16/22
+     3                  YR-288754-288810             215
+
+     4  Exhibit No. 245 E-mail, 1/13/23
+                        YR-289548-289550             222
+     5
+        Exhibit No. 246 E-mail, 3/23/23
+     6                  YR-028389-391                245
+
+     7  Exhibit No. 247 White Top Energy, LLC
+                        Sulphur Mines - Board
+     8                  Update March 22, 2022
+                        YR-239335-336                252
+     9
+        Exhibit No. 248 E-mail, 6/2/23
+    10                  YR-222224                    254
+
+    11  Exhibit No. 249 E-mail, 8/17/23
+                        YR-223863-864                256
+    12
+        Exhibit No. 250 White Top Energy, LLC
+    13                  Sulphur Mines Field
+                        August 2023 Fund Raise
+    14                  YR-454055-076                260
+
+    15  Exhibit No. 251 E-mail, 3/23/23
+                        YR-249174-178                270
+    16
+        Exhibit No. 252 E-mail, 7/3/24
+    17                  YR-327938-940                273
+
+    18  Exhibit No. 253 E-mail, 10/22/24
+                        YR-201474-489                274
+    19
+        Exhibit No. 254 E-mail, 12/1/24
+    20                  YR-192552                    277
+
+    21  Exhibit No. 255 E-mail, 4/5/23
+                        YR-239492-523                280
+    22
+        Exhibit No. 256 E-mail, 5/16/23
+    23                  YR-239768-793                288
+
+    24  Exhibit No. 257 E-mail, 8/3/23
+                        YR-242186-188                285
+    25
+
+
+                                                           4
+
+
+     1
+                        E X H I B I T S
+     2
+        Exhibit No. 258 E-mail, 10/17/23
+     3                  YR-287227-249                290
+
+     4
+
+     5
+
+     6
+
+     7
+
+     8
+
+     9
+
+    10
+
+    11
+
+    12
+
+    13
+
+    14
+
+    15
+
+    16
+
+    17
+
+    18
+
+    19
+
+    20
+
+    21
+
+    22
+
+    23
+
+    24
+
+    25
+
+
+                                                           5
+
+
+     1  A P P E A R A N C E S:
+
+     2  ATTORNEY FOR PLAINTIFF:
+           SHER GARNER CAHILL RICHTER KLEIN &
+     3     HILBERT, L.L.C.
+           909 Poydras Street
+     4     Suite 2800
+           New Orleans, Louisiana 70112
+     5     504.299.2100
+           tmadigan@shergarner.com
+     6     jgarner@shergarner.com
+           khandy@shergarner.com
+     7     mharris@shergarner.com
+           BY: THOMAS J. MADIGAN, ESQ.
+     8         JAMES GARNER, ESQ.
+               KAYLYN HANDY, ESQ.
+     9         MELISSA ROME HARRIS, ESQ.
+                                (Zoom)
+    10         LESLIE PARTIDA DEPAZ,
+                                Paralegal
+    11
+
+    12  FOR THE DEFENDANTS, WESTLAKE US 2 LLC, WESTLAKE
+        CORPORATION AND WESTLAKE CHLOR-VINYLS CORPORATION:
+    13      SUSMAN GODFREY LLP
+            1000 Louisiana Street
+    14      Suite 5100
+            Houston, Texas� 77002-5096
+    15      713.651.9366
+            rcaughey@susmangodfrey.com
+    16      BY: RYAN CAUGHEY, ESQ.
+
+    17  FOR THE DEFENDANTS, PPG:
+            JONES WALKER
+    18      445 North Boulevard
+            Suite 800
+    19      Baton Rouge, Louisiana 70802
+            225.248.2056
+    20      twalker@joneswalker.com
+            BY: TREY K. WALKER, ESQ. (Via Zoom)
+    21
+
+    22
+
+    23
+
+    24
+
+    25
+
+
+                                                           6
+
+
+     1  A P P E A R A N C E S:
+
+     2  FOR THE DEFENDANTS, LONQUIST & COMPANY, LONQUIST
+        FIELD
+     3  SERVICE:
+            KELLY HART & HALLMAN
+     4      400 Poydras Street
+            Suite
+     5      New Orleans, Louisiana� 70130
+            504.522.1812
+     6      aimee.hebert@kellyhart.com
+            BY: AIMEE W. HEBERT, ESQ.
+     7
+        FOR THE DEFENDANT, ALL STATE INSURANCE COMPANY,
+     8  solely as successor-in-interest to NORTHBROOK EXCESS
+        AND SURPLUS INSURANCE COMPANY,formerly NORTHBROOK
+     9  INSURANCE COMPANY:
+            WINDELS MARX
+    10      180 Park Avenue
+            Florham Park, New Jersey� 07932-1054
+    11      973.966.3207
+            asirianni@@windelsmarx.com
+    12      NOT PRESENT
+
+    13  FOR THE DEFENDANT, NATIONAL CASUALTY COMPANY:
+            PHELPS DUNBAR
+    14      365 Canal Street
+            Suite 2000
+    15      New Orleans, Louisiana� 70130-6534
+            504.679.5686
+    16      NOT PRESENT
+
+    17  FOR THE DEFENDANT, CERTAIN UNDERWRITERS AT LLOYDS,
+        LONDON, BERKSHIRE HATHAWAY SPECIALTY INSURANCE
+    18  COMPANY, THE CONTINENTAL INSURANCE COMPANY,
+        GOVERNMENT EMPLOYEES INSURANCE COMPANY, COLUMBIA
+    19  CASUALTY COMPANY, CNA, GEICO, STONEWALL INSURANCE
+        COMPANY AND GENERAL REINSURANCE CORPORATION:
+    20      TAYLOR, WELLONS, POLITZ & DUHE, LLC
+            1555 Poydras Street
+    21      Suite 2000
+            New Orleans, Louisiana� 70112
+    22      504.525.9888
+            srosamond@twpdlaw.com
+    23      BY: SAMUEL M. ROSAMOND, III, ESQ. (Via Zoom)
+
+    24
+
+    25
+
+
+                                                           7
+
+
+     1  A P P E A R A N C E S:
+
+     2  FOR THE DEFENDANT, STARR INDEMNITY AND LIABILITY
+        COMPANY:
+     3      TREADAWAY BOLLINGER, LLC
+            406 North Florida Street
+     4      Suite 2
+            Covington, Louisiana� 70433
+     5      504.833.7300
+            pam@ztalaw.com
+     6      BY: PAM GAUTIER, ESQ. (Via Zoom)
+
+     7  FOR THE DEFENDANT, GEMINI INSURANCE COMPANY:
+            PHELPS DUNBAR
+     8      365 Canal Street
+            Suite 2000
+     9      New Orleans, Louisiana� 70130-6534
+            504.679.5685
+    10      bennett.matson@phelps.com
+            BY: BENNETT MATSON, ESQ.  (Via Zoom)
+    11
+        FOR THE DEFENDANT, ALLSTATE INSURANCE COMPANY:
+    12      MUSGRAVE, MCLACHLAN & PENN, LLC
+            1555 Poydras Street
+    13      Suite 2100
+            New Orleans, Louisiana� 70112
+    14      504.799.4300
+            lmd@mmpfirm.com
+    15      NOT PRESENT
+
+    16  FOR THE DEFENDANT, AIG ENTITIES:
+            MCDOWELL HETHERINGTON
+    17      1001 Fannin Street
+            Suite 2400
+    18      Houston, Texas� 77002
+            jillian.kerr@mhllp.com
+    19      BY: JILLIAN M. KERR, ESQ. (Via Zoom)
+
+    20  FOR THE DEFENDANT, GREAT AMERICAN INSURANCE COMPANY:
+            DUPLASS, APLC
+    21      433 Metairie Road
+            Suite 600
+    22      Metairie, Louisiana� 70005
+            504.832.3700
+    23      agallaugher@duplass.com
+            BY: AIDAN P. GALLAUGHER, ESQ. (Via Zoom)
+    24
+
+    25
+
+
+                                                           8
+
+
+     1  A P P E A R A N C E S:
+
+     2  FOR THE DEFENDANT, OLD REPUBLIC INSURANCE COMPANY:
+            KENNEDYS LAW LLP
+     3      400 Connell Drive
+            Suite 700
+     4      Berkeley Heights, New Jersey� 07922
+            564.224.9104
+     5      sally.clements@kenndyslaw.com
+            BY: SALLY CLEMENTS, ESQ.  (Via Zoom)
+     6
+
+     7  FOR THE DEFENDANT, TIG:
+            MOULEDOUX, BLAND, LEGRAND & BRACKETT
+     8      701 Poydras Street
+            Suite 600
+     9      New Orleans, Louisiana� 70139
+            504.522.2121
+    10      pdominick@mblb.com
+            BY: PAIGE M. DOMINICK, ESQ. (Via Zoom)
+    11
+        FOR THE DEFENDANT, LIBERTY SURPLUS INSURANCE
+    12  CORPORATION:
+            BARRASSO USDIN KUPPERMAN FREEMAN & SARVER
+    13      909 Poydras Street
+            Suite 2350
+    14      New Orleans, Louisiana� 70112
+            504.589.9762
+    15      xflavien@barrassousdin.com
+            BY: XAVIER FLAVIEN, ESQ. (Via Zoom)
+    16
+        FOR THE DEFENDANT, HAMILTON INSURANCE DESIGNATED
+    17  ACTIVITY COMPANY:
+            COSMICH, SIMMONS & BROWN
+    18      650 Poydras Street
+            Suite 2215
+    19      New Orleans, Louisiana� 70130
+            601.863.2100
+    20      kenan.rand@cs-law.com
+            BY: KENAN S. RAND, JR., ESQ. (Via Zoom)
+    21
+
+    22
+
+    23
+
+    24
+
+    25
+
+
+                                                           9
+
+
+     1  A P P E A R A N C E S:
+
+     2  FOR THE DEFENDANT, ZURICH REINSURANCE LTD F/K/A
+        ZURICH INTERNATIONAL (BERMUDA) LTD:
+     3      SKARZYNSKI MARICK & BLACK
+            500 West Madison Street
+     4      Suite 3600
+            Chicago, Illinois� 60661
+     5      312.946.4239
+            acandela@skarzynski.com
+     6      NOT PRESENT
+
+     7  FOR THE DEFENDANT, TRAVELERS CASUALTY & SURETY CO.:
+            LUGENBUHL WHEATON PECK RANKIN & HUBBARD
+     8      601 Poydras Street
+            Suite 2775
+     9      New Orleans, Louisiana
+            504.568.1990
+    10      kmcglone@lawla.com
+            jguichet@lawla.com
+    11      BY: KEVIN MCGLONE, ESQ.  (Via Zoom)
+
+    12  FOR THE DEFENDANT, ZURICH as alleged insurer of PPG:
+            SALLEY HITE MERCER AND RESOR
+    13      One Canal Place
+            365 Canal Street
+    14      Suite 1710
+            New Orleans, Louisiana� 70130
+    15      504.566.8815
+            mhaupt@shmrlaw.com
+    16      BY: J. MICHAEL HAUPT, JR., ESQ. (Via Zoom)
+
+    17  FOR THE DEFENDANT, ENDURANCE AMERICAN INSURANCE
+        COMPANY:
+    18      CHAFFE MCCALL LLP
+            1100 Poydras Street
+    19      Suite 2300
+            New Orleans, Louisiana� 70163
+    20      504.585.7081
+            NOT PRESENT
+    21
+
+    22
+
+    23
+
+    24
+
+    25
+
+
+                                                          10
+
+
+     1  A P P E A R A N C E S:
+
+     2  FOR THE DEFENDANT, SWISS RE CORPORATE SOLUTIONS
+        AMERICA INSURANCE CORPORATION f/k/a PURITAN
+     3  INSURANCE COMPANY:
+            GALLOWAY JOHNSON
+     4      One Shell Square
+            701 Poydras Street
+     5      Suite 4040
+            New Orleans, Louisiana 70139
+     6      504.525.6802
+            seckholdt@gallowayjohnson.com
+     7      BY: STEPHEN J. ECKHOLDT, ESQ. (Via Zoom)
+
+     8  FOR THE DEFENDANT, RLI INSURANCE COMPANY, named as
+        excess insurer of PPG INDUSTRIES, INC.:
+     9      LUGENBUHL WHEATON PECK RANKIN & HUBBARD
+            601 Poydras Street
+    10      Suite 2775
+            New Orleans, Louisiana
+    11      504.568.1990
+            NOT PRESENT
+    12
+
+    13  ALSO PRESENT:
+
+    14      Darren Guastella, Videographer
+
+    15
+
+    16
+
+    17
+
+    18
+
+    19
+        Reported by:  Marybeth E. Muir,
+    20                Certified Court Reporter
+                      In and for the State of
+    21                Louisiana and Registered
+                      Professional Reporter
+    22
+
+    23
+
+    24
+
+    25
+
+
+                                                          11
+
+
+     1                  S T I P U L A T I O N
+
+     2
+
+     3          It is stipulated and agreed by and between
+
+     4  Counsel that the testimony of the witness, RICHARD
+
+     5  HALPRIN, is hereby being taken pursuant to Notice
+
+     6  under the Louisiana Code of Civil Procedure for all
+
+     7  purposes permitted under law.
+
+     8
+
+     9          The witness reserves the right to read and
+
+    10  sign the deposition.  The original is to be
+
+    11  delivered to and retained by RYAN CAUGHEY, ESQ., for
+
+    12  proper filing with the Clerk of Court.
+
+    13
+
+    14          All objections, except those as to the form
+
+    15  of the questions and/or responsiveness of the
+
+    16  answers, are reserved until the time of the trial of
+
+    17  this cause.
+
+    18
+
+    19                      *  *  *  *  *
+
+    20          Marybeth E. Muir, Certified Court Reporter
+
+    21  in and for the State of Louisiana and Registered
+
+    22  Professional Reporter, officiated in administering
+
+    23  the oath to the witness.
+
+    24
+
+    25
+
+
+                                                          12
+
+
+     1                 MR. GARNER:  The usual stipulations.
+
+     2              We disagree with the Reservation of
+
+     3              Rights of the insurers.
+
+     4                 THE VIDEOGRAPHER:  We are now on the
+
+     5              record.  Today's date is April 2nd, 2026.
+
+     6              The time is approximately 9:09 a.m.  My
+
+     7              name is Darrein Guastella with Lexitas
+
+     8              and the court reporter is Marybeth Muir,
+
+     9              also with Lexitas.  This is the video
+
+    10              deposition of Rick Halprin in the matter
+
+    11              of Yellow Rock, LLC, et al. v. Westlake
+
+    12              US 2, LLC, f/k/a Eagle US 2, LLC, et al,
+
+    13              in the State of Louisiana, Parish of
+
+    14              Calcasieu, Docket No. 202-001594
+
+    15              Division "H".
+
+    16                 Counsel, please identify themselves
+
+    17              for the record, after which the court
+
+    18              reporter will swear in the witness and we
+
+    19              may continue.
+
+    20                 THE COURT REPORTER:  All appearances
+
+    21              are noted for the stenographic record.
+
+    22
+
+    23                         RICHARD HALPRIN,
+
+    24              9757 Lemonwood Terrace, Boynton Beach,
+
+    25              Florida, 33437, rhalprin@whitetopllc.com,
+
+
+                                                          13
+
+
+     1              having been first duly sworn, was
+
+     2              examined and testified as follows:
+
+     3
+

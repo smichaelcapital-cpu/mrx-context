@@ -1,0 +1,13 @@
+# Exclude large binary files from git — copy locally but do not commit
+*.sgngl
+*.rtf
+*.opus
+*.sgdct
+*.sgdcx
+*.sgdcg
+*.sgglb
+*.sgstn
+*.sgngl
+*.sgxr2
+*.zip
+*.pdf
