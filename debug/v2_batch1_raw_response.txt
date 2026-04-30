@@ -1,0 +1,87 @@
+=== API METADATA ===
+input_tokens:  10048
+output_tokens: 1024
+stop_reason:   max_tokens
+elapsed_sec:   14.80
+
+=== RAW response.content[0].text ===
+
+{
+  "anomalies": [
+    {
+      "anomaly_id": "a_0001",
+      "turn_idx": 96,
+      "token_span": [1, 3],
+      "category": "name_uncertain",
+      "reader_note": "lowercase street name 'lemon wood terrace' — likely a proper noun 'Lemonwood Terrace'; also possible split compound 'lemon wood' → 'Lemonwood'",
+      "confidence": "high"
+    },
+    {
+      "anomaly_id": "a_0002",
+      "turn_idx": 97,
+      "token_span": [3, 3],
+      "category": "phonetic",
+      "reader_note": "'permit address' — likely 'permanent address'; phonetic steno collision (permit/permanent); witness corrects to 'permission address' in next turn, suggesting steno captured wrong word",
+      "confidence": "high"
+    },
+    {
+      "anomaly_id": "a_0003",
+      "turn_idx": 98,
+      "token_span": [3, 3],
+      "category": "phonetic",
+      "reader_note": "'permission address' — witness appears to be correcting attorney's 'permit address'; likely intended 'permanent address'; both 'permit' and 'permission' are steno artifacts for 'permanent'",
+      "confidence": "high"
+    },
+    {
+      "anomaly_id": "a_0004",
+      "turn_idx": 99,
+      "token_span": [2, 4],
+      "category": "phonetic",
+      "reader_note": "'flew into give testimony' — likely 'flew in to give testimony'; 'into' should be two words 'in to' in this context",
+      "confidence": "high"
+    },
+    {
+      "anomaly_id": "a_0005",
+      "turn_idx": 104,
+      "token_span": [0, 1],
+      "category": "format_artifact",
+      "reader_note": "narrative number '25' — state convention spells out numbers under 100 in narrative speech; likely 'Twenty-five years ago'",
+      "confidence": "medium"
+    },
+    {
+      "anomaly_id": "a_0006",
+      "turn_idx": 108,
+      "token_span": [7, 8],
+      "category": "steno_artifact",
+      "reader_note": "doubled word 'oil oil' — likely witness self-correction missing em-dash, or steno duplication; expected 'oil --' or single 'oil'",
+      "confidence": "high"
+    },
+    {
+      "anomaly_id": "a_0007",
+      "turn_idx": 110,
+      "token_span": [9, 15],
+      "category": "steno_artifact",
+      "reader_note": "'do a deposition for with and T offshore' — 'with and T' appears to be letters-as-words steno artifact; likely a company acronym such as 'W&T Offshore' (W and T Offshore); 'do a deposition for' may also be garbled",
+      "confidence": "high"
+    },
+    {
+      "anomaly_id": "a_0008",
+      "turn_idx": 111,
+      "token_span": [5, 7],
+      "category": "steno_artifact",
+      "reader_note": "'with and T' — same letters-as-words artifact as turn 110; likely 'W&T' (W and T Offshore)",
+      "confidence": "high"
+    },
+    {
+      "anomaly_id": "a_0009",
+      "turn_idx": 113,
+      "token_span": [13, 15],
+      "category": "steno_artifact",
+      "reader_note": "'with and T' — same letters-as-words artifact; likely 'W&T'",
+      "confidence": "high"
+    },
+    {
+      "anomaly_id": "a_0010",
+      "turn_idx": 114,
+      "token_span": [3, 5],
+      "category": "steno
