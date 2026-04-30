@@ -1,0 +1,2906 @@
+
+
+                                                           1
+
+
+     1                  STATE OF LOUISIANA
+
+     2                  PARISH OF CALCASIEU
+
+     3                 14TH JUDICIAL DISTRICT
+
+     4     * * * * * * * * * * * * * * * * * * * * * * * *
+         YELLOW ROCK, LLC, et               Docket No.
+     5   al,                                202-001594
+                Plaintiffs,                 Division "H"
+     6      v.
+         WESTLAKE US 2 LLC f/k/a
+     7   EAGLE US 2 LLC et al.,
+                Defendants.
+     8
+
+     9
+           * * * * * * * * * * * * * * * * * * * * * * * *
+    10
+
+    11
+                       VIDEOTAPED DEPOSITION
+    12                           OF
+                          RICHARD HALPRIN
+    13
+                              taken on
+    14                 Thursday, April 2, 2026
+
+    15                commencing at 9:04 a.m.
+
+    16                   at the offices of
+                             SHER GARNER
+    17                   909 Poydras Street
+                       New Orleans, Louisiana
+    18
+              Reported By:  MARYBETH E. MUIR, CCR, RPR
+    19
+           * * * * * * * * * * * * * * * * * * * * * * * *
+    20
+
+    21
+
+    22
+
+    23
+
+    24
+
+    25
+
+
+                                                           2
+
+
+     1                        I N D E X
+                                                    Page
+     2  Caption                                       1
+
+     3  Appearances                                   5
+
+     4  Stipulation                                  11
+
+     5  Examination
+            Mr. Caughey                              13
+     6
+
+     7
+        Reporter's Certificate                      296
+     8
+        Witness's Certificate                       298
+     9
+                           * * * * * * * *
+    10
+
+    11                      EXHIBITS
+
+    12  Exhibit No. 236 E-mail, 5/25/17
+                        YR-325674-677                60
+    13
+        Exhibit No. 237 Letter, undated
+    14                  YR-460028-029                81
+
+    15  Exhibit No. 238 Brief History of the
+                        "White Top" Field
+    16                  YR-460035-                   99
+
+    17  Exhibit No. 239 E-mail, 2/28/18
+                        YR-455297-298               105
+    18
+        Exhibit No. 240 E-mail, 4/9/20
+    19                  YR-428748-750               110
+
+    20  Exhibit No. 241 E-mail, 7/2/20
+                        YR-330670-719               135
+    21
+        Exhibit No. 242 E-mail, 10/7/22
+    22                  YR-283212                   184
+
+    23  Exhibit No. 243 E-mail, 12/9/22
+                        YR-285451-516
+    24                  (Retained by Court Reporter
+                        at Counsel's request)       195
+    25
+
+
+                                                           3
+
+
+     1
+                        E X H I B I T S
+     2
+        Exhibit No. 244 E-mail, 12/16/22
+     3                  YR-288754-288810             215
+
+     4  Exhibit No. 245 E-mail, 1/13/23
+                        YR-289548-289550             222
+     5
+        Exhibit No. 246 E-mail, 3/23/23
+     6                  YR-028389-391                245
+
+     7  Exhibit No. 247 White Top Energy, LLC
+                        Sulphur Mines - Board
+     8                  Update March 22, 2022
+                        YR-239335-336                252
+     9
+        Exhibit No. 248 E-mail, 6/2/23
+    10                  YR-222224                    254
+
+    11  Exhibit No. 249 E-mail, 8/17/23
+                        YR-223863-864                256
+    12
+        Exhibit No. 250 White Top Energy, LLC
+    13                  Sulphur Mines Field
+                        August 2023 Fund Raise
+    14                  YR-454055-076                260
+
+    15  Exhibit No. 251 E-mail, 3/23/23
+                        YR-249174-178                270
+    16
+        Exhibit No. 252 E-mail, 7/3/24
+    17                  YR-327938-940                273
+
+    18  Exhibit No. 253 E-mail, 10/22/24
+                        YR-201474-489                274
+    19
+        Exhibit No. 254 E-mail, 12/1/24
+    20                  YR-192552                    277
+
+    21  Exhibit No. 255 E-mail, 4/5/23
+                        YR-239492-523                280
+    22
+        Exhibit No. 256 E-mail, 5/16/23
+    23                  YR-239768-793                288
+
+    24  Exhibit No. 257 E-mail, 8/3/23
+                        YR-242186-188                285
+    25
+
+
+                                                           4
+
+
+     1
+                        E X H I B I T S
+     2
+        Exhibit No. 258 E-mail, 10/17/23
+     3                  YR-287227-249                290
+
+     4
+
+     5
+
+     6
+
+     7
+
+     8
+
+     9
+
+    10
+
+    11
+
+    12
+
+    13
+
+    14
+
+    15
+
+    16
+
+    17
+
+    18
+
+    19
+
+    20
+
+    21
+
+    22
+
+    23
+
+    24
+
+    25
+
+
+                                                           5
+
+
+     1  A P P E A R A N C E S:
+
+     2  ATTORNEY FOR PLAINTIFF:
+           SHER GARNER CAHILL RICHTER KLEIN &
+     3     HILBERT, L.L.C.
+           909 Poydras Street
+     4     Suite 2800
+           New Orleans, Louisiana 70112
+     5     504.299.2100
+           tmadigan@shergarner.com
+     6     jgarner@shergarner.com
+           khandy@shergarner.com
+     7     mharris@shergarner.com
+           BY: THOMAS J. MADIGAN, ESQ.
+     8         JAMES GARNER, ESQ.
+               KAYLYN HANDY, ESQ.
+     9         MELISSA ROME HARRIS, ESQ.
+                                (Zoom)
+    10         LESLIE PARTIDA DEPAZ,
+                                Paralegal
+    11
+
+    12  FOR THE DEFENDANTS, WESTLAKE US 2 LLC, WESTLAKE
+        CORPORATION AND WESTLAKE CHLOR-VINYLS CORPORATION:
+    13      SUSMAN GODFREY LLP
+            1000 Louisiana Street
+    14      Suite 5100
+            Houston, Texas· 77002-5096
+    15      713.651.9366
+            rcaughey@susmangodfrey.com
+    16      BY: RYAN CAUGHEY, ESQ.
+
+    17  FOR THE DEFENDANTS, PPG:
+            JONES WALKER
+    18      445 North Boulevard
+            Suite 800
+    19      Baton Rouge, Louisiana 70802
+            225.248.2056
+    20      twalker@joneswalker.com
+            BY: TREY K. WALKER, ESQ. (Via Zoom)
+    21
+
+    22
+
+    23
+
+    24
+
+    25
+
+
+                                                           6
+
+
+     1  A P P E A R A N C E S:
+
+     2  FOR THE DEFENDANTS, LONQUIST & COMPANY, LONQUIST
+        FIELD
+     3  SERVICE:
+            KELLY HART & HALLMAN
+     4      400 Poydras Street
+            Suite
+     5      New Orleans, Louisiana· 70130
+            504.522.1812
+     6      aimee.hebert@kellyhart.com
+            BY: AIMEE W. HEBERT, ESQ.
+     7
+        FOR THE DEFENDANT, ALL STATE INSURANCE COMPANY,
+     8  solely as successor-in-interest to NORTHBROOK EXCESS
+        AND SURPLUS INSURANCE COMPANY,formerly NORTHBROOK
+     9  INSURANCE COMPANY:
+            WINDELS MARX
+    10      180 Park Avenue
+            Florham Park, New Jersey· 07932-1054
+    11      973.966.3207
+            asirianni@@windelsmarx.com
+    12      NOT PRESENT
+
+    13  FOR THE DEFENDANT, NATIONAL CASUALTY COMPANY:
+            PHELPS DUNBAR
+    14      365 Canal Street
+            Suite 2000
+    15      New Orleans, Louisiana· 70130-6534
+            504.679.5686
+    16      NOT PRESENT
+
+    17  FOR THE DEFENDANT, CERTAIN UNDERWRITERS AT LLOYDS,
+        LONDON, BERKSHIRE HATHAWAY SPECIALTY INSURANCE
+    18  COMPANY, THE CONTINENTAL INSURANCE COMPANY,
+        GOVERNMENT EMPLOYEES INSURANCE COMPANY, COLUMBIA
+    19  CASUALTY COMPANY, CNA, GEICO, STONEWALL INSURANCE
+        COMPANY AND GENERAL REINSURANCE CORPORATION:
+    20      TAYLOR, WELLONS, POLITZ & DUHE, LLC
+            1555 Poydras Street
+    21      Suite 2000
+            New Orleans, Louisiana· 70112
+    22      504.525.9888
+            srosamond@twpdlaw.com
+    23      BY: SAMUEL M. ROSAMOND, III, ESQ. (Via Zoom)
+
+    24
+
+    25
+
+
+                                                           7
+
+
+     1  A P P E A R A N C E S:
+
+     2  FOR THE DEFENDANT, STARR INDEMNITY AND LIABILITY
+        COMPANY:
+     3      TREADAWAY BOLLINGER, LLC
+            406 North Florida Street
+     4      Suite 2
+            Covington, Louisiana· 70433
+     5      504.833.7300
+            pam@ztalaw.com
+     6      BY: PAM GAUTIER, ESQ. (Via Zoom)
+
+     7  FOR THE DEFENDANT, GEMINI INSURANCE COMPANY:
+            PHELPS DUNBAR
+     8      365 Canal Street
+            Suite 2000
+     9      New Orleans, Louisiana· 70130-6534
+            504.679.5685
+    10      bennett.matson@phelps.com
+            BY: BENNETT MATSON, ESQ.  (Via Zoom)
+    11
+        FOR THE DEFENDANT, ALLSTATE INSURANCE COMPANY:
+    12      MUSGRAVE, MCLACHLAN & PENN, LLC
+            1555 Poydras Street
+    13      Suite 2100
+            New Orleans, Louisiana· 70112
+    14      504.799.4300
+            lmd@mmpfirm.com
+    15      NOT PRESENT
+
+    16  FOR THE DEFENDANT, AIG ENTITIES:
+            MCDOWELL HETHERINGTON
+    17      1001 Fannin Street
+            Suite 2400
+    18      Houston, Texas· 77002
+            jillian.kerr@mhllp.com
+    19      BY: JILLIAN M. KERR, ESQ. (Via Zoom)
+
+    20  FOR THE DEFENDANT, GREAT AMERICAN INSURANCE COMPANY:
+            DUPLASS, APLC
+    21      433 Metairie Road
+            Suite 600
+    22      Metairie, Louisiana· 70005
+            504.832.3700
+    23      agallaugher@duplass.com
+            BY: AIDAN P. GALLAUGHER, ESQ. (Via Zoom)
+    24
+
+    25
+
+
+                                                           8
+
+
+     1  A P P E A R A N C E S:
+
+     2  FOR THE DEFENDANT, OLD REPUBLIC INSURANCE COMPANY:
+            KENNEDYS LAW LLP
+     3      400 Connell Drive
+            Suite 700
+     4      Berkeley Heights, New Jersey· 07922
+            564.224.9104
+     5      sally.clements@kenndyslaw.com
+            BY: SALLY CLEMENTS, ESQ.  (Via Zoom)
+     6
+
+     7  FOR THE DEFENDANT, TIG:
+            MOULEDOUX, BLAND, LEGRAND & BRACKETT
+     8      701 Poydras Street
+            Suite 600
+     9      New Orleans, Louisiana· 70139
+            504.522.2121
+    10      pdominick@mblb.com
+            BY: PAIGE M. DOMINICK, ESQ. (Via Zoom)
+    11
+        FOR THE DEFENDANT, LIBERTY SURPLUS INSURANCE
+    12  CORPORATION:
+            BARRASSO USDIN KUPPERMAN FREEMAN & SARVER
+    13      909 Poydras Street
+            Suite 2350
+    14      New Orleans, Louisiana· 70112
+            504.589.9762
+    15      xflavien@barrassousdin.com
+            BY: XAVIER FLAVIEN, ESQ. (Via Zoom)
+    16
+        FOR THE DEFENDANT, HAMILTON INSURANCE DESIGNATED
+    17  ACTIVITY COMPANY:
+            COSMICH, SIMMONS & BROWN
+    18      650 Poydras Street
+            Suite 2215
+    19      New Orleans, Louisiana· 70130
+            601.863.2100
+    20      kenan.rand@cs-law.com
+            BY: KENAN S. RAND, JR., ESQ. (Via Zoom)
+    21
+
+    22
+
+    23
+
+    24
+
+    25
+
+
+                                                           9
+
+
+     1  A P P E A R A N C E S:
+
+     2  FOR THE DEFENDANT, ZURICH REINSURANCE LTD F/K/A
+        ZURICH INTERNATIONAL (BERMUDA) LTD:
+     3      SKARZYNSKI MARICK & BLACK
+            500 West Madison Street
+     4      Suite 3600
+            Chicago, Illinois· 60661
+     5      312.946.4239
+            acandela@skarzynski.com
+     6      NOT PRESENT
+
+     7  FOR THE DEFENDANT, TRAVELERS CASUALTY & SURETY CO.:
+            LUGENBUHL WHEATON PECK RANKIN & HUBBARD
+     8      601 Poydras Street
+            Suite 2775
+     9      New Orleans, Louisiana
+            504.568.1990
+    10      kmcglone@lawla.com
+            jguichet@lawla.com
+    11      BY: KEVIN MCGLONE, ESQ.  (Via Zoom)
+
+    12  FOR THE DEFENDANT, ZURICH as alleged insurer of PPG:
+            SALLEY HITE MERCER AND RESOR
+    13      One Canal Place
+            365 Canal Street
+    14      Suite 1710
+            New Orleans, Louisiana· 70130
+    15      504.566.8815
+            mhaupt@shmrlaw.com
+    16      BY: J. MICHAEL HAUPT, JR., ESQ. (Via Zoom)
+
+    17  FOR THE DEFENDANT, ENDURANCE AMERICAN INSURANCE
+        COMPANY:
+    18      CHAFFE MCCALL LLP
+            1100 Poydras Street
+    19      Suite 2300
+            New Orleans, Louisiana· 70163
+    20      504.585.7081
+            NOT PRESENT
+    21
+
+    22
+
+    23
+
+    24
+
+    25
+
+
+                                                          10
+
+
+     1  A P P E A R A N C E S:
+
+     2  FOR THE DEFENDANT, SWISS RE CORPORATE SOLUTIONS
+        AMERICA INSURANCE CORPORATION f/k/a PURITAN
+     3  INSURANCE COMPANY:
+            GALLOWAY JOHNSON
+     4      One Shell Square
+            701 Poydras Street
+     5      Suite 4040
+            New Orleans, Louisiana 70139
+     6      504.525.6802
+            seckholdt@gallowayjohnson.com
+     7      BY: STEPHEN J. ECKHOLDT, ESQ. (Via Zoom)
+
+     8  FOR THE DEFENDANT, RLI INSURANCE COMPANY, named as
+        excess insurer of PPG INDUSTRIES, INC.:
+     9      LUGENBUHL WHEATON PECK RANKIN & HUBBARD
+            601 Poydras Street
+    10      Suite 2775
+            New Orleans, Louisiana
+    11      504.568.1990
+            NOT PRESENT
+    12
+
+    13  ALSO PRESENT:
+
+    14      Darren Guastella, Videographer
+
+    15
+
+    16
+
+    17
+
+    18
+
+    19
+        Reported by:  Marybeth E. Muir,
+    20                Certified Court Reporter
+                      In and for the State of
+    21                Louisiana and Registered
+                      Professional Reporter
+    22
+
+    23
+
+    24
+
+    25
+
+
+                                                          11
+
+
+     1                  S T I P U L A T I O N
+
+     2
+
+     3          It is stipulated and agreed by and between
+
+     4  Counsel that the testimony of the witness, RICHARD
+
+     5  HALPRIN, is hereby being taken pursuant to Notice
+
+     6  under the Louisiana Code of Civil Procedure for all
+
+     7  purposes permitted under law.
+
+     8
+
+     9          The witness reserves the right to read and
+
+    10  sign the deposition.  The original is to be
+
+    11  delivered to and retained by RYAN CAUGHEY, ESQ., for
+
+    12  proper filing with the Clerk of Court.
+
+    13
+
+    14          All objections, except those as to the form
+
+    15  of the questions and/or responsiveness of the
+
+    16  answers, are reserved until the time of the trial of
+
+    17  this cause.
+
+    18
+
+    19                      *  *  *  *  *
+
+    20          Marybeth E. Muir, Certified Court Reporter
+
+    21  in and for the State of Louisiana and Registered
+
+    22  Professional Reporter, officiated in administering
+
+    23  the oath to the witness.
+
+    24
+
+    25
+
+
+                                                          12
+
+
+     1                 MR. GARNER:  The usual stipulations.
+
+     2              We disagree with the Reservation of
+
+     3              Rights of the insurers.
+
+     4                 THE VIDEOGRAPHER:  We are now on the
+
+     5              record.  Today's date is April 2nd, 2026.
+
+     6              The time is approximately 9:09 a.m.  My
+
+     7              name is Darrein Guastella with Lexitas
+
+     8              and the court reporter is Marybeth Muir,
+
+     9              also with Lexitas.  This is the video
+
+    10              deposition of Rick Halprin in the matter
+
+    11              of Yellow Rock, LLC, et al. v. Westlake
+
+    12              US 2, LLC, f/k/a Eagle US 2, LLC, et al,
+
+    13              in the State of Louisiana, Parish of
+
+    14              Calcasieu, Docket No. 202-001594
+
+    15              Division "H".
+
+    16                 Counsel, please identify themselves
+
+    17              for the record, after which the court
+
+    18              reporter will swear in the witness and we
+
+    19              may continue.
+
+    20                 THE COURT REPORTER:  All appearances
+
+    21              are noted for the stenographic record.
+
+    22
+
+    23                         RICHARD HALPRIN,
+
+    24              9757 Lemonwood Terrace, Boynton Beach,
+
+    25              Florida, 33437, rhalprin@whitetopllc.com,
+
+
+                                                          13
+
+
+     1              having been first duly sworn, was
+
+     2              examined and testified as follows:
+
+     3
+
+     4                      EXAMINATION                      
+
+     5   BY MR. CAUGHEY:
+
+     6        Q.    Good morning, sir. My name is Ryan
+
+     7   Caughey and we met a few minutes ago. I represent
+
+     8   the Westlake Defendants in this case. I'm in from
+
+     9   Houston. It's good to meet you.
+
+    10        A.    Nice to meet you.
+
+    11        Q.    What is your name, sir?
+
+    12        A.    Richard Halprin, Rick Halprin.
+
+    13        Q.    What is your address?
+
+    14        A.    9757 lemon wood terrace, Boynton Beach,
+
+    15   Florida, 33437.
+
+    16        Q.    And that's your permit address?
+
+    17        A.    That is my permission address.
+
+    18        Q.    So you flew into give testimony today?
+
+    19        A.    I did.
+
+    20        Q.    Have you given a deposition before, sir?
+
+    21        A.    One time.
+
+    22        Q.    When was that?
+
+    23        A.    25 years ago potentially. It was probably
+
+    24   in the early 2000's.
+
+    25        Q.    Do you recall what the general subject
+
+
+                                                          14
+
+
+     1   matter was of the lawsuit?
+
+     2        A.    Absolutely.
+
+     3        Q.    What was it?
+
+     4        A.    It was a dispute between volumes of oil
+
+     5   oil barrels being paid to one of the companies I
+
+     6   used to work for versus a major company and I used
+
+     7   to do all the marketing for them when I retired from
+
+     8   that company. They called me back to testify.
+
+     9        Q.    Was this when you were at Somerset?
+
+    10        A.    I was at Somerset and it went back to do
+
+    11   a deposition for with and T offshore.
+
+    12        Q.    And do you know whether with and T was
+
+    13   the plaintiff or the defendant in that case?
+
+    14        A.    They were the plaintiff.
+
+    15        Q.    And could you describe to the best of
+
+    16   your recollection what the claim with and T made in
+
+    17   that case was?
+
+    18        A.    That they were being under paid for the
+
+    19   volumes that they were producing.
+
+    20        Q.    Do you recall who the defendant was in
+
+    21   that case?
+
+    22        A.    Chevron.
+
+    23        Q.    Have you ever testified at a trial?
+
+    24        A.    No no, yes, I have one time.
+
+    25        Q.    When was that?
+
+
+                                                          15
+
+
+     1        A.    1980's being late 80's potentially.
+
+     2        Q.    Do you recall what that trial was about?
+
+     3        A.    I was an expert witness on accounting
+
+     4   software in the oil and gas business.
+
+     5        Q.    Do you recall who the parties were in
+
+     6   that case?
+
+     7        A.    Uhmm, I want to say I don't recall. I no
+
+     8   one of them was Warren seal. And I don't know if he
+
+     9   was the defendant or the plaintiff. It's been a
+
+    10   while.
+
+    11        Q.    Do you recall the general nature of what
+
+    12   opinions you offered as an expert witness in that
+
+    13   case?
+
+    14        A.    Just how the software worked. How the
+
+    15   billings came out should have come out versus what
+
+    16   the other party was using.
+
+    17        Q.    Have you ever been retained as an expert
+
+    18   witness in any other case?
+
+    19        A.    No, sir.
+
+    20        Q.    That's the only one?
+
+    21        A.    Yes, sir.
+
+    22        Q.    You do understand that your sworn under
+
+    23   oath and testifying under oath as if you were in a
+
+    24   court of law today, correct?
+
+    25        A.    I do.
+
+
+                                                          16
+
+
+     1        Q.    And I don't you've done this before so
+
+     2   not a lot of ground rules to go over. The only thing
+
+     3   for the benefit of Marybeth is if you could let me
+
+     4   finish your question before you answer and I'll
+
+     5   endeavor to let you finish your answer before I
+
+     6   launch in, does that work?
+
+     7        A.    Yes, sir.
+
+     8        Q.    All righty..
+
+     9              You received a degree from the University
+
+    10   of New Orleans; is that right?
+
+    11        A.    That's correct.
+
+    12        Q.    In accounting?
+
+    13        A.    That is correct.
+
+    14        Q.    When was that?
+
+    15        A.    1980.
+
+    16        Q.    Are you a CPA?
+
+    17        A.    Unlicensed CPA.
+
+    18        Q.    What do you mean unlicensed?
+
+    19        A.    I don't maintain my license anymore. I
+
+    20   was a licensed CPA at one point.
+
+    21        Q.    Until when did you maintain your license?
+
+    22        A.    I don't remember.
+
+    23        Q.    Any approximation?
+
+    24        A.    2010 maybe. It's been a while.
+
+    25        Q.    More than a decade?
+
+
+                                                          17
+
+
+     1        A.    More than ten years.
+
+     2        Q.    Do you have any other professional
+
+     3   certification is?
+
+     4        A.    No.
+
+     5        Q.    You have and we'll get into it, but you
+
+     6   have for decades worked in the oil and gas industry,
+
+     7   right?
+
+     8        A.    Yes.
+
+     9        Q.    You don't you have always done so in a
+
+    10   financial or accounting or controlling capacity,
+
+    11   right?
+
+    12        A.    Yes.
+
+    13        Q.    You are not any sort of petroleum
+
+    14   engineer or geologist or expert in oil and gas
+
+    15   drilling, right?
+
+    16                 MR. MADIGAN: Object to form.
+
+    17                 Go ahead.
+
+    18        A.    Absolutely not. No, I'm not.
+
+    19        Q.    Okay.
+
+    20              Nor do you have any debris in any of
+
+    21   those subjects, right?
+
+    22        A.    Correct.
+
+    23        Q.    Other than your degree from the
+
+    24   University of New Orleans, you don't have any other
+
+    25   debris, right?
+
+
+                                                          18
+
+
+     1        A.    Correct.
+
+     2        Q.    Nor any other certification is other than
+
+     3   the CPA license or former license?
+
+     4        A.    Well, I did have a real estate license.
+
+     5        Q.    Okay.
+
+     6              Other than your CPA and your real estate
+
+     7   license, any other licenses or certification is that
+
+     8   you've received?
+
+     9        A.    No, none.
+
+    10        Q.    Okay.
+
+    11              Could you briefly describe for me your
+
+    12   professional career after leaving the University of
+
+    13   New Orleans in 1980? Just start me off. What did you
+
+    14   do after college?
+
+    15        A.    After college I went right to Odeco.
+
+    16        Q.    Can you spell that.
+
+    17        A.    Odeco. Odeco was a subsidiary of Murphy
+
+    18   Oil & Gas.
+
+    19        Q.    What did you do for Odeco?
+
+    20        A.    I was the property accountant initially.
+
+    21        Q.    How long did you work for Odeco?
+
+    22        A.    A little over five years.
+
+    23        Q.    You left Odeco in mid1980's. What you did
+
+    24   do next?
+
+    25        A.    I went to Crescent Exploration.
+
+
+                                                          19
+
+
+     1        Q.    And what was your role at Crescent?
+
+     2        A.    Assistant controller, handling some
+
+     3   financial, mostly joint interest billings, analysis,
+
+     4   performers potentially.
+
+     5        Q.    What was crescent business?
+
+     6        A.    Oil and gas.
+
+     7        Q.    Exploration and production?
+
+     8        A.    Yes.
+
+     9        Q.    How long did you stay at crescent?
+
+    10        A.    Two years.
+
+    11        Q.    What came next?
+
+    12        A.    Graham resources.
+
+    13        Q.    Was that another oil and gas exploration
+
+    14   production company?
+
+    15        A.    They were they were a limited
+
+    16   partnerships involved in the oil and gas business.
+
+    17        Q.    Were you based in New Orleans this whole
+
+    18   time?
+
+    19        A.    Yes. I lived in Metairie.
+
+    20        Q.    How long did you stay at Graham?
+
+    21        A.    Two years.
+
+    22        Q.    Okay. What came after that?
+
+    23        A.    With and T offshore.
+
+    24        Q.    And you were at with and T all the way
+
+    25   through about 1998, right?
+
+
+                                                          20
+
+
+     1        A.    1998 is correct.
+
+     2        Q.    And you joined with and T in about 1990?
+
+     3        A.    1990.
+
+     4        Q.    What was with and T business?
+
+     5        A.    He in P exploration and production.
+
+     6        Q.    And were you still in New Orleans with
+
+     7   with and T?
+
+     8        A.    I was the whole time. In Metairie, I'm
+
+     9   sorry.
+
+    10        Q.    What was your position at with and T?
+
+    11        A.    I was the accounting manager.
+
+    12        Q.    Was that true the entire time that you
+
+    13   were with the company?
+
+    14        A.    Yes.
+
+    15        Q.    In 1998 you joined Somerset production
+
+    16   company, right?
+
+    17        A.    That's correct.
+
+    18        Q.    Assets Chief Financial Officer?
+
+    19        A.    That's correct.
+
+    20        Q.    What was some sets business?
+
+    21        A.    He in P.
+
+    22        Q.    Okay. Still in New Orleans?
+
+    23        A.    No.
+
+    24        Q.    Okay.
+
+    25        A.    Pittsburgh, Pennsylvania area, Indiana
+
+
+                                                          21
+
+
+     1   Pennsylvania specifically.
+
+     2        Q.    And you were at Somerset until
+
+     3   approximately 2003; is that right?
+
+     4        A.    2 or 3, thereabouts. Yeah, 3 yeah, 3. In
+
+     5   that area. And we sold our company.
+
+     6        Q.    Who was Somerset sold to, do you recall?
+
+     7        A.    It's a major here in Houston not major.
+
+     8   Uhmm. Oh, yeah. Uhmm. EOG Resources.
+
+     9        Q.    Right down the street from my office.
+
+    10              What did you do after leaving Somerset or
+
+    11   after Somerset was sold?
+
+    12        A.    I we had success at Somerset so some
+
+    13   local ENP companies wanted me to help them sell
+
+    14   their assets.
+
+    15        Q.    So did you then enter a consulting role
+
+    16   in that regard?
+
+    17        A.    I did.
+
+    18        Q.    And just describe briefly what that
+
+    19   consulting entailed.
+
+    20        A.    Well, the consulting entailed putting
+
+    21   mapping getting a geologist mapping to to map
+
+    22   together there acres. Putting together a data room.
+
+    23   Giving them the well logs. And projections,
+
+    24   historical data, uhmm, purchase statements, things
+
+    25   like that. Just historical data.
+
+
+                                                          22
+
+
+     1        Q.    And it sounds like you worked with the
+
+     2   geologist who would do the geology work and you
+
+     3   would perform the accounting and financial cyst in
+
+     4   connection with that consulting?
+
+     5        A.    Pretty much.
+
+     6        Q.    Could you describe just in the little
+
+     7   more detail in that consulting work how your work on
+
+     8   the financial accounting side intersected or
+
+     9   interacted with the geologist the work?
+
+    10        A.    Well, these are active fields so it's
+
+    11   just a mat er of taking historic geology work and
+
+    12   taking it from one place and putting it into the
+
+    13   data room. So there wasn't working with a geologist
+
+    14   per se it's more of just moving data into a
+
+    15   presentation so we can sell it into a sales package
+
+    16   really.
+
+    17        Q.    How long did you do that consulting work?
+
+    18        A.    I think about a year.
+
+    19        Q.    And then what?
+
+    20        A.    Then well, in between them my wife had
+
+    21   passed away and it was time for me to just leave the
+
+    22   area. So I moved to Florida.
+
+    23        Q.    I'm sorry to hear that?
+
+    24        A.    Thank you.
+
+    25        Q.    At some point you joined a company called
+
+
+                                                          23
+
+
+     1   trek oil and gas?
+
+     2        A.    Trek oil do you want me to yes, I did.
+
+     3        Q.    And what is you paused there. Is there
+
+     4        A.    Well, I moved to Florida for a couple of
+
+     5   years and then I moved to Houston to work at trek.
+
+     6        Q.    Okay.
+
+     7              So you moved to Florida and then you
+
+     8   moved to Houston and worked for trek?
+
+     9        A.    Yes, I did work for trek in Houston. I
+
+    10   don't remember the dates exactly.
+
+    11        Q.    Around 2007 sound like an approximate
+
+    12   start time at trek?
+
+    13        A.    No, I would say more like 2008 maybe.
+
+    14        Q.    Okay.
+
+    15              And you were in a financial function for
+
+    16   trek?
+
+    17        A.    I was also there CFO.
+
+    18        Q.    What was Trek's business?
+
+    19        A.    ENP.
+
+    20        Q.    Where was there ENP?
+
+    21        A.    The Peruvian basin I'm sorry.
+
+    22        Q.    Salt domes?
+
+    23        A.    No salt domes.
+
+    24        Q.    Okay. I didn't think so.
+
+    25              You worked with trek until about 2011; is
+
+
+                                                          24
+
+
+     1   that right?
+
+     2        A.    That's correct.
+
+     3        Q.    And then you joined a company called
+
+     4   North Summit Energy, right?
+
+     5        A.    North Summit Energy was part of the
+
+     6   group, yes.
+
+     7        Q.    Part of what group?
+
+     8        A.    Well, it was North Wind, North Summit. So
+
+     9   North Wind.
+
+    10        Q.    So you were employed by North Wind?
+
+    11        A.    That's right.
+
+    12        Q.    Okay.
+
+    13              What was the relationship between North
+
+    14   Wind and North Summit?
+
+    15        A.    North Summit was the predecessor of North
+
+    16   Wind.
+
+    17        Q.    What was your role at that company?
+
+    18        A.    I came on as the CFO.
+
+    19        Q.    Who were the other executive officers of
+
+    20   North Summit Energy or North Wind energy?
+
+    21        A.    Robin French, Tom Easley.
+
+    22        Q.    And you worked for North Summit in
+
+    23   Houston, right?
+
+    24        A.    That's correct.
+
+    25        Q.    Did you know Mr. French or Mr. Easley
+
+
+                                                          25
+
+
+     1   before joining North Summit?
+
+     2        A.    No, I did not.
+
+     3        Q.    How did you come to work for North
+
+     4   Summit? Describe that for me.
+
+     5        A.    When I was working at trek we had a
+
+     6   landman who was also working at trek and we became
+
+     7   friends. He had left the company at trek before I
+
+     8   did and he recommended that I meet with these guys
+
+     9   because they were not happy with the financial
+
+    10   stuff. They would need somebody to come in and help
+
+    11   with the financial stuff.
+
+    12        Q.    And they introduced who actually hired
+
+    13   you, was it Mr. Easley, Mr. French?
+
+    14        A.    French was the ultimate hire, yes.
+
+    15        Q.    What was Mr. French's position at North
+
+    16   Summit?
+
+    17        A.    CEO I guess.
+
+    18        Q.    Do you recall what Mr. Easley's position
+
+    19   was?
+
+    20        A.    Senior vice president.
+
+    21        Q.    Were there other executive officers other
+
+    22   than yourself, Mr. French and Mr. Easley at North
+
+    23   Summit?
+
+    24        A.    There was a president, Marshall submit.
+
+    25        Q.    Anyone else?
+
+
+                                                          26
+
+
+     1        A.    There have been land men who may be like
+
+     2   vice president of land. Stephen Burke potentially.
+
+     3   Maybe Carl Kimberly was actually the vice president
+
+     4   of land at the time.
+
+     5        Q.    Did you report to Mr. French?
+
+     6        A.    Tom Easley.
+
+     7        Q.    You reported to Mr. Easley who was the
+
+     8   president?
+
+     9        A.    Marshall Smith was the president.
+
+    10        Q.    What was Mr. Easley's role, I'm sorry?
+
+    11        A.    Senior vice president.
+
+    12        Q.    Senior vice president.
+
+    13              Did anyone report to you?
+
+    14        A.    I had a couple acts payable people,
+
+    15   basically.
+
+    16        Q.    Did you sit on the Board of Directors of
+
+    17   North Summit?
+
+    18        A.    No.
+
+    19        Q.    Or North Wind?
+
+    20        A.    No.
+
+    21        Q.    Do you recall who did?
+
+    22        A.    Robin French, Tom Easley and Marshall
+
+    23   probably.
+
+    24        Q.    What was North Summit I keep calling it
+
+    25   North Summit. Do you think of it as North Summit or
+
+
+                                                          27
+
+
+     1   North Wind?
+
+     2        A.    North Summit, yes.
+
+     3        Q.    What was North Summit's business?
+
+     4        A.    ENP.
+
+     5        Q.    Where were North Summit's assets?
+
+     6        A.    Well, they were trying to get assets, so
+
+     7   they had some assets in the Vinton Field I believe.
+
+     8        Q.    Where is that located?
+
+     9        A.    In the dome next to the Sulphur Mines.
+
+    10   You know, not that far away as the crow flies. Maybe
+
+    11   20 miles. I don't really remember how far it is but
+
+    12   it's in that area and we were looking at other dome
+
+    13   possibilities.
+
+    14        Q.    Other than the Vinton assets in the
+
+    15   Sulphur Dome not near the Sulphur Dome but at the
+
+    16   Vinton Field, do you recall other assets that North
+
+    17   Summit had?
+
+    18        A.    They drilled a well in Napoleonville
+
+    19   dome.
+
+    20        Q.    Any anything else that you recall?
+
+    21        A.    No, nothing.
+
+    22        Q.    You are aware of the Bayou Corne sinkhole
+
+    23   near Napoleonville, right?
+
+    24        A.    I've heard of it.
+
+    25        Q.    Did that intersect with North Summits
+
+
+                                                          28
+
+
+     1   business at all?
+
+     2        A.    No.
+
+     3        Q.    In the well
+
+     4        A.    No.
+
+     5        Q.    Was North Summit working on that dome at
+
+     6   the time of the Bayou Corne incident?
+
+     7        A.    No.
+
+     8        Q.    Was it earlier than that?
+
+     9        A.    After.
+
+    10        Q.    After, okay.
+
+    11              Were you involved in the decision to
+
+    12   acquire that Napoleonville asset?
+
+    13        A.    No.
+
+    14        Q.    Were you involved in the decision to
+
+    15   acquire the asset of Vinton Field?
+
+    16        A.    No.
+
+    17        Q.    Could you describe what your role was at
+
+    18   the company.
+
+    19        A.    Just an accountant. Just financial
+
+    20   accountant, financial officer.
+
+    21        Q.    If you could provide a little more detail
+
+    22   it would be helpful. There will be jurors who don't
+
+    23   understand your business much at all. So just a
+
+    24   little bit of verbiage around what your role was?
+
+    25        A.    My role was to handle all the cash in and
+
+
+                                                          29
+
+
+     1   out, whether it was paying Bill's or receiving money
+
+     2   from investors, or reporting to regulatory agencies
+
+     3   as far as you know paying for permits or things like
+
+     4   that. Uhmm. Dealing with our out site consultant.
+
+     5   Uhmm. KJ Accounting they handled all our permitting
+
+     6   so I was in communications with those guys. Handling
+
+     7   our marketing. Accelerating oil and gassy was
+
+     8   involved with that. Financial statements if you want
+
+     9   to throw that in there. Any kind of financial cyst.
+
+    10   If the officers wanted me to run a schematic or a
+
+    11   scenario they wanted to see, whatever it would look
+
+    12   like, based on whatever criteria they gave me.
+
+    13        Q.    Did you interact with North Summit
+
+    14   investors?
+
+    15        A.    No.
+
+    16        Q.    Who would have had those interaction is
+
+    17   principally?
+
+    18        A.    Robin French and Tom Easley.
+
+    19        Q.    When did you leave North Summit or North
+
+    20   Wind?
+
+    21        A.    Well, I never left. I mean we moved over
+
+    22   and we created this new entity. So whenever North
+
+    23   Summit seized to exist, basically, on or they may
+
+    24   still exist I don't know I came over and we created
+
+    25   White Top oil and gas.
+
+
+                                                          30
+
+
+     1        Q.    Obviously we're getting to that. Now I
+
+     2   want too fast forward just briefly before going back
+
+     3   on the narrative. Are you currently employed, sir?
+
+     4        A.    I'm consultant.
+
+     5        Q.    Consultant for whom?
+
+     6        A.    For Yellow Rock.
+
+     7        Q.    You are not an employee of Yellow Rock?
+
+     8        A.    I am not.
+
+     9        Q.    Are you an employee of White Top?
+
+    10        A.    I am not.
+
+    11        Q.    Is there a consultant company or firm via
+
+    12   which you offer your consulting services?
+
+    13        A.    No.
+
+    14        Q.    So your personally as Mr. Halprin a
+
+    15   consultant for Yellow Rock?
+
+    16        A.    Correct.
+
+    17        Q.    Do you consult for any other companies?
+
+    18        A.    Do not.
+
+    19        Q.    Were you ever employed by Yellow Rock?
+
+    20        A.    White Top Energy.
+
+    21        Q.    You were employed by White Top?
+
+    22        A.    That's correct.
+
+    23        Q.    When was the end of your employment with
+
+    24   White Top?
+
+    25        A.    It might have been 2022 maybe. I don't
+
+
+                                                          31
+
+
+     1   have the exact dates, I'm sorry.
+
+     2        Q.    It's been several years at least?
+
+     3        A.    It's been a couple years.
+
+     4        Q.    Why did you why did your employment cease
+
+     5   with White Top?
+
+     6        A.    Because they decided to go to consultants
+
+     7   instead of employees. So I'm consultant versus via
+
+     8   instead of an employee.
+
+     9        Q.    Were you ever a consultant for White Top?
+
+    10        A.    No.
+
+    11        Q.    Just for Yellow Rock?
+
+    12        A.    Well, I would say I'm a consultant for
+
+    13   both companies if that makes sense.
+
+    14        Q.    Does White Top still exist?
+
+    15        A.    White Top definitely exists.
+
+    16        Q.    Did you have a consulting agreement?
+
+    17        A.    With Yellow Rock.
+
+    18        Q.    What are you can paid as a consultant?
+
+    19        A.    It started off as I think 750 a month and
+
+    20   then it went up to '9,500 a month and it's geneos up
+
+    21   to about 12,000 a month recently.
+
+    22        Q.    When did it go up to about 12,000 a
+
+    23   month?
+
+    24        A.    September.
+
+    25        Q.    Of 2025?
+
+
+                                                          32
+
+
+     1        A.    I think so, yeah.
+
+     2        Q.    What was the reason for the increase?
+
+     3        A.    Just there's a lot of extra work with the
+
+     4   lawsuit and having to communicate with just the
+
+     5   various event just the various angles I guess. It's
+
+     6   a lot more messy guess you guys created.
+
+     7        Q.    What so when did you first become a
+
+     8   consultant for Yellow Rock?
+
+     9        A.    Again, we had this question I think it's
+
+    10   sometime a couple years ago. 2022, 2023 I believe.
+
+    11   {{MB_REVIEW-FIX: confident — Steno artifact 'Ir' is clearly 'I' with extraneous characters appended; context 'I don't remember...}}I{{/}}
+
+    12   remember.
+
+    13        Q.    Okay.
+
+    14              So when you ceased being an employee at
+
+    15   White Top, you then become a consultant for Yellow
+
+    16   Rock; is that right?
+
+    17        A.    That is correct.
+
+    18        Q.    So that was the transition?
+
+    19        A.    That is correct.
+
+    20        Q.    Okay.
+
+    21              Could you tell me how your
+
+    22   responsibilities or area of work for Yellow Rock has
+
+    23   evolved in these years you've been a consultant for
+
+    24   them.
+
+    25        A.    Well, what we've done is created a lot of
+
+
+                                                          33
+
+
+     1   stuff in the cloud which allows me to, you know,
+
+     2   handle the payroll and handle the a lot of the
+
+     3   information I can do via the cloud. So it just gave
+
+     4   me that bred of
+
+     5   {{MB_REVIEW-FLAG: Phonetic mishear — 'bred' could be 'breadth' or 'breed'; cannot determine intended word without a...}}
+
+     6   freedom to, you know, communicate with Jonathan Love
+
+     7   on a weekly basis or whatever just to talk about,
+
+     8   you know, how we're going to try to run this
+
+     9   company.
+
+    10        Q.    When you're talking about the cloud, what
+
+    11   do you mean?
+
+    12        A.    Well, like I said, I used to have
+
+    13   everything was a hard drive. Everything was stored
+
+    14   onsite. So now everything is not stored into a into
+
+    15   a virtual network now that's maybe stored in Idaho,
+
+    16   Iowa, I don't know where it's stored.
+
+    17        Q.    What software platform is that on?
+
+    18        A.    The VPN I don't know. We have an outside
+
+    19   IT group.
+
+    20                 (Court Reporter clarification.)
+
+    21        Q.    What is the name?
+
+    22        A.    You know, I can't remember. I mean give
+
+    23   me time to think about it. I may remember.
+
+    24        Q.    How do you access this cloud storage?
+
+    25        A.    I just log into my laptop.
+
+
+                                                          34
+
+
+     1        Q.    What types of materials are stored on
+
+     2   that cloud platform?
+
+     3        A.    All our oil and gas software information.
+
+     4   All our all my spreadsheets. I mean, you know, I
+
+     5   have a drive of everything I do it gets stored
+
+     6   automatically to the cloud. All accounting software,
+
+     7   any kind of payroll, any kind of, uhmm, insurance
+
+     8   communications. All my Emails, they're all stored in
+
+     9   the cloud.
+
+    10        Q.    Do you have or do you know whether
+
+    11   individuals with Yellow Rock or White Top other than
+
+    12   yourself access this same cloud?
+
+    13        A.    I think they have access to whatever
+
+    14   cloud they're setup to access.
+
+    15        Q.    Do you have like a specific Rick Halprin
+
+    16   folder where Jonathan Love would have a Jonathan
+
+    17   Love folder or is that not how it's organized?
+
+    18        A.    I can't speak for anybody else but for my
+
+    19   situation I call it the R drive and everything is in
+
+    20   that drive. I access it via the VPN.
+
+    21        Q.    It's called the R drive?
+
+    22        A.    Yes, it's R it could have been "X," Y
+
+    23   it's R.
+
+    24        Q.    Are there any other drivers where you
+
+    25   store your materials?
+
+
+                                                          35
+
+
+     1        A.    None for work.
+
+     2        Q.    Okay. Is there a folder structure within
+
+     3   that R drive?
+
+     4        A.    There's. We have certain folders in
+
+     5   there.
+
+     6        Q.    Could you describe it?
+
+     7        A.    Yellow Rock folder, White Top folder,
+
+     8   basically, that's, you know, it's like that. And
+
+     9   then within that sub folders.
+
+    10        Q.    Have you provided those folders and the R
+
+    11   drive to your lawyers in connection with this
+
+    12   litigation?
+
+    13        A.    My lawyers had access to all my
+
+    14   information that I'm aware of.
+
+    15        Q.    Okay.
+
+    16              Have you been involved personally in
+
+    17   identifying relevant and responsive materials for
+
+    18   this litigation?
+
+    19        A.    I have not.
+
+    20        Q.    Okay.
+
+    21              So back to your roles and
+
+    22   responsibilities as a Yellow Rock consultant, to
+
+    23   whom do you report?
+
+    24        A.    Jonathan Love.
+
+    25        Q.    And you said part I want to break it
+
+
+                                                          36
+
+
+     1   down. Part of your responsibilities is payroll. Did
+
+     2   you say that?
+
+     3        A.    Yes.
+
+     4        Q.    Who is on Yellow Rock's payroll?
+
+     5        A.    Field the field guys and the field guys
+
+     6   would be advance hill and Shannon if you can with a
+
+     7   FAR request you he.
+
+     8   {{MB_REVIEW-FLAG: Reader category is 'unclear'; turn is largely incoherent with possible proper names and garbled p...}}
+
+     9        Q.    And
+
+    10   {{MB_REVIEW-FIX: confident — Steno intrusion 'he' inserted between 'are' and 'they'; removing it restores grammatically correc...}}are they{{/}}
+
+    11   employees or consultants?
+
+    12        A.    They are employees.
+
+    13        Q.    And are there any other employees other
+
+    14   than those two individuals?
+
+    15        A.    Jonathan Love.
+
+    16        Q.    Any other employees other than Mr.
+
+    17   {{MB_REVIEW-VERIFY: Steno artifact dropped the 'd' from 'and'; 'Mr. Love an the' corrected to 'Mr. Love and the'}}Mr. Love and the{{/}}
+
+    18   field guys?
+
+    19        A.    No.
+
+    20        Q.    So there's three employees presently of
+
+    21   Yellow Rock?
+
+    22        A.    That is correct.
+
+    23        Q.    Okay.
+
+    24              And you handle payroll for those three
+
+    25   employees?
+
+
+                                                          37
+
+
+     1        A.    Correct.
+
+     2        Q.    Do you handle paying other consultants
+
+     3   for Yellow Rock?
+
+     4        A.    I do.
+
+     5        Q.    Who are Yellow Rock's other consultants
+
+     6   presentday?
+
+     7        A.    Brad Brandl would be a consultant. Uhmm.
+
+     8   Sebastian Garcia once in a while, very little. Uhmm.
+
+     9   Jennifer Saltsman. Uhmm. M and M energy, Mickey, the
+
+    10   geologist. There's a lot of consultants now that are
+
+    11   getting paid via let's see what else an Jonathan
+
+    12   Love is consulting on some other things besides
+
+    13   being an employee. Those are our consultants.
+
+    14        Q.    What how is Mr. Love paid as a consultant
+
+    15   versus an employee where is the dividing line?
+
+    16        A.    Yellow Rock, White Top.
+
+    17        Q.    He consults for White Top?
+
+    18        A.    He consults for White Top.
+
+    19        Q.    Okay.
+
+    20              Do you know what the scope of Jonathan
+
+    21   loves consulting work for White Top is?
+
+    22        A.    I do not.
+
+    23        Q.    Okay.
+
+    24              We mentioned payroll. What other
+
+    25   responsibilities do you have as a consultant for
+
+
+                                                          38
+
+
+     1   Yellow Rock?
+
+     2        A.    Uhmm. Payables.
+
+     3        Q.    Like what as an example?
+
+     4        A.    Paying any outside thirdparty company,
+
+     5   whatever they have. Whether it's going to be
+
+     6   chemicals for the field, uhmm, Internet, Internet
+
+     7   consultants. Interests net company, whatever they
+
+     8   call them. I can't remember the name off the top of
+
+     9   my head. Just basic chemicals, water for the field,
+
+    10   electricity Bill's, just normal consultants related
+
+    11   to this case or experts whatever you want to call
+
+    12   them.
+
+    13        Q.    So payrolls, payables, what else?
+
+    14        A.    Financial.
+
+    15        Q.    Financial. Yellow Rock is not generating
+
+    16   any revenue these days, right?
+
+    17        A.    That's not right.
+
+    18        Q.    What revenue is Yellow Rock generating?
+
+    19        A.    Oil and gas oil revenues.
+
+    20        Q.    Do you know which wells are producing
+
+    21   revenue?
+
+    22        A.    I want to say 997 potentially. Maybe a
+
+    23   little bit here and there in the 1020, 1030, it's
+
+    24   very little.
+
+    25        Q.    And any approximation of how much revenue
+
+
+                                                          39
+
+
+     1   Yellow Rock is generating presently on a monthly or
+
+     2   quarterly or however you understand it?
+
+     3        A.    15,000 a month.
+
+     4        Q.    Is that pretty steady?
+
+     5        A.    It's been steady since a couple you know,
+
+     6   since we lost a couple of wells.
+
+     7        Q.    What wells did you lose?
+
+     8        A.    Well, I think 1030 was producing pretty
+
+     9   good an the 1028 was producing pretty G 997
+
+    10   obviously was still producing. Other than that I
+
+    11   don't remember the rest of them.
+
+    12        Q.    What else fits in your consulting
+
+    13   responsibilities for the company?
+
+    14        A.    Any pro form errs. If they want
+
+    15   information about not as much late I, you know,
+
+    16   before I was doing more. But proformas maybe. What
+
+    17   else?
+
+    18        Q.    Could you describe for the jury what a
+
+    19   pro forma is?
+
+    20        A.    Just a spreadsheet or analysis of
+
+    21   whatever event we want to look at whether whether
+
+    22   it's prior history. Maybe we'll put together and say
+
+    23   for instance, Jennifer Saltsman put together a
+
+    24   revervoir engineering report. She wants to know
+
+    25   history, well history. I'll put together what the
+
+
+                                                          40
+
+
+     1   well has produced, what's the revenue, things like
+
+     2   that.
+
+     3        Q.    Any proformas that you would have
+
+     4   created, would those be on your hard drive?
+
+     5        A.    Everything is on my hard drive.
+
+     6        Q.    All right. Proformas, what else?
+
+     7        A.    Financial statements quarterly.
+
+     8        Q.    What else?
+
+     9        A.    Uhmm. Sometimes we do information
+
+    10   insurance. We deal with insurance whether it's
+
+    11   health, dental, property insurance, general
+
+    12   liability insurance, did and on insurance.
+
+    13        Q.    What else?
+
+    14        A.    Whatever I'm structured by Jonathan Love
+
+    15   to to to do.
+
+    16        Q.    You said in September of 2025 your
+
+    17   consulting fee was increased because of an increase
+
+    18   in support work that you had been doing in
+
+    19   connection with this litigation; is that right?
+
+    20        A.    Part of it, yes.
+
+    21        Q.    And what sort of work are you doing to
+
+    22   support this litigation?
+
+    23        A.    Well, there's a lot more invoices, a lot
+
+    24   more communication with the expert witnesses,
+
+    25   dealing with Sher Garner communication back and
+
+
+                                                          41
+
+
+     1   forth, whether it's related to this consultant
+
+     2   approving this, what are they doing for the case, I
+
+     3   don't get involved in the details I just want to
+
+     4   know, you know, it's what type of work they are
+
+     5   doing so I know what category to put it into.
+
+     6   Whether its capital account, expense account, more
+
+     7   financially related.
+
+     8        Q.    Have you done work relating to alleged
+
+     9   damages in this case?
+
+    10        A.    No.
+
+    11        Q.    You've not done your own calculations?
+
+    12        A.    No.
+
+    13        Q.    Have you done any calculations relating
+
+    14   to Yellow Rock's allegation that it's been harmed or
+
+    15   loss money as a result of Westlake's actions?
+
+    16        A.    No.
+
+    17        Q.    If you had done any such work would it be
+
+    18   on the hard drive, that's where you keep everything?
+
+    19        A.    Everything is on the hard drive.
+
+    20        Q.    Do you interact routinely directly with
+
+    21   Sher Garner attorney or do you go through Mr. Love?
+
+    22                 MR. MADIGAN: I just want to interject
+
+    23                 not hijack anything I just want to
+
+    24                 make sure you don't disclose the
+
+    25                 substance of anything we talked about.
+
+
+                                                          42
+
+
+     1                 That's a fair question, but don't
+
+     2                 expand beyond that.
+
+     3   BY MR. CAUGHEY:
+
+     4        Q.    I'm not asking for the communication with
+
+     5   them?
+
+     6        A.    The answer would be no.
+
+     7        Q.    I'm just trying to understand with what
+
+     8   frequency do you speak with attorneys at Sher Garner
+
+     9   firm?
+
+    10        A.    Until this week probably never.
+
+    11        Q.    Fair enough.
+
+    12              You are represented at this deposition by
+
+    13   the Sher Garner firm, right?
+
+    14        A.    Yes, I am that I am aware of.
+
+    15        Q.    You are not personally paying their fees,
+
+    16   right?
+
+    17        A.    That is correct.
+
+    18        Q.    Who is paying their fees?
+
+    19        A.    Yellow Rock.
+
+    20        Q.    Since when have you been represented by
+
+    21   Sher Garner?
+
+    22        A.    Today.
+
+    23        Q.    When did you learn your deposition would
+
+    24   be taken?
+
+    25        A.    Last week.
+
+
+                                                          43
+
+
+     1        Q.    What did you do to prepare to give
+
+     2   testimony today?
+
+     3        A.    Reviewed records with Sher Garner
+
+     4   yesterday.
+
+     5        Q.    Did Sher Garner provide you the records
+
+     6   to review?
+
+     7        A.    They did.
+
+     8        Q.    Were they materials that you had seen
+
+     9   before?
+
+    10        A.    They were materials I created.
+
+    11        Q.    All right. We may get back into your
+
+    12   consulting work but I want to back up and talk about
+
+    13   White Top. What is White Top.
+
+    14        A.    White Top is the parent company of Yellow
+
+    15   Rock.
+
+    16        Q.    And you testified I think that White Top
+
+    17   was formed by or formed in connection with North
+
+    18   Summit; is that right?
+
+    19        A.    No, that's not right.
+
+    20        Q.    All right. So judge don't you explain.
+
+    21   {{MB_REVIEW-FLAG: Category is 'unclear' — rule requires FLAG. Multiple plausible reconstructions ('So just go ahead...}}
+
+    22   Tell me the origin of White Top. How was White Top
+
+    23   founded?
+
+    24        A.    White Top was created solely as a one
+
+    25   field based organization for the Sulphur Mines
+
+
+                                                          44
+
+
+     1   acquisition.
+
+     2        Q.    Okay.
+
+     3              So let's actually then back up to get a
+
+     4   little context for that. So do you know when Yellow
+
+     5   Rock originated?
+
+     6        A.    I don't have to guess and I don't want to
+
+     7   do that.
+
+     8        Q.    Do you know who it was that founded and
+
+     9   were the original leaders of Yellow Rock?
+
+    10        A.    No.
+
+    11        Q.    Do you know Todd Bertolet?
+
+    12        A.    Yes, I've heard that name.
+
+    13        Q.    What about Mr. Cox?
+
+    14        A.    I've heard that name also.
+
+    15        Q.    Do you associate them with Yellow Rock?
+
+    16        A.    I do.
+
+    17        Q.    How do you associate them with Yellow
+
+    18   Rock?
+
+    19        A.    They are the company that owned the asset
+
+    20   prior to us.
+
+    21        Q.    Okay.
+
+    22              Do you have any understanding of how Mr.
+
+    23   Cox and Mr. Bertolet is it Bertolet or Bertolet?
+
+    24                 MR. MADIGAN: I say Bertolet, but I
+
+    25                 think it's I've heard it both ways.
+
+
+                                                          45
+
+
+     1                 MR. GARNER: Don't feel bad about it.
+
+     2                 It depends which state you're in. In
+
+     3                 Mississippi it's Bortalay.
+
+     4                 {{MB_REVIEW-FLAG: Name not confirmed in names_lock. 'Bortalay' may be phonetic capture of 'Bertolet' but cannot be ...}}
+
+     5                 In Louisiana it's Bortalet.
+
+     6                 {{MB_REVIEW-FLAG: Name not confirmed in names_lock. 'Bortalet' may be phonetic capture of 'Bertolet' but cannot be ...}}
+
+     7                 MR. CAUGHEY: Clear as mud.
+
+     8   BY MR. CAUGHEY:
+
+     9        Q.    Anyway, do you have any understanding of
+
+    10   how Mr. Cox and Mr. Bertolet acquired or formed
+
+    11   Yellow Rock?
+
+    12        A.    I didn't no, they formed Yellow Rock, so
+
+    13   {{MB_REVIEW-FLAG: Category is 'unclear' — rule requires FLAG. 'didn't no' may be steno artifact for 'didn't know' o...}}
+
+    14   no.
+
+    15        Q.    Okay.
+
+    16              You do understand that Yellow Rock even
+
+    17   before you got involved had operations at Sulphur
+
+    18   Mines dome, right?
+
+    19        A.    Yes.
+
+    20        Q.    And you are not aware of Yellow Rock ever
+
+    21   having operations outside of the Sulphur Dome, LLC,
+
+    22   right?
+
+    23        A.    Correct.
+
+    24        Q.    Do you have any understanding of how
+
+    25   Yellow Rock acquired its interest at the Sulphur
+
+
+                                                          46
+
+
+     1   Mines dome?
+
+     2        A.    Not really.
+
+     3        Q.    Okay.
+
+     4              When did you first personally intersect
+
+     5   with the Sulphur Mines dome?
+
+     6        A.    When uhmm, Tom Easley gave me an analysis
+
+     7   saying here we're looking at this acquisition.
+
+     8        Q.    When would that have been?
+
+     9        A.    2017 I shall maybe
+
+    10   {{MB_REVIEW-FLAG: Category is 'unclear' — rule requires FLAG. 'I shall' is likely a steno artifact but multiple pla...}}
+
+    11   around that time.
+
+    12        Q.    So, Mr. Easley brought that opportunity
+
+    13   to you with an analysis. What do you recall about
+
+    14   that analysis?
+
+    15        A.    That it was a producing field in the dome
+
+    16   area with okay production, good production.
+
+    17        Q.    Do you recall your conversation with Mr.
+
+    18   Easley around that potential opportunity?
+
+    19        A.    No.
+
+    20        Q.    Did you discuss the opportunity with Mr.
+
+    21   French?
+
+    22        A.    No.
+
+    23        Q.    Did you advocate that Mr. Easley pursue a
+
+    24   transaction with respect to Yellow Rock and the
+
+    25   Sulphur Mines dome?
+
+
+                                                          47
+
+
+     1        A.    I did not. Did not.
+
+     2        Q.    So you didn't identify that opportunity?
+
+     3        A.    I identified the opportunity once it was
+
+     4   given to me. I reviewed the opportunity, yes.
+
+     5        Q.    But you weren't the one who found it?
+
+     6        A.    Know.
+
+     7        Q.    That was Mr. Easley?
+
+     8        A.    That was the one who gave it to me.
+
+     9        Q.    Okay.
+
+    10              And tell me, was there a process of due
+
+    11   diligence that you were involved from with respect
+
+    12   to this potential?
+
+    13        A.    Yes.
+
+    14        Q.    Describe that for me.
+
+    15        A.    I went to Bertolet office or Bertolet or
+
+    16   whatever in Natchez, Mississippi and I reviewed some
+
+    17   historical data.
+
+    18        Q.    What type of historical data?
+
+    19        A.    Least operating statements, revenue
+
+    20   decks, to show who was on the decks. Capital
+
+    21   drilling information. Uhmm. Agreements they may have
+
+    22   had back then W uhmm, electricity al contractors
+
+    23   whatever they had with Entergy or whoever they dealt
+
+    24   with. I just reviewed those. I wanted to see what
+
+    25   the fixed costs would be what the variable costs
+
+
+                                                          48
+
+
+     1   potentially could be over time, what their cashflow
+
+     2   was doing on the field, things like that.
+
+     3        Q.    What was your take away from that due
+
+     4   diligence?
+
+     5        A.    That it was a profitable field.
+
+     6        A.    I would think they won't be necessary,
+
+     7   yes.
+
+     8        Q.    Wait.
+
+     9        A.    I said yes, there should be. I don't know
+
+    10   if there had been if I didn't attend the Board
+
+    11   meetings. But yes there should have been material to
+
+    12   the board to review.
+
+    13        Q.    Do you know
+
+    14        A.    If it's an update operational update.
+
+    15        Q.    Do you know if White Top maintains a
+
+    16   central repository of the Board documents, board
+
+    17   documentation?
+
+    18        A.    I'm not aware of that.
+
+    19        Q.    You're not aware of anything in the cloud
+
+    20   like that?
+
+    21        A.    I'm not aware of anything like, that
+
+    22   would be Jonathan Love or Tom Easley.
+
+    23        Q.    And if you go to the very end here, the
+
+    24   last couple of pages, there's an operations update
+
+    25   memo.
+
+
+                                                          49
+
+
+     1        A.    Uhhuh.
+
+     2        Q.    Do you see that?
+
+     3        A.    The last page? Oh, yes operation summary,
+
+     4   operation what?
+
+     5        Q.    It's just a document with the title,
+
+     6   "White Top Energy, LLC, Yellow Rock, LLC Sulphur
+
+     7   Mines Field Operations Update".
+
+     8              Do you see that?
+
+     9                 (Witness peruses document.)
+
+    10        A.    I see that.
+
+    11        Q.    Do you see that?
+
+    12        A.    I do.
+
+    13        Q.    Were these reports created on a quarterly
+
+    14   basis?
+
+    15        A.    Yes.
+
+    16        Q.    And I assume that you received these
+
+    17   reports on a quarterly basis?
+
+    18        A.    I probably provided information for this
+
+    19   report. Probably. The legacy wells and it could have
+
+    20   been I could have sent just a little one line item
+
+    21   to Jonathan to let him know. So he he may include
+
+    22   the data I'm not sure but this particular case.
+
+    23        Q.    Okay.
+
+    24              And then the the paragraph under
+
+    25   operational summary references the funds from our
+
+
+                                                          50
+
+
+     1   August capital raise were used to pay the revolver
+
+     2   and interest in full and pay all remaining expenses
+
+     3   associated with completing the 1031 well.
+
+     4              Do you see that?
+
+     5                 (Witness peruses document.)
+
+     6        A.    I do.
+
+     7        Q.    And you understand that refers to the
+
+     8   August 2023 capital raise we saw previously?
+
+     9        A.    I believe that's the case.
+
+    10        Q.    Okay.
+
+    11              If you go down to the 1031, it says it's
+
+    12   currently producing 23 barrels per day, right?
+
+    13        A.    I see that.
+
+    14        Q.    The 1031 currently doesn't produce
+
+    15   anything, right?
+
+    16        A.    That's correct.
+
+    17                 MR. CAUGHEY: I have no further
+
+    18                 questions for you today, unless other
+
+    19                 folks do and then I need to respond.
+
+    20                 MS. HEBERT: I have no questions.
+
+    21                 MR. MADIGAN: Anybody on the Zoom? The
+
+    22                 auction style, going once, going
+
+    23                 twice?
+
+    24                 MR. GARNER: We're ending the depo if
+
+    25                 nobody has questions.
+
+
+                                                          51
+
+
+     1                 MR. MADIGAN: All right.
+
+     2                 MR. CAUGHEY: You got anything, TJ?
+
+     3                 MR. MADIGAN: No, nothing from us.
+
+     4                 THE WITNESS: Thank you so much.
+
+     5                 THE VIDEOGRAPHER: This concludes the
+
+     6                 deposition and the time is 4:19 p.m.
+
+     7                 THE COURT REPORTER: Do you want the
+
+     8                 rough draft of this, Mr. Garner?
+
+     9                 MR. GARNER: I do, yes.
+
+    10                 MR. CAUGHEY: And so do we.
+
+    11                 THE COURT REPORTER: Amiee,
+
+    12                 {{MB_REVIEW-FLAG: Name 'Amiee' not in names_lock; spelling uncertain (Aimee/Amy); must flag per rule 8 — never gues...}}
+
+    13                 do you want the rough draft?
+
+    14                 MS. HEBERT: If you're handing it out.
+
+    15                 I don't really need it, Marybeth.
+
+    16                 THE COURT REPORTER: Then I won't give
+
+    17                 it to you. No worries. time
+
+    18                 {{MB_REVIEW-FLAG: Medium confidence steno drop; 'time' may be fragment of 'Time noted' closing notation but context...}}
+
+    19                 noted 4:20 p.m.
+
+    20                 C E R T I F I C A T E                 
+
+    21Certification is valid only for a transcript
+
+    22accompanied by my original signature and
+
+    23Original required seal on this page.
+
+    24I, MARYBETH E. MUIR, Certified Court Reporter in and
+
+    25for the State of Louisiana, and Registered Professional
+
+
+                                                          52
+
+
+     1Reporter, as the officer
+
+     2before whom this testimony was taken, do hereby
+
+     3certify that RICHARD HALPRIN, after having been duly
+
+     4sworn by me upon authority of R.S. 37:2554, did
+
+     5testify as hereinbefore set forth in the foregoing
+
+     6pages; that this testimony was reported by me in
+
+     7the stenotype reporting method, was prepared and
+
+     8transcribed by me or under my personal direction and
+
+     9supervision, and is a true and correct transcript to
+
+    10the best of my ability and understanding; that the
+
+    11transcript has been prepared in compliance with
+
+    12transcript format guidelines required by statute or
+
+    13by rules of the board, and that I am informed about
+
+    14the complete arrangement, financial or otherwise,
+
+    15with the person or entity making arrangements for
+
+    16deposition services; that I have acted in compliance
+
+    17with the prohibition on contractual relationships,
+
+    18as defined by Louisiana Code of Civil Procedure
+
+    19Article 1434 and in rules and advisory opinions of
+
+    20the board; that I have no actual knowledge of any
+
+    21prohibited employment or contractual relationship,
+
+    22direct or indirect, between a court reporting firm
+
+    23and any party litigant in this matter nor is there
+
+    24any such relationship between myself and a party
+
+    25litigant in this matter. I am not related to
+
+
+                                                          53
+
+
+     1counsel or to the parties herein, nor am I otherwise
+
+     2interested in the outcome of this matter.
+
+     3_________________________
+
+     4MARYBETH E. MUIR, CCR, RPR
+
+     5                 C E R T I F I C A T E                 
+
+     6I, RICHARD HALPRIN, do hereby certify that I
+
+     7have read or have had read to me the foregoing
+
+     8transcript of my testimony given on Thursday, April 2,
+
+     92026,
+
+    10and find same to be true and correct to the best of
+
+    11my ability and understanding with the exceptions
+
+    12noted on the amendment sheet;
+
+    13CHECK ONE BOX BELOW:
+
+    14( ) Without Correction.
+
+    15( ) With corrections, deletions, and/or
+
+    16additions as reflected on the errata
+
+    17sheet attached hereto.
+
+    18Dated this ___ day of ___________,
+
+    19_________________________
+
+    20RICHARD HALPRIN
+
+    21Reported by: MARYBETH E. MUIR, CCR, RPR
+
+    22DEPOSITION ERRATA SHEET
+
+    23Page No._____Line No._____Change to:______________
+
+    24_______________________________________________
+
+    25Reason for change:________________________________
+
+
+                                                          54
+
+
+     1Page No._____Line No._____Change to:______________
+
+     2_______________________________________________
+
+     3Reason for change:________________________________
+
+     4Page No._____Line No._____Change to:______________
+
+     5_______________________________________________
+
+     6Reason for change:________________________________
+
+     7Page No._____Line No._____Change to:______________
+
+     8_______________________________________________
+
+     9Reason for change:________________________________
+
+    10Page No._____Line No._____Change to:______________
+
+    11_______________________________________________
+
+    12Reason for change:________________________________
+
+    13Page No._____Line No._____Change to:______________
+
+    14_______________________________________________
+
+    15Reason for change:________________________________
+
+    16Page No._____Line No._____Change to:______________
+
+    17_______________________________________________
+
+    18Reason for change:________________________________
+
+    19SIGNATURE:_______________________DATE:___________
+
+    20RICHARD HALPRIN
