@@ -801,3 +801,32 @@ MB FINAL files in `oracle/finals/` are TRUTH SOURCES for testing/scoring ONLY:
 - Do NOT use to construct example pairs in any prompt
 - Reading them to design templates: ALLOWED
 - Reading them to write a unit test that diffs OUR_FINAL against truth: ALLOWED
+
+
+---
+
+## DECISION LOG — Anomaly join key architecture (2026-05-01)
+
+DECIDED: Option 3 — natural key (turn_idx, token_span)
+WHY NOW: Smallest code surface, zero artifact cost, semantically correct,
+         doesn't conflate with apply.py Bug 2.
+
+ALSO CONSIDERED:
+- Option 1 (compound key batch_id, anomaly_id) — requires schema change
+  to anomalies.jsonl, $0.95 re-run, fix in two places
+- Option 2 (globally unique IDs at suggester) — cleanest long-term, but
+  invalidates all existing artifacts and changes suggester contract
+
+REVISIT TRIGGER (when to reconsider):
+- If onboarding a 2nd CR and we discover the natural-key assumption
+  doesn't hold across CR styles (e.g., Reader prompts that flag
+  overlapping spans)
+- If we move to a production ID system where surrogate keys carry other
+  metadata (audit trails, cross-system references)
+- If the apply.py Bug 2 fix forces a schema change anyway — at that
+  point Option 2 might be cheaper to do alongside it
+- If anomaly volume scales 10x+ and the (turn_idx, token_span) tuple
+  lookup becomes a perf concern (unlikely but worth flagging)
+
+REVISIT CADENCE: Re-evaluate in ~3-4 weeks or when one of the triggers
+above fires, whichever comes first.
