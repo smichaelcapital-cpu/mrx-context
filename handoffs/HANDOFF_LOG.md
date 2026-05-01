@@ -830,3 +830,188 @@ REVISIT TRIGGER (when to reconsider):
 
 REVISIT CADENCE: Re-evaluate in ~3-4 weeks or when one of the triggers
 above fires, whichever comes first.
+
+---
+
+## 2026-05-01 — Friday session: Chunk A + C push + Chunk B' Lemonwood + Chunk D recon
+
+**Time written:** Friday 2026-05-01, late evening
+**Architect:** Opus (current session)
+**Builder:** Sonnet (current session)
+**Owner:** Scott
+
+---
+
+### NEW WORKFLOW — Chunked work model with end-of-chunk logging
+
+Established this session and adopted as the default going forward:
+
+- Opus designs, Sonnet builds, Scott gates
+- Chunks are sized so Sonnet can complete one in a single uninterrupted run
+- Two gate types:
+  - **Soft gate** = cheap, reversible, low risk — Opus can approve, Scott reviews after
+  - **Hard gate** = architecture, money, or anything touching MB's accuracy — work stops until Scott says go
+- **End-of-chunk rule (NEW):** every shipped chunk gets a paragraph appended to HANDOFF_LOG.md the moment it ships, not at session end. Avoids the "log the whole day at the end" failure mode that surfaced today.
+
+---
+
+### CHUNK A — Test fixture cleanup for V2 schema (SHIPPED)
+
+**Status:** Complete. Pushed. 510 tests passing.
+
+**What it did:**
+Updated three test files to align with the V2 contract:
+- `tests/stage5/test_proposal_mapper.py` — second assertion in `test_build_application_map_raises_on_length_mismatch` updated from `match="length mismatch"` to `match="unknown anomaly_id"` to reflect the actual V2 error path
+- `tests/stage5/test_proposal_mapper.py` — `test_integration_real_block_h_artifacts` switched from hardcoded V1 counts (30/12/18) to dynamic counts computed from fixture data
+- `tests/stage5/test_document_composer.py` — three cover-related tests inverted to document the new `_build_cover() -> []` contract (cover moved to literal template in `assemble_final.py`); section ordering and stats accuracy tests updated for the `+6` line offset added by VIDEOGRAPHER_OPENING
+- `tests/stage5/test_assemble_final.py` — `test_07_review_queue_has_30_items` changed from hardcoded `30` to count-from-summary-totals
+
+**Judgment calls:**
+1. Three near-identical contract stubs kept separate rather than collapsed — preserves git history showing distinct contract-documentation tests
+2. `+6` offset on `test_stats_accuracy` documented in docstring (VIDEOGRAPHER_OPENING contributes 4 uncounted lines + original 2 = 6)
+3. Cover-related tests **inverted** rather than deleted — preserves institutional memory for why `_build_cover()` returns `[]`
+
+**Commit:** `ee4f8f3 test(stage5): align fixtures with V2 anomaly_id-keyed join + dynamic counts`
+
+---
+
+### CHUNK C — Push 7 unpushed commits to origin/main (SHIPPED)
+
+**Status:** Complete. Pushed by Scott.
+
+**What it did:**
+Pushed `cdcac65..ee4f8f3` to engine `origin/main`. Includes V2 deployment commits (22a24d7 prompt swap, 502061e + 657649a max_tokens bumps, 7d5bb93 anomaly_id keyed join), the videographer opening literal template, and Chunk A fixture fixes.
+
+**Note on push authority:** Scott's standing rule is "Scott commits, Sonnet never commits or pushes" on the engine repo. Rule held — Scott pushed. Sonnet's role on engine repo is build + commit locally; Scott runs `git push`. (mrx-context push authority remained with Sonnet through the session for handoffs/specs/audits — see Open Decisions below.)
+
+---
+
+### CHUNK B' — Lemonwood Terrace to NAMES_LOCK (SHIPPED)
+
+**Status:** Complete. Pushed. FLAG to REWORD confirmed.
+
+**What it did:**
+Added "Lemonwood Terrace" as the 12th entry in `_run_halprin_mini.py` NAMES_LOCK, under a new `# Addresses / streets` category (seeded for future growth). Re-ran Halprin mini end-to-end through Stage 3.1 + Stage 5.
+
+**Result:**
+- Stage 3.1 re-run: $0.9361 (within expected ~$0.95)
+- Anomaly `a_0001` (turn 96, "lemon wood terrace") now produces a **REWORD** proposal with `after = "Lemonwood Terrace"` and `source = "names_lock"` — was a FLAG in V2 baseline
+- Stage 5 OUR_FINAL.txt at turn 96 now renders "Lemonwood Terrace" correctly
+
+**The Lemonwood fix landed.** Marker came out as `MB_REVIEW-VERIFY` instead of `MB_REVIEW-FIX: confident` — that is downstream of Bug 1 (see below), not a problem with the Lemonwood fix itself.
+
+**Commit:** `e7989e3 feat(stage3): add Lemonwood Terrace to NAMES_LOCK (V2 miss fix #1)`
+
+---
+
+### BUGS SURFACED THIS SESSION
+
+#### Bug 1 — anomaly_id cross-batch collision in proposal_mapper.py (HIGH PRIORITY — fix queued as Chunk D)
+
+`anomaly_id` resets to `a_0001` in every Stage 3.1 batch. `proposal_mapper.py` builds `anomaly_by_id` as a plain dict — last `a_0001` (turn 634, confidence=medium) overwrites all earlier `a_0001`s including turn 96 (Lemonwood, confidence=high).
+
+**Scope:** 19 anomaly IDs collide (a_0001–a_0019). 142 anomaly records, 125 proposals. Approximately 10 of 126 proposals get wrong confidence lookups (~8% silently miscalibrated).
+
+**Visible impact:** Lemonwood marker came out as VERIFY (medium) instead of FIX confident (high). Every batch-first proposal across all 10 V2 batches has wrong confidence.
+
+**Why pre-existing:** This was always wrong. Was masked by V1 producing only 30 proposals fitting in fewer batches. V2's 147 anomalies across 10 batches exposed it.
+
+**Fix decided this session:** Option 3 — natural key (turn_idx, token_span). See DECISION LOG below. Chunk D build is queued.
+
+#### Bug 2 — apply.py multi-token substitution silent skip (PARKED — fix later)
+
+The Lemonwood proposal spans tokens [1,3] ("lemon wood terrace," -> 3 tokens) but the `after` is "Lemonwood Terrace" (2 tokens). `apply.py`'s 1-for-1 constraint silently skips it. Result: `corrected_turns.json` for turn 96 still reads "lemon wood terrace" — the artifact is stale.
+
+**Saving grace:** Stage 5's `render_turn` correctly applies the substitution at output time, so OUR_FINAL.txt is still right. Only the intermediate artifact is wrong.
+
+**Deeper related issue surfaced during recon:** The runner's `proposals_map = {p.proposal_id: p for p in all_proposals}` has the same collision problem. apply.py's I-5 invariant fires when same `proposal_id` is applied multiple times (cross-batch collision) -> `ApplyHardBlock` raised -> runner catches it and silently sets `corrected_turns = list(turns)` (unmodified Stage 2 output). **Net effect: corrected_turns.json is essentially a no-op for any multi-batch run.** Stage 5 saves us by re-applying everything from scratch.
+
+**Decision:** Park as Bug 2 / future Chunk E. No visible impact on OUR_FINAL.txt today. Fix before production. **Add a `logger.warning` in the catch block as part of Chunk D build** so the silent failure becomes visible.
+
+#### Diff methodology gap (PARKED — methodology lockdown owed)
+
+Sonnet could not reproduce the 827 baseline diff count using `unified_diff` on pages 13-54 with markers stripped. Got 4,486 changed lines vs expected ~826. V1 baseline also gave ~4,252 by this method, not 1,040.
+
+**The 827 number from `audits/HALPRIN_MINI_3WAY_DIFF_V2.md` was likely produced by a different (possibly section-aware) script that wasn't documented.** Until methodology is locked, **diff line count is unreliable as an acceptance criterion** for chunks.
+
+**Decision:** Park. Use REWORD entry inspection + visual spot-check of OUR_FINAL.txt + pytest passing as acceptance criteria for V2 miss cleanups going forward. Methodology lockdown gets its own future chunk.
+
+---
+
+### DECISION LOG — Anomaly join key architecture (2026-05-01)
+
+**DECIDED:** Option 3 — natural key (turn_idx, token_span)
+
+**WHY NOW:**
+- Smallest code surface (4 lines in one file)
+- Zero artifact cost — existing proposals.json and anomalies.jsonl remain valid, no $0.95 re-run needed
+- Semantically correct — (turn_idx, token_span) is the natural join key because Writer is structurally constrained to cite Reader's exact span. anomaly_id was always a surrogate for this relationship
+- Doesn't conflate with apply.py Bug 2 — keeps fix scopes clean
+
+**ALSO CONSIDERED:**
+- **Option 1** (compound key `(batch_id, anomaly_id)`) — requires schema change to anomalies.jsonl (add batch_id field), $0.95 re-run, fix in two places (Stage 5 anomaly lookup + Stage 3 proposal lookup)
+- **Option 2** (globally unique IDs at suggester generation time, e.g., `b_0001_a_0001`) — cleanest long-term, but invalidates ALL existing artifacts in one shot, changes suggester contract, slightly higher regression risk
+
+**REVISIT TRIGGER (when to reconsider Option 3):**
+- Onboarding a 2nd CR and discovering the natural-key assumption doesn't hold across CR styles (e.g., Reader prompts that flag overlapping spans on the same turn)
+- Moving to a production ID system where surrogate keys carry other metadata (audit trails, cross-system references)
+- apply.py Bug 2 fix forces a schema change anyway — at that point Option 2 might be cheaper to do alongside it
+- Anomaly volume scales 10x+ and (turn_idx, token_span) tuple lookup becomes a perf concern (unlikely but flagged)
+
+**REVISIT CADENCE:** Re-evaluate in ~3-4 weeks or when one of the triggers above fires, whichever comes first.
+
+**EDGE CASE GUARD (must be in build):** If two anomalies ever share `(turn_idx, token_span)` on the same turn, the dict comprehension would silently drop one. Build spec must add `len(anomaly_by_natural_key) != len(anomalies)` guard that raises explicitly.
+
+---
+
+### CHUNK D — Anomaly join key fix (RECON DONE, BUILD QUEUED)
+
+**Status:** Recon complete. Sonnet's report posted in chat. Three options analyzed. Option 3 chosen. Build spec coming next.
+
+**Will fix:** Bug 1 (anomaly confidence collisions) using natural key join.
+
+**Will also include:**
+- Inline code comment at the join site referencing this decision log
+- `logger.warning` in apply.py's `ApplyHardBlock` catch block (Bug 2 visibility, not full fix)
+- One test update (the `match="unknown anomaly_id"` assertion -> new error message for natural-key path)
+
+**Will NOT fix:** apply.py Bug 2 (multi-token skip + I-5 crash). That's a separate future chunk.
+
+---
+
+### OPEN DECISIONS / OPEN QUESTIONS
+
+| # | Item | Owner |
+|---|---|---|
+| OD-1 | mrx-context push authority — Sonnet currently pushes (handoffs/specs/audits); Scott pushes engine repo. Should mrx-context match strict rule or stay current practice? | Scott |
+| OD-2 | apply.py Bug 2 (Chunk E) scoping — when to fix: before more V2 miss cleanups, after, or in parallel? | Opus next session |
+| OD-3 | Diff methodology lockdown — what script becomes canonical? Section-aware diff vs unified_diff. | Opus next session |
+| OD-4 | V2 miss cleanup priority order — `with and T` (6 occurrences) vs `No no` vs `Warren seal` vs `25 years ago`. See decision tree (separate doc shipping this session). | Opus next session |
+| OD-5 | Comprehension Agent design (Options 3/4/5 from Opus 4.7 last night) — when to revisit. Decision parked until V3 prompt + names_lock work surfaces what's left. | Opus + Scott |
+
+---
+
+### REVISIT LIST (NOT BLOCKING)
+
+- **apply.py Bug 2 / Chunk E** — multi-token + proposal_id collision; corrected_turns.json silent no-op
+- **Diff methodology lockdown** — owed before next "diff count" acceptance criterion
+- **V2 misses remaining:** `with and T` (Reader catches batch 1 only, misses 6 later occurrences), `No no` -> `No -- no` (Writer truncation), `Warren seal` (Reader miss), `25 years ago` (Reader miss / Writer FLAG)
+- **NAMES_LOCK growth** — "Addresses / streets" category seeded with Lemonwood; future depos likely add more
+- **Tier 3 generalization** — promote Halprin literal templates to slot-driven; gate trigger TBD
+- **Comprehension Agent decision** — Option 3 (Whisper-only) vs Option 5 (Whisper + steno reconciled); revisit after V3
+- **Stage 0.5 Whisper integration** — needed for Comprehension Agent and audio verification
+- **Stage 4 / 3.5 audio architecture** — paragraph timestamps from .sgxml may suffice
+- **MB Style Rules workstream** — parked
+- **Onboarding intake schema** — case_info.json production version with format_profile slot
+
+---
+
+### SCOTT'S MOOD / SESSION ENERGY
+
+Friday evening session, post-distraction recovery. Solid focus through three shipped chunks. Made a sharp call to chunk the work so Opus designs while Scott does life and Sonnet builds. Caught the architect (me) not updating HANDOFF_LOG.md incrementally and corrected it on the spot — the end-of-chunk logging rule comes from that catch.
+
+Pushed back appropriately on hard gate moments. Good rhythm. Real wins shipped. Closed the day with explicit prep for tomorrow's "solid session" — handoff log catch-up + decision tree + Opus-to-Opus handoff before sign-off. That sequencing is correct and Opus owes Scott the deliverables.
+
+---
+
+— End of Friday 2026-05-01 session entry —
