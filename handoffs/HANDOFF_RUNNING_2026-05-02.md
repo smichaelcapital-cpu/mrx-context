@@ -502,6 +502,77 @@ Report: `io/analysis/halprin_mini/harness_report_20260502_v2.md`
 
 ---
 
+---
+
+### ~17:30 — Late-session findings (Scott, post first harness read)
+
+Two findings that must be reviewed by fresh Opus BEFORE Move A starts.
+
+#### Finding 1 — "permission" vs "permanent" is NOT a phonetic defect
+
+Defect inventory CAT-7 logged "permission" → "permanent address" on the
+A-line as an engine miss, implied phonetic. Late-session re-read says
+that's wrong. The two words are phonetically distant.
+
+The actual defect mechanism is SEMANTIC, not phonetic:
+- Q-line: real steno collision ("permit" → "permanent") — engine caught
+- A-line: witness said "permission" — a valid English word, no anomaly flag
+- MB knows from CONTEXT the witness was answering the same Q (about
+  permanent address). MB substitutes "permanent" because the meaning demands it.
+
+The current engine processes turn-by-turn with no cross-turn semantic memory.
+It cannot do this kind of fix by design. This is not a bug to patch. It is
+a class limitation.
+
+**Action for fresh Opus:** Before Move A starts, have Sonnet do a 15-min
+recon on the actual permission/permanent turns. Pull both turns from raw
++ final, look at the data. Confirm or refute the semantic-not-phonetic
+hypothesis. If confirmed, this defect class moves to comprehension agent scope.
+If refuted, add NAMES_LOCK or case_dict entry as a normal fix.
+
+#### Finding 2 — Comprehension agent value proposition is now CONCRETE
+
+Finding 1 clarifies what the comprehension agent (long-parked) actually does
+that the pattern engine cannot. Three capabilities:
+
+1. Reads multiple turns together (Q + A as connected exchange)
+2. Understands the SUBJECT of conversation (semantic memory)
+3. Chooses contextually-correct word when spoken word is ambiguous
+
+When paired with audio (Whisper as second source):
+- Steno output: "permission" / Audio: "permanent" / Semantics: address conversation
+- Three independent signals triangulate to high-confidence FIX
+
+Defect class mapping:
+
+| Defect class                               | Pattern engine | Comprehension |
+|--------------------------------------------|----------------|---------------|
+| Steno collision (permit→permanent)         | Catches        | Catches       |
+| Cross-turn semantic (permission→permanent) | Cannot catch   | Catches       |
+| Editorial em-dash (audio-dependent)        | Cannot catch   | Catches       |
+| Witness self-correction interpretation     | Cannot catch   | Catches       |
+
+**Sequencing locked tonight:** Do NOT build comprehension agent yet.
+- Pattern engine at 52.4%. Get to ~85% first.
+- After 6 depo calibrations we will have real frequency data on which defects
+  are "pattern engine improvable" vs "needs comprehension."
+- Comprehension agent gets built on top of: harness (built), pattern catalog
+  (built), restraint watch (built), 6 depos of frequency data, audio integration.
+  That is the real sequence.
+
+**Action for fresh Opus:** Review this finding. Sharpen or refute the
+sequencing. If you agree, leave it parked. If you disagree, surface reasoning
+to Scott BEFORE Move A starts — sequencing changes everything else.
+
+#### Why both findings matter together
+
+**The pattern engine has a ceiling.** Probably ~85% on text-only. The remaining
+15% is comprehension territory. That ceiling is not bad news — it tells us when
+to stop optimizing the pattern engine and start building the comprehension agent.
+The harness will tell us exactly when we hit it. This is the shape of the v2 roadmap.
+
+---
+
 *This file is updated periodically through the day. Sonnet appends
 new entries at Opus's direction. Last-updated timestamp goes at the
 top of each new section.*
