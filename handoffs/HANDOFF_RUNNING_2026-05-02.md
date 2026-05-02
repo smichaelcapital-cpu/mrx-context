@@ -236,6 +236,56 @@ silent-failure distorts the number.
 
 ---
 
+## ~13:00 — PIT STOP PLAN LOGGED
+
+After validate_ops V2.2 build commits and rerun completes (estimated
+~13:30-14:00), both Opus and Sonnet swap to fresh sessions for the
+afternoon stretch.
+
+Reason: today is a long grind day. Best to swap at a natural break
+point with a clean handoff than to grind into mistakes. Last night's
+ramp failures are the cautionary tale.
+
+### Swap timing
+
+| Player        | Swap point                                     |
+|---------------|------------------------------------------------|
+| Opus          | After rerun result is in hand, before harness  |
+|               | spec write                                     |
+| Sonnet        | Same window — fresh Sonnet for harness build   |
+
+Both swap at roughly the same break. Two new players in the game
+for the afternoon.
+
+### What outgoing Opus owes incoming Opus
+
+A pit-stop handoff covering:
+1. Where we are right now (validate_ops V2.2 shipped, rerun result,
+   what numbers moved)
+2. What's next (validation harness spec build)
+3. Today's running deliverable: harness output + EOD confidence
+   number on first 50 pages
+4. All decisions locked today (rule shapes, parking lot, mini-MB
+   concept, Scott's simpler tiering proposal)
+5. Scott's energy + framing — including the venting moment about
+   "three weeks for what MB does in three hours" — for tone calibration
+6. Pings/leaks lesson — never go silent on Scott, always status
+   when waiting
+
+### What outgoing Sonnet owes incoming Sonnet
+
+Standard fresh-Sonnet ramp: read CODER_MINDSET + ADDENDUM + this
+running handoff. State of repos. Next task: validation harness build
+(spec coming from incoming Opus).
+
+### Critical reminder for both incoming players
+
+Read CODER_MINDSET.md and CODER_MINDSET_ADDENDUM.md FIRST. Do not
+skip. Last night's failure mode was skipping these to "save time."
+Slow is smooth, smooth is fast.
+
+---
+
 *This file is updated periodically through the day. Sonnet appends
 new entries at Opus's direction. Last-updated timestamp goes at the
 top of each new section.*
