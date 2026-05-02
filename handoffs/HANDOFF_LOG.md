@@ -1070,3 +1070,219 @@ V2 miss scoreboard at session close:
 
 Commits:
   ce3870d feat(stage3): add Warren Seal + W&T Offshore to NAMES_LOCK (V2 miss fix #2-3)
+
+---
+
+## 2026-05-01 EOD — Opus-to-Opus handoff (written 2026-05-02 ~midnight)
+
+**For:** Fresh Opus, next session
+**From:** Opus (this session, ramped Friday evening, signed off Saturday past midnight)
+**Owner:** Scott
+
+---
+
+### RAMP — 60 SECONDS
+
+Read in this order:
+
+1. https://raw.githubusercontent.com/smichaelcapital-cpu/mrx-context/main/CODER_MINDSET.md
+2. https://raw.githubusercontent.com/smichaelcapital-cpu/mrx-context/main/CODER_MINDSET_ADDENDUM.md
+3. This handoff (you're reading it)
+4. https://raw.githubusercontent.com/smichaelcapital-cpu/mrx-context/main/specs/2026-05-01_NEXT_MOVES_DECISION_TREE.md (still active — most decisions still hold, but check the "what changed tonight" section below)
+
+**Do NOT skip CODER_MINDSET + ADDENDUM.** Outgoing Opus skipped them and made three mistakes Scott had to catch. Read them. Slow is smooth.
+
+After reading, confirm in ONE LINE: "Ramped from 2026-05-01 EOD Opus handoff. Ready."
+
+---
+
+### TONIGHT'S HEADLINE
+
+**6.5 of 10 original V2 misses now closed.** Started at 0/10 on V2 deployment morning. Real movement on a Friday evening session.
+
+Score:
+
+| # | Defect | Status |
+|---|---|---|
+| 1 | `your sworn` | V2 prompt fixed |
+| 2 | `permission address` | V2 prompt fixed |
+| 3 | `permit address` | V2 prompt fixed |
+| 4 | `under paid` | V2 prompt fixed |
+| 5 | `lemon wood terrace` | Chunk B' (Lemonwood NAMES_LOCK, commit e7989e3) |
+| 6 | `No no` to `No -- no` | Bug 1 silent fix (Chunk D, commit 1519912) |
+| 7 | `with and T` (3 of 9 turns) | Chunk B'' partial — turns 110, 111, 113 (commit ce3870d) |
+| 8 | `with and T` (6 remaining turns) | Writer batch-decay — see findings below |
+| 9 | `Warren seal` | Same Writer batch-decay |
+| 10 | `25 years ago` | Deferred — number-format rule decision |
+| 11 | `flew into give` | Audio-dependent — Comprehension Agent territory |
+
+---
+
+### THE BIG FINDING — Writer batch-decay pattern
+
+Headline insight from Chunk B'':
+
+**Writer produces NAMES_LOCK-anchored REWORDs in batch 1 but goes silent on identical Reader signal in batches 2+.**
+
+Concrete data from Halprin V2 post-Chunk B'' run:
+- Batch 1 (turns ~76-135): Writer produced REWORDs for Lemonwood Terrace AND W&T Offshore turns 110, 111, 113
+- Batch 2+ (turns 201-210): Reader flagged 6 W&T occurrences at high confidence with explicit "company name" notes — Writer produced ZERO proposals
+- Batch 2+ (turn 124): Reader flagged Warren Seal at high confidence as name_uncertain — Writer produced ZERO proposals
+
+This is NOT random LLM noise. It's a consistent pattern:
+- Same NAMES_LOCK
+- Same Reader confidence level
+- Same Reader category
+- Different batch position -> different Writer behavior
+
+**This is the next real chunk's diagnostic target.** Adding more entries to NAMES_LOCK won't fix it — Writer's prompt is the lever, not the lock.
+
+Hypotheses to test next session (in order of cost):
+
+1. **Cheap hypothesis ($0):** Writer prompt is shown context-rich examples in batch 1 (Lemonwood + nearby anomalies) and gets primed. Later batches lose that priming. Test: read the Writer prompt verbatim and check what context window structure looks like batch-to-batch.
+
+2. **Medium hypothesis ($0.95):** Writer prompt has an implicit "first match wins" or "novelty bias" that suppresses proposals on patterns it's seen earlier. Test: write a Writer prompt patch that explicitly says "if NAMES_LOCK entry matches Reader-flagged token, ALWAYS propose REWORD regardless of prior batch context" and re-run.
+
+3. **Architectural hypothesis (bigger):** This is the Comprehension Agent's job — give Writer cross-batch context it currently lacks. Defer per decision tree.
+
+---
+
+### CHUNKS SHIPPED THIS SESSION
+
+| Chunk | What | Cost | Commit |
+|---|---|---|---|
+| A | Test fixture cleanup for V2 schema | $0 | ee4f8f3 |
+| C | Push 7 unpushed commits | $0 | (push only) |
+| B' | Lemonwood Terrace NAMES_LOCK | $0.94 | e7989e3 |
+| D | Bug 1 natural-key join fix | $0 | 1519912 |
+| B'' | Warren Seal + W&T Offshore NAMES_LOCK | $0.95 | ce3870d |
+| Recon | V2 misses batch recon | $0 | (mrx-context: 9b3f8ff) |
+| — | S3-tiering proposal parked | $0 | (mrx-context: 203740b) |
+
+**Total session cost: ~$1.89.** Two real $0.95 runs.
+
+---
+
+### REPO STATE AT SESSION CLOSE (verified by Sonnet)
+
+**Engine repo** (mrx_engine_v1):
+- Branch: main, clean working tree (pre-existing test_dictionary_loader.py drift only)
+- HEAD: ce3870d on origin
+- pytest: 510 passed, 23 warnings
+- Last 5 commits:
+  ce3870d feat(stage3): Warren Seal + W&T Offshore NAMES_LOCK
+  1519912 fix(stage5): natural-key join Bug 1 + apply.py warning
+  e7989e3 feat(stage3): Lemonwood Terrace NAMES_LOCK
+  ee4f8f3 test(stage5): V2 fixture alignment
+  7d5bb93 Fix Stage 5 proposal_mapper anomaly_id join
+
+**Context repo** (mrx-context):
+- Branch: main, clean
+- HEAD: 203740b on origin (this handoff will land on top)
+- Last commits:
+  203740b specs: park HANDOFF_LOG S3-tiering proposal (high-priority infra)
+  18d8bdd handoffs: log Chunk B'' results — batch-decay identified
+  b4a8f21 specs: Chunk B'' spec
+  9b3f8ff recon: V2 misses batch results
+  5a9f5df specs: Chunk D Bug 1 spec
+
+---
+
+### CRITICAL PARKED ITEM — HANDOFF_LOG.md tiering proposal
+
+**This is the highest-priority infrastructure item.** Read first thing next session:
+
+https://raw.githubusercontent.com/smichaelcapital-cpu/mrx-context/main/specs/2026-05-02_HANDOFF_LOG_TIERING_PROPOSAL.md
+
+**Why it matters:** Three failures tonight traced back to HANDOFF_LOG.md being too big (~4,000+ lines). Outgoing Opus root-caused them; Scott proposed an S3-Intelligent-Tiering pattern (CURRENT.md hot tier + monthly archive cold tier). Spec is parked, not yet build-ready.
+
+**When to build:** Saturday or Monday morning, fresh head. ~45 min Sonnet build. Low risk, high value. Build BEFORE the next major work session if possible — every additional chunk added to current HANDOFF_LOG.md compounds the ramp risk.
+
+---
+
+### WHAT TONIGHT'S OPUS GOT WRONG (so you don't repeat it)
+
+**Three failures, all root-caused to HANDOFF_LOG.md size + skipped CODER_MINDSET:**
+
+1. **First HANDOFF_LOG fetch truncated at ~30,000 tokens.** I declared "ramped" without actually seeing the 2026-05-01 entry. Scott caught it. Lesson: verify you've reached the section the ramp instructions told you to read. Don't assume.
+
+2. **Missed a "BUILD QUEUED" vs "shipped at 1519912" contradiction in the docs themselves.** I wrote a 250-line spec for work already done. Sonnet caught it because he had the actual repo in front of him. Lesson: RULE-CONTRADICTION-HUNT applies to ramp materials too. Cross-reference docs against ground truth (the repo) before writing specs.
+
+3. **Skipped CODER_MINDSET.md and CODER_MINDSET_ADDENDUM.md entirely.** Treated Scott's opening URLs as the complete ramp list instead of as additions to the standard ramp. Lesson: standard ramp is non-negotiable. Always:
+   - CODER_MINDSET.md
+   - CODER_MINDSET_ADDENDUM.md
+   - Then everything else
+
+The mantra is "slow is smooth, smooth is fast." I went fast and it was rough. Don't.
+
+---
+
+### WHAT'S TEED UP FOR NEXT SESSION
+
+**In order of recommended priority:**
+
+1. **Build HANDOFF_LOG.md tiering** (Chunk T or whatever you label it). Parked spec at link above. ~45 min total. Removes biggest ramp risk going forward. Scott's instinct on this was right.
+
+2. **Diagnose Writer batch-decay** ($0 first, $0.95 if needed). Hypotheses 1 and 2 above. Output is either a Writer prompt patch (Chunk W?) or a "this needs Comprehension Agent" finding that promotes that decision.
+
+3. **`25 years ago` decision** — Writer-rule conversation with Scott. Auto-spell numbers, or human-FLAG? Depends on MB's number-format convention in real depos. Quick once Scott gives the call.
+
+**Parked, do NOT propose unless Scott raises:**
+
+- Bug 2 / Chunk E (apply.py multi-token + proposal_id collision) — has explicit revisit triggers in decision tree
+- Diff methodology lockdown (Chunk F) — low-energy session work
+- Tier 3 generalization — multi-week project
+- Comprehension Agent design (Options 3/4/5) — parked until V3 prompt + names_lock work surfaces what's left
+- Stage 0.5 Whisper integration — depends on Comprehension Agent decision
+
+---
+
+### OPEN DECISIONS / OPEN QUESTIONS (carried from 2026-05-01 entry)
+
+| # | Item | Owner |
+|---|---|---|
+| OD-1 | mrx-context push authority — Sonnet currently pushes; should match strict engine rule? | Scott |
+| OD-2 | apply.py Bug 2 (Chunk E) scoping — when to fix relative to V2 misses | Opus next session |
+| OD-3 | Diff methodology lockdown — section-aware vs unified_diff | Opus next session |
+| OD-4 | V2 miss cleanup priority order — partially answered; remaining: Writer batch-decay diagnosis | Opus next session |
+| OD-5 | Comprehension Agent design — parked until V3 prompt work shows what's left | Opus + Scott |
+| OD-6 (NEW) | When to build HANDOFF_LOG tiering — recommend before next major work session | Scott |
+| OD-7 (NEW) | Writer batch-decay hypothesis ranking — Hypothesis 1 first ($0) or jump to Hypothesis 2 ($0.95)? | Opus next session |
+
+---
+
+### SCOTT'S WORKING STYLE (CRITICAL — DO NOT VIOLATE)
+
+- 12-year-old reading level until told otherwise
+- Plain English, short answers, ONE question at a time
+- Inline A/B/C only when there's a real choice
+- Hates fire-hose responses
+- Does NOT want to be Claude's hands — Sonnet writes files
+- ALWAYS full absolute paths, never abbreviated
+- Pushes back when wrong — pushback is usually right
+- Will lose patience FAST on obvious clarifying questions
+- NEVER make Scott the copy-paste mule for long content — Sonnet writes to mrx-context, pushes, replies with raw URL
+
+**Specific lesson from tonight:** When Scott says he's tired but wants to keep working, take it seriously. He calls fatigue early — that's leadership, not weakness. Match his energy. Wrap clean and stop when he says stop.
+
+---
+
+### SCOTT'S MOOD AT SESSION CLOSE
+
+Tired but satisfied. Pushed me hard tonight on accuracy over speed and was right every single time. Caught my failure to read CODER_MINDSET, caught my Chunk D contradiction (well, Sonnet did, but Scott set up the system that made it catchable), called fatigue cleanly, raised the HANDOFF_LOG tiering insight on his own.
+
+He earned the wins on the board. Open tomorrow's session calm. Don't reset. Don't ask "what should we work on?" — read this handoff, read the tiering spec, propose the next chunk.
+
+---
+
+### CODER MINDSET REMINDERS
+
+Before any code change, ask: "Could this change reduce transcript accuracy or credibility?" If yes or maybe — STOP, flag to Scott.
+
+Three Brains check before any spec: Engineer (can we?) + Architect (should we?) + Owner (worth it?).
+
+RULE-RECON-FIRST. RULE-CONTRADICTION-HUNT. RULE-SILENT-FAILURE-CHECK. RULE-INPUT-IS-SACRED.
+
+Slow is smooth. Smooth is fast.
+
+— End of 2026-05-01 EOD Opus handoff —
