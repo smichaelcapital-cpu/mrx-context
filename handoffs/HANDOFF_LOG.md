@@ -1030,3 +1030,43 @@ Findings summary:
 Bug 1 fix did NOT change anomaly data on disk: confirmed. Timestamps 2026-05-01T13:53:26 on both files.
 
 Drives next spec: Warren Seal + W&T Offshore NAMES_LOCK additions (one or two chunks — Opus decides).
+
+
+### CHUNK B'' — Warren Seal + W&T Offshore NAMES_LOCK bundle (SHIPPED)
+
+Status: Complete. Pushed. 510 tests passing.
+
+What it did: Added "Warren Seal" (People) and "W&T Offshore" (Organizations) to
+NAMES_LOCK in _run_halprin_mini.py. Re-ran Stage 3.1 end-to-end + Stage 5 re-render.
+
+Stage 3.1 cost: $0.9538 (target ~$0.95 ✓)
+
+V2 miss results post-Chunk B'':
+  - W&T Offshore turns 110, 111, 113: MB_REVIEW-FIX:confident ✓ (3 of 9 flipped)
+  - W&T Offshore turns 201, 202, 204, 206, 208, 210: no proposal — Writer silent
+  - Warren Seal turn 124: no proposal — Writer silent
+  - Lemonwood turn 96: still MB_REVIEW-FIX:confident ✓ (no regression)
+
+FINDINGS — batch-decay pattern:
+  Writer produces NAMES_LOCK-anchored REWORDs in batch 1 (turns ~76-135) but goes
+  silent on identical Reader signal in batches 2+. Reader flagged all 9 W&T turns
+  and Warren Seal at high confidence across multiple batches. Batch 1 W&T turns got
+  proposals; every other batch got zero proposals for those anomalies despite the
+  same category (steno_artifact / name_uncertain) and confidence (high).
+  This is not a NAMES_LOCK gap — the anchor is present. It's a Writer behavior issue:
+  Writer in later batches doesn't act on name-correction anomalies the way batch 1
+  does. Diagnostic for the next Writer prompt iteration.
+
+V2 miss scoreboard at session close:
+  - Original 10 misses
+  - 4 fixed in V2 prompt (your, permission/permit, under paid, Lemonwood flag→REWORD)
+  - Bug 1 fix silent win: No no now MB_REVIEW-FIX:confident (was misattributed as miss)
+  - Chunk B' fix: Lemonwood Terrace REWORD + FIX confident
+  - Chunk B'' fix: W&T Offshore 3 of 9 turns flipped to FIX confident (turns 110, 111, 113);
+    6 W&T turns + Warren Seal turn 124 still missed — Writer batch-decay pattern, not a
+    NAMES_LOCK gap
+  - Remaining open: Warren Seal + W&T batch 2+ (Writer prompt needed), 25 years ago
+    (format-rule decision deferred), flew into give (audio-dependent, parked)
+
+Commits:
+  ce3870d feat(stage3): add Warren Seal + W&T Offshore to NAMES_LOCK (V2 miss fix #2-3)
