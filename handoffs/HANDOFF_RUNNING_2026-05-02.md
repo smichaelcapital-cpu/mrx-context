@@ -177,6 +177,34 @@ over-reach / style gap / scope decision).
 
 ---
 
+### ~17:30 — halprin_mini rerun complete against V2.2 engine (22f083b)
+
+**Cost:** $0.9494 (Reader $0.52, Writer $0.43)
+
+**run_metrics.json:**
+- anomalies: 145
+- proposals: 134 (↑ from 127 pre-V2.2)
+- decisions applied: 134 / rejected by gate: 0
+- validate_drops (NEW): 13
+
+**proposals breakdown:**
+- REWORD: 96 / FLAG: 38
+- by source: raw_steno=76, case_dict=19, phonetic_match=16,
+  house_style=13, kb=7, names_lock=3
+
+**names_lock proposals (3 total):**
+- turn=96: 'Lemonwood Terrace'
+- turn=124: 'I know one of them was Warren Seal' ← NEW (was silently dropped)
+- turn=214: 'Somerset Production Company'
+
+**rejections.jsonl — 13 drops (all now visible):**
+- word_budget_fail: 10
+- span_overlap_resolved: 2
+- validator_other: 1 (turn=189, span out of range — new failure type visible)
+
+**OUR_FINAL.txt status:** STALE — mtime 2026-05-01 (stage5 not re-run;
+proposals.json is fresh but stage5 application is a separate step)
+
 ### ~14:30 — validate_ops V2.2 fix bundle built + committed (Sonnet)
 
 Four fixes shipped in one commit:
