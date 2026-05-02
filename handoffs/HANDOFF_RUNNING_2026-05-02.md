@@ -177,6 +177,40 @@ over-reach / style gap / scope decision).
 
 ---
 
+### ~13:00 — Defect inventory complete (Sonnet)
+
+Spec saved: `specs/2026-05-02_DEFECT_INVENTORY_HALPRIN_FIRST_50.md`
+
+**Method:** Targeted pattern search (difflib alignment unreliable — corrections
+shift line wrapping, making line-by-line comparison misleading).
+
+**Engine activity:** 114 annotation touches — 63 FIX, 10 VERIFY, 41 FLAG.
+
+**Key findings by defect category:**
+
+| Category | MB | Engine | Coverage |
+|---|---|---|---|
+| W&T acronym | 9 | 3 correct | 33% (6 missed by word-budget) |
+| Em-dash | 49 | 10 correct | 20% (39 missed, mix of fixable + MB judgment) |
+| Warren Seal cap | 1 | 0 | 0% (overlapping spans blocked) |
+| Crescent case | 4 | 2 correct | 50% (2 wrong case, Rule 8 issue) |
+| SVP title case | 3 | 0 | 0% (scope decision — no rule yet) |
+| Sentence spacing | 158 | 0 | OUT OF SCOPE (style gap, formatting pass) |
+| flew in to give | 1 | 1 | 100% WIN |
+| No -- no | 1 | 1 | 100% WIN |
+| underpaid | 1 | 1 | 100% WIN |
+| 25-years FLAG | 1 | 1 (FLAG) | 100% correct behavior |
+
+**Overall: ~30% gross coverage pre-fix. Projected ~50–60% after validate_ops
+fix bundle (word-budget + check_coverage + Writer Rule 8 prompt clarification).**
+
+**Zero-embarrassment verdict:** Safe to demo with framing — engine catches
+high-confidence phonetic/steno errors in batch 1. Diagnosis of batch 2+ miss
+is complete and fix is queued. Don't claim a % without noting validate_ops
+silent-failure distorts the number.
+
+---
+
 *This file is updated periodically through the day. Sonnet appends
 new entries at Opus's direction. Last-updated timestamp goes at the
 top of each new section.*
