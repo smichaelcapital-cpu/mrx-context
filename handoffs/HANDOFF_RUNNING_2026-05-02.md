@@ -461,6 +461,47 @@ He earned the rest. Open tomorrow's session calm and direct.
 
 ---
 
+---
+
+### ~16:45 — Validation harness built + first report produced (Sonnet)
+
+**Harness shipped:** `harness/` module — 4 INDUSTRIAL modules + YAML catalog + 31 tests.
+Test count: 527 → 558 passing.
+
+**First harness run (v1, case-sensitive):** 10/20 (50.0%) — RED
+**Second harness run (v2, IGNORECASE fix):** 11/21 (52.4%) — RED
+
+IGNORECASE support added to pattern engine (`flags:` field in catalog entries).
+EM_DASH_REPEAT_WORD updated with `flags: IGNORECASE` — now finds 1 MB match
+(was 0 due to "No -- no" mixed-case miss).
+
+**Per-pattern table (v2 run, pages 13-50):**
+
+| Pattern | MB count | Engine correct | Engine wrong | Bucket |
+|---|---|---|---|---|
+| WT_ACRONYM | 9 | 4 | 5 | WIN(4)/MISS(5) |
+| WT_OFFSHORE | 2 | 4 | 0 | OVER-REACH |
+| WARREN_SEAL_CAP | 1 | 1 | 0 | WIN |
+| CRESCENT_CAP | 4 | 1 | 0 | WIN(1)/MISS(3) |
+| EM_DASH_REPEAT_WORD | 1 | 3 | 0 | OVER-REACH |
+| PERMANENT_ADDRESS | 2 | 0 | 0 | MISS |
+| FLEW_IN_TO_GIVE | 1 | 1 | 0 | WIN |
+| UNDERPAID | 1 | 1 | 0 | WIN |
+| SVP_TITLE_CAP | 3 | — | — | STYLE_GAP (N) |
+| EM_DASH_INTERRUPTION | 40 | — | — | SCOPE_DECISION (N) |
+| DOUBLE_SPACE_AFTER_PERIOD | 649 | — | — | STYLE_GAP (N) |
+
+Report: `io/analysis/halprin_mini/harness_report_20260502_v2.md`
+
+**PARKING LOT ADDITION — for Opus next session:**
+
+10. **WT_OFFSHORE contextual short-form rule** — engine over-expands
+    'W&T Offshore' to full form 4 times when MB used short form 'W&T'
+    in 2 of those. NAMES_LOCK needs both forms with rule for when
+    to use which. Spec candidate.
+
+---
+
 *This file is updated periodically through the day. Sonnet appends
 new entries at Opus's direction. Last-updated timestamp goes at the
 top of each new section.*
