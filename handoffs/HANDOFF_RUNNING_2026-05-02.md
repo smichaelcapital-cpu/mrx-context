@@ -314,6 +314,153 @@ Slow is smooth, smooth is fast.
 
 ---
 
+### ~17:38 — Stage 5 rerun complete (Sonnet)
+
+OUR_FINAL.txt regenerated against V2.2 proposals (commit 22f083b).
+
+**OUR_FINAL.txt:** mtime 2026-05-02 13:38:37 EDT, **89,131 bytes**
+(stale pre-rerun was 88,874 bytes — overwritten, not recoverable;
++257 bytes net from fresh proposals)
+
+**stage5.summary.json totals:**
+- Turns rendered: 551
+- Pages rendered: 59
+- Lines rendered: 1,169
+- REWORD applied: 96 / FLAG applied: 38 / Proposals rejected: 0
+- review_tags: MB_REVIEW-FIX=78, MB_REVIEW-FLAG=38, MB_REVIEW-VERIFY=14
+- Duration: 0.036s / Warnings: 44 (all QA_Q_CONTINUATION pass-throughs)
+
+**Warren Seal spot check (turn 124, line 816):**
+OUTPUT: `one of them was Warren seal.` — **seal still lowercase. Fix did NOT apply.**
+
+Root cause identified: validate_ops correctly dropped p_0014 (span [8,10],
+logged as span_overlap_resolved in rejections.jsonl), but p_0014 still
+appears in proposals.json — suggester builds ProposalBatch from original
+ops, not filtered_ops. Stage 5 sees two proposals with overlapping token
+spans ([8,15] and [8,10]) both marked "apply" and skips both.
+
+**Bug logged:** suggester.py must exclude dropped_ops (from
+coverage_result.dropped_ops) when building ProposalBatch. Currently
+validate_drops only logs the drop — it doesn't prevent the dropped
+proposal from reaching Stage 5.
+
+**Diff vs V1 baseline (halprin_mini.OUR_FINAL.V1.2026-04-30.txt, 72,680 bytes):**
+4,396 diff lines (large because V1 was pre-pagination overhaul; not
+apples-to-apples).
+
+---
+
+### ~14:12 — Fresh Stage 3.1 + Stage 5 rerun on patched suggester (83d5199)
+
+**Why fresh run:** proposals.json corrupted in manual re-filter attempt
+(Sonnet filtered on global anomaly_id instead of (anomaly_id, turn_idx) pairs —
+anomaly_ids are batch-scoped, so 134 → 51 with 83 valid proposals removed).
+Re-run authorized by Scott.
+
+**Stage 3.1 cost:** $0.9411 (Reader $0.5160, Writer $0.4251)
+
+**proposals.json:** 132 proposals total — REWORD: 86 / FLAG: 46
+(vs V2.2 run: 134 proposals. -2 delta — LLM variance, acceptable.)
+
+**rejections.jsonl:** 12 validate_drops total
+- word_budget_fail: 10
+- span_overlap_resolved: 2
+(vs V2.2 run: 13 drops. -1 delta — LLM variance on one ambiguous turn.)
+
+**OUR_FINAL.txt:** mtime 2026-05-02 14:12 EDT, **89,398 bytes**
+
+**Stage 5:** 551 turns / 60 pages / 1,177 lines. REWORD=86, FLAG=46, rejected=0.
+
+**Warren Seal spot-check — FIXED. Turn 124, line 818:**
+```
+{{MB_REVIEW-FIX: confident — 'Warren seal' corrected to 'Warren Seal'
+(in NAMES_LOCK); 'I no one' corrected to 'I know one' (p...)}}I know one
+of them was Warren Seal{{/}}
+```
+"Warren Seal" now capitalized. Fix confirmed end-to-end.
+
+**Today's engine work: COMPLETE.** Fresh team takes over from here.
+
+---
+
+### PARKING LOT ADDITION (2026-05-02 ~14:00) — Checkpointing / cheap-iteration architecture
+
+**Checkpointing / cheap-iteration architecture (NEW, Scott raised 2026-05-02 ~14:00):**
+
+Today's mid-day rerun cost ~$0.95 to recover from a corruption that didn't
+actually require LLM re-execution. The Stage 3.1 output was conceptually
+intact; only the post-validation filter needed re-running.
+
+Principle: Stage 3.1 outputs should be treated as immutable artifacts
+(write once, content-hashed, refuse overwrite without confirmation).
+Validation logic changes should be re-applicable to existing proposals.json
+without re-calling the LLM.
+
+At 50-page test scale: $0.95 / 10 min — annoying but tolerable.
+At 300-page production scale: $5-10 / 2-3 hours wall time per rerun —
+unacceptable iteration speed.
+
+Revisit: this week. Cheap to add (output hashing + write-once protection).
+Massive payoff at scale.
+
+---
+
+## ~14:15 — DAY CLOSE — engine work complete, fresh team taking over
+
+### What shipped today
+
+| Artifact | Commit / location |
+|---|---|
+| validate_ops V2.2 fix bundle | engine 22f083b |
+| Hotfix: drop overlap-resolved proposals from output | engine 83d5199 |
+| Fresh Stage 3.1 + Stage 5 rerun | $0.94, 14:12 EDT |
+| OUR_FINAL.txt | 89,398 bytes, ce3870d→83d5199 lineage, Warren Seal capitalized |
+| MB tight-collapse recon | mrx-context specs/2026-05-02_MB_TIGHT_COLLAPSE_RECON.md |
+| Defect inventory (first 50 pages) | mrx-context specs/2026-05-02_DEFECT_INVENTORY_HALPRIN_FIRST_50.md |
+| Running handoff (this file) | mrx-context handoffs/HANDOFF_RUNNING_2026-05-02.md |
+
+### Confirmed wins on first 50 pages
+
+- Warren Seal — capitalized + tagged FIX-confident
+- "I no one" → "I know one" — bonus fix, same proposal
+- Silent-failure visibility — rejections.jsonl now logs every drop with reason
+- Test count: 510 → 527 passing
+- Engine touches 114 turns in first 50 pages; pre-fix coverage ~30%, post-fix projected 50-60%
+
+### What did NOT ship today
+
+- Validation harness (the EOD confidence number deliverable). Spec drafted but not finalized — fresh Opus picks up tomorrow.
+- W&T 6 remaining turns — NAMES_LOCK exemption needs substring matching, not exact match. Real spec gap. Parking lot.
+- Number-format rule (`25 years ago`) — undecided, parked.
+- Em-dash + sentence-spacing patterns — partial / out of engine scope, parked.
+
+### Parking lot adds today
+
+1. Mini-MB / per-CR style profile architecture — case-specific NAMES_LOCK + per-CR reusable rule profile. Each rule extracted from MB's FINAL becomes one stone in her wall. AD gets her own.
+2. Anthropic Claude sandbox / shared-filesystem multi-agent pattern — investigate post-V3.
+3. Scott's simpler tiering proposal — last 2 sessions in CURRENT.md (small enough for one fetch), older rolls to monthly archive. Manual moves, no auto-roll. Build before Tuesday.
+4. "Brandl FINAL" labeling error — file in oracle/finals/brandl/ is actually MB's raw CAT export. Rename or relabel.
+5. No reusable audit script exists — V2 3-way diff was hand-built. Validation harness fills this gap (next session).
+6. No full-depo runner — only halprin_mini wired. Build candidate after harness ships.
+7. Checkpointing / cheap-iteration architecture — Stage 3.1 outputs should be immutable, content-hashed. Validation logic changes should be re-applicable to existing proposals.json without re-calling LLM. At 50-page scale: $0.95 / 10 min annoying. At 300-page scale: $5-10 / 2-3 hours unacceptable.
+8. Whisper / audio integration — text-only ceiling now measurable. Whisper ROI estimate for first 50 pages: 2 of 5 defect classes (NAMES_LOCK auto-population). Less leverage than expected.
+9. NAMES_LOCK substring matching — current exact-match rule misses Writer phrasing like "for W&T Offshore". Real spec gap from today.
+
+### Process lessons today
+
+- **Silent waits are a leak.** Always ping Scott when work is complete or when waiting on something. Never go quiet.
+- **Don't take shortcuts to skip cheap re-runs.** Mid-day Sonnet manually filtered proposals.json to avoid $0.95, corrupted the file, ended up paying $0.95 anyway plus extra time. The shortcut WAS the cost.
+- **Spec precision matters more at 50% energy.** Two spec misses today (NAMES_LOCK exact-match, manual filter option) — both caught, both small, both signals to swap when energy drops. Pit-stop earlier next time.
+- **Reverse-engineer rules from MB's FINALs before asking MB.** New Opus rule: when tempted to ask MB "what's your convention?", ask "what rule do I want, can I reverse-engineer it from her work?" first.
+
+### Mood at close
+
+Scott was honestly disappointed mid-afternoon — three weeks of engineering for what MB does in three hours. Real, valid feeling. He vented, regrouped, and stayed the course. Real wins on the board: Warren Seal lands clean, MB rule confirmed (zero exceptions across two depos), validate_ops silent failures now visible. Today proved the per-CR profile concept is real, not theoretical.
+
+He earned the rest. Open tomorrow's session calm and direct.
+
+---
+
 *This file is updated periodically through the day. Sonnet appends
 new entries at Opus's direction. Last-updated timestamp goes at the
 top of each new section.*
