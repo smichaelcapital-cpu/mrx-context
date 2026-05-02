@@ -177,6 +177,31 @@ over-reach / style gap / scope decision).
 
 ---
 
+### ~14:30 — validate_ops V2.2 fix bundle built + committed (Sonnet)
+
+Four fixes shipped in one commit:
+
+1. **check_word_budget NAMES_LOCK exemption** — REWORD to a NAMES_LOCK entry (exact
+   match, case-sensitive) bypasses the 0.80 word-budget check. Fixes W&T batch-2
+   miss: 6/6 W&T collapses should now pass on next run.
+
+2. **check_coverage overlap resolution** — overlapping spans now RESOLVED (keep
+   longer, drop shorter, tiebreak on lower start_index) instead of hard-failing
+   the whole turn. Fixes Warren Seal (turn 124 had a_0013 [8,15] vs a_0014 [8,10]).
+
+3. **rejections.jsonl logging** — every validate_ops drop now writes a structured
+   record (anomaly_id, turn_idx, reason_code, reason_detail, dropped_op) to
+   rejections.jsonl. Never flying blind again.
+   JSON parse failures also logged (reason_code: writer_json_parse_fail).
+
+4. **Writer Rule 8 rewritten** — "Going silent is FORBIDDEN. MUST produce a FLAG
+   op. Silence is never the answer." Fixes Crescent capitalization miss.
+
+2 existing tests updated (semantic behavior change, not bugs).
+16 new tests (T1-T16). 510 → 526 passing.
+
+Wait for Scott "go re-run" before spending $0.95.
+
 ### ~13:00 — Defect inventory complete (Sonnet)
 
 Spec saved: `specs/2026-05-02_DEFECT_INVENTORY_HALPRIN_FIRST_50.md`
