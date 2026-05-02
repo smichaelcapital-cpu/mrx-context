@@ -1015,3 +1015,18 @@ Pushed back appropriately on hard gate moments. Good rhythm. Real wins shipped. 
 ---
 
 — End of Friday 2026-05-01 session entry —
+
+
+### RECON — V2 misses batch (DONE)
+
+Status: Recon complete. Report at specs/results/2026-05-02_RECON_V2_MISSES_RESULTS.md
+
+Findings summary:
+- with and T (6 later): Reader flagged ALL 9 turns at high confidence. Writer missed turns 201-210 (no proposals). Fix: add "W&T Offshore" to NAMES_LOCK.
+- Warren seal: Reader flagged (name_uncertain, high). Writer produced no proposal. Not in NAMES_LOCK. Fix: add "Warren Seal" to NAMES_LOCK.
+- 25 years ago: Reader flagged (format_artifact, medium). Writer produced FLAG (correct for medium conf). Shows as MB_REVIEW-FLAG — deferred to human. Judgment call for Opus.
+- No no: Writer proposed correct fix ('No no,' → 'No -- no,'), outcome=apply, shows as MB_REVIEW-FIX:confident. Already fixed post-Bug 1. No action needed.
+
+Bug 1 fix did NOT change anomaly data on disk: confirmed. Timestamps 2026-05-01T13:53:26 on both files.
+
+Drives next spec: Warren Seal + W&T Offshore NAMES_LOCK additions (one or two chunks — Opus decides).
