@@ -621,3 +621,60 @@ Then: build aligner (3-way diff script) + differ for systematic analysis at 305-
 *This file is updated periodically through the day. Sonnet appends
 new entries at Opus's direction. Last-updated timestamp goes at the
 top of each new section.*
+
+---
+
+### D-COMPOSER-SILENT-TRUNCATE — Bug Log (2026-05-03)
+
+**Discovered by:** Sonnet, Sunday morning recon
+**Severity:** HIGH — full-depo Stage 5 renders are silently truncated to mini range
+
+#### What happened
+
+The full Halprin Stage 5 run (last night) produced `halprin_mini.OUR_FINAL.txt` at 89,916 bytes /
+59 pages / 551 turns. The corrected_turns.json fed to it has 3,547 turns (idx 76–3,635).
+The other 2,996 turns were silently dropped.
+
+Root cause: `document_composer.py` has hardcoded turn ranges (tagged `HARDCODE-HALPRIN-V01`):
+
+```python
+_QA_START = 91
+_QA_END   = 621    # ← mini endpoint; full depo last Q&A is turn 3620
+_CLOSE_START = 622
+_CLOSE_END   = 636  # ← mini close; full depo closing colloquy is 3621–3635
+_BYLINE_IDXS = frozenset({503, 549})  # ← 2 of 40 bylines in full depo
+```
+
+`_render_turns_in_range` and `_build_qa_body` silently skip turns outside these ranges —
+no warning, no error. Stage 5 "completes" with a valid but 59-page document.
+
+Also: `assemble_final.py` line 35: `_DEPOSITION_STEM = "halprin_mini"` (separate HARDCODE-HALPRIN-V01).
+
+#### Correct values for full Halprin (from corrected_turns.json recon 2026-05-03)
+
+| Constant | Mini (current) | Full (correct) |
+|---|---|---|
+| `_QA_START` | 91 | 91 (unchanged) |
+| `_QA_END` | 621 | 3620 |
+| `_CLOSE_START` | 622 | 3621 |
+| `_CLOSE_END` | 636 | 3635 |
+| `_BYLINE_IDXS` | {503, 549} | {503, 549, 737, 845, 860, 917, 976, 1018, 1022, 1235, 1306, 1432, 1461, 1478, 1483, 1486, 1493, 1502, 1649, 1899, 2016, 2107, 2229, 2246, 2264, 2333, 2344, 2441, 2507, 2656, 2704, 2943, 2950, 2983, 3038, 3068, 3294, 3391, 3556, 3563} |
+| `_DEPOSITION_STEM` | "halprin_mini" | "halprin_full" |
+
+Style counts in full depo: s1=1445, s2=232, s3=1416, s5=413, s7=41
+
+**Note:** The running handoff entry above ("Content is correct 305-page full run") is WRONG.
+The content rendered is the mini section only. The proposals.json has all 981 proposals
+across turns 96–3,635 — the full-depo AI work is correct and complete. Only the rendering
+(document_composer.py range constants) is wrong.
+
+#### Fix required
+
+RULE-SPEC-BEFORE-BUILD applies. Multi-file change touching INDUSTRIAL code:
+- `src/stage5/document_composer.py` — update 4 range constants + `_BYLINE_IDXS`
+- `src/stage5/assemble_final.py` — update `_DEPOSITION_STEM` OR make it a parameter
+
+v0.2 path (comment in source): derive ranges from `paragraph_style` markers at runtime
+instead of hardcoding. Eliminates the bug class permanently for all future depositions.
+
+**Do NOT touch composer.py until Opus specs the fix.**
