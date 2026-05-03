@@ -1,10 +1,53 @@
 # Frequency Report — 742 Diff Block Classification
 ## Halprin Full Deposition
 
-**Generated:** 2026-05-03 12:28 EDT  
-**Engine commit:** 1c601fd  
-**Total blocks counted:** 742  
+**Generated:** 2026-05-03 12:28 EDT
+**Engine commit:** 1c601fd
+**Total blocks counted:** 742
 **Note:** Each block classified by dominant pattern. Some blocks contain multiple patterns.
+
+---
+
+## Noise Sources Identified
+*Added: 2026-05-03 afternoon session (Sunday Sonnet probe)*
+
+The `doubled_word` category count (101 blocks pre-fix, 104 post-fix) is substantially
+inflated by two diff-tool artifact patterns. Neither represents an engine bug.
+
+### Artifact 1 — Cross-turn paragraph-join
+**Mechanism:** The words-only diff joins continuation lines into paragraphs. When turn N ends
+with word X and turn N+1 starts with word X, the joined paragraph reads "X X". The
+`has_consecutive_duplicate` classifier fires correctly on the joined text, but the double
+exists only in the measurement, not in the engine output.
+
+**Example (block #723):** MB has `talking about about business matters` — sentence boundary
+fused "we've been talking about" + "about business matters". OUR correctly has "about" once.
+
+### Artifact 2 — `{{MB_REVIEW-FIX}}` tag boundary leak
+**Mechanism:** OUR_FINAL.txt contains inline review tags of the form
+`{{MB_REVIEW-FIX: ...}}replacement text{{/}}`. `strip_markers()` in `_generate_report_b.py`
+keeps the replacement content and removes the wrapper. When a line break in the formatted
+output falls between the context text and the opening `{{` tag, the last word of the context
+line and the first word of the replacement content can be identical — creating a phantom
+double after the join.
+
+**Example (block #62):** Line 12 ends `handle the payroll and handle`. Line 13 is
+`{{MB_REVIEW-FIX:...}}handle a lot{{/}}`. After stripping and joining: `handle handle a lot`.
+The double is not present in `corrected_turns.json` (turn idx=399 reads
+`handle the payroll and handle the a lot`).
+
+**Example (block #240):** Tag replacement ends `Phase two actually`. Next line starts
+`actually those assets were purchased`. After join: `actually actually`.
+
+### Impact on doubled_word count
+- `dedupe_consecutive_duplicates()` correctly fixed **35 real within-turn engine doubles**.
+- The remaining ~67 blocks in the 104-block post-fix count are a mix of these two artifact
+  types plus a smaller number of misclassified `word_drop` blocks (MB has real speech
+  repetitions that OUR dropped).
+- **The engine fix is sound.** The validator needs a separate fix in `_generate_report_b.py`
+  to prevent tag-boundary leaks from inflating the doubled_word count.
+
+---
 
 ## Frequency Table
 
