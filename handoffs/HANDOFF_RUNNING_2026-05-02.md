@@ -573,6 +573,51 @@ The harness will tell us exactly when we hit it. This is the shape of the v2 roa
 
 ---
 
+---
+
+### ~21:10 EDT — Move A shipped + full Halprin 305-page run complete (Sonnet)
+
+#### Move A — what shipped
+
+| Commit | What |
+|---|---|
+| `be5ecad` | validate_ops: 3-tier NAMES_LOCK substring exemption + "W&T" added to NAMES_LOCK |
+| `8b1ca21` | suggester.py: W&T form rule in Writer prompt (offshore signal → full/short form) |
+
+579 tests passing. Both commits on engine `main`.
+
+Recon artifacts in mrx-context/specs/:
+- `2026-05-02_MOVE_A_NAMES_RECON.md` — 5 W&T word_budget_fail drops identified, fix designed
+- `2026-05-02_MOVE_A_WT_OFFSHORE_RECON.md` — over-reach root cause, form rule designed
+
+PRE-MOVE-A GATE finding: turns 97/98 ("permission"→"permanent") fixed by engine via
+`phonetic_match`, not semantic memory. Defect inventory CAT-7 was stale. Gate cleared.
+
+#### Full Halprin 305-page baseline run
+
+**Engine:** `8b1ca21` | **Cost:** $6.5971 of $8.00 ceiling | **Runtime:** ~79 min
+
+| Metric | Value |
+|---|---|
+| Proposals | 981 applied / 0 rejected |
+| Anomalies | 1,031 |
+| Validate drops | 50 |
+| Turns rendered | 551 |
+| Pages rendered | 59 |
+| REWORD applied | 545 / FLAG applied: 436 |
+
+Stage 5 output files named "halprin_mini.*" (cosmetic — case_info fixture issue).
+Content is correct 305-page full run. Fix next session: create halprin_full case_info.
+
+Full artifact list: `io/analysis/halprin_full/RUN_SUMMARY_2026-05-02_evening.md`
+
+#### Tomorrow pivot: aligner + differ
+
+Harness v4 run against full depo output to confirm Move A numbers.
+Then: build aligner (3-way diff script) + differ for systematic analysis at 305-page scale.
+
+---
+
 *This file is updated periodically through the day. Sonnet appends
 new entries at Opus's direction. Last-updated timestamp goes at the
 top of each new section.*
