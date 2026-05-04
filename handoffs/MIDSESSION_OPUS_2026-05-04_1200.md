@@ -13,7 +13,7 @@ Status: Mid-session handoff. Today is a Monday build day. Scott is
 2. https://raw.githubusercontent.com/smichaelcapital-cpu/mrx-context/main/CODER_MINDSET_ADDENDUM.md
 3. https://raw.githubusercontent.com/smichaelcapital-cpu/mrx-context/main/RULE_SHEET_v1.md
 4. https://raw.githubusercontent.com/smichaelcapital-cpu/mrx-context/main/backlog/THREE_SEALED_PHASES.md
-5. https://raw.githubusercontent.com/smichaelcapital-cpu/mrx-context/main/reports/2026-05-04/halprin_full_scoreboard_v2.md
+5. https://raw.githubusercontent.com/smichaelcapital-cpu/mrx-context/main/reports/2026-05-04/v2_scoreboard.md
 6. https://raw.githubusercontent.com/smichaelcapital-cpu/mrx-context/main/reports/2026-05-04/defect_inventory_v1.md  <- READ THIS, TODAY'S STRATEGIC ANCHOR
 7. https://raw.githubusercontent.com/smichaelcapital-cpu/mrx-context/main/reports/2026-05-04/bible_vs_bucket_b_recon.md
 8. https://raw.githubusercontent.com/smichaelcapital-cpu/mrx-context/main/handoffs/HANDOFF_OPUS_2026-05-04_MONDAY.md (the morning ramp — for context on what landed)
