@@ -125,4 +125,70 @@ source of truth for all block counts in this session.
 
 ---
 
+## Appendix A — Key File Paths
+
+A fresh Sonnet will need these without hunting.
+
+**Analysis data (read-only, reusable):**
+```
+C:\Users\scott\OneDrive\Documents\mrx_engine_v1\mrx_engine_v1\io\analysis\brandl_50pp\_diff_out_fingerprint\block_classification.json
+C:\Users\scott\OneDrive\Documents\mrx_engine_v1\mrx_engine_v1\io\analysis\brandl_50pp\_stage3_m1_out\corrected_turns.json
+C:\Users\scott\OneDrive\Documents\mrx_engine_v1\mrx_engine_v1\io\analysis\brandl_50pp\_stage5_fingerprint_out\
+```
+
+**Stage 5 source files (where the fix goes):**
+```
+C:\Users\scott\OneDrive\Documents\mrx_engine_v1\mrx_engine_v1\src\stage5\document_composer.py   ← _split_intra_turn_sentences() goes here
+C:\Users\scott\OneDrive\Documents\mrx_engine_v1\mrx_engine_v1\src\stage5\assemble_final.py      ← orchestration, already accepts fingerprint=None
+C:\Users\scott\OneDrive\Documents\mrx_engine_v1\mrx_engine_v1\src\stage5\page_layout.py         ← adds Q./A. prefixes per LogicalLine
+C:\Users\scott\OneDrive\Documents\mrx_engine_v1\mrx_engine_v1\src\stage5\turn_renderer.py       ← renders turn text verbatim, no sentence awareness
+```
+
+**Fingerprint loader:**
+```
+C:\Users\scott\OneDrive\Documents\mrx_engine_v1\mrx_engine_v1\src\mrx_engine_v1\fingerprint\loader.py
+```
+
+**Run scripts created this session (on disk, not in engine repo):**
+```
+C:\Users\scott\OneDrive\Documents\mrx_engine_v1\mrx_engine_v1\io\analysis\brandl_50pp\_run_brandl_stage5_fingerprint.py
+C:\Users\scott\OneDrive\Documents\mrx_engine_v1\mrx_engine_v1\io\analysis\brandl_50pp\_run_brandl_diff_fingerprint.py
+```
+
+---
+
+## Appendix B — Two Corrections to This Handoff
+
+### B1 — Mechanical close total is ~49, not ~42
+
+The body of this handoff says ~42 blocks. The correct number is **~49** when you include the
+fingerprint-closeable cap_proper sub-patterns (~7 blocks: proper noun capitalization ~30 → ~5
+net new closeable this sprint, term format "E-mail"→"Email" ~2–3 high-confidence). Scott's
+version of this handoff correctly states ~49. The ~42 is the document_composer.py fix alone;
+~49 includes YAML fingerprint additions running in parallel.
+
+### B2 — Garbled-filter regex bug (affects all recon block counts)
+
+The garbled-block filter used in every recon script this session is:
+
+```python
+re.search(r'REVIEW|REPORTER CHECK', raw, re.IGNORECASE)
+```
+
+This regex **fails** when the diff tokenizer splits `REPORTER CHECK` across separate diff marker
+tokens — e.g., `**-*REPORTER-** **-CHECK-**` — because the literal string "REPORTER CHECK"
+never appears contiguously. The result: garbled blocks slip through into other condition
+buckets (confirmed: 7 garbled blocks appeared in the sequential_and bucket for this reason).
+
+**Fix before next recon:**
+```python
+re.search(r'REVIEW|REPORTER|REPORTER.?CHECK|\[\[', raw, re.IGNORECASE)
+```
+
+This affects the accuracy of all condition counts in today's reports. The counts are correct
+directionally but are slightly understated for garbled_contamination and slightly overstated
+for all other conditions. Magnitude: small (~5–10 blocks across all five reports).
+
+---
+
 *End of handoff.*
