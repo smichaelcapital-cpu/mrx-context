@@ -21,3 +21,20 @@ $0 under correct architecture. Plus risk of new truncation bugs if anomaly densi
 grows.
 
 **Status:** PATCHED, NOT SOLVED.
+
+---
+
+## TD-002 — Stale E2E Test Expectation: test_E2E3_wt_has_misses (2026-05-09)
+
+**Symptom:** `tests/test_e2e_halprin_mini.py::test_E2E3_wt_has_misses` fails with:
+`AssertionError: Expected W&T miss >= 4, got miss=0`
+
+**What happened:** Test was written when the engine was missing ≥4 W&T hits.
+Engine has since improved — now correctly finds all 9 W&T hits (0 misses).
+Test expectation was never updated to match.
+
+**Real fix:** Update the assertion to reflect current engine behavior (miss == 0,
+win == 9). Quick fix — low effort. Verify no other e2e assertions depend on
+the miss count before editing.
+
+**Status:** LOGGED, NOT FIXED.
