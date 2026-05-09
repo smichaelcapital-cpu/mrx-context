@@ -1,1 +1,70 @@
-# CR-agnostic fingerprint template. Defines all fields any CR fingerprint must populate.
+# CR-agnostic fingerprint template.
+# Defines all fields any CR fingerprint must populate.
+# Each section has TWO subsections: observed (facts) and inferred (rules).
+
+# -----------------------------------------------------------------------
+# LAYER 1 — IDENTITY
+# Operational metadata about the reporter. Not just demographics —
+# context that affects how their rough transcripts behave.
+# -----------------------------------------------------------------------
+identity:
+  observed:
+    reporter_id:           # e.g., "mb_louisiana_001"
+    jurisdiction:          # e.g., "LA"
+    cat_software:          # e.g., "CaseCATalyst"
+    realtime_writer:       # bool
+    years_experience:      # int
+    uses_scopist:          # bool
+    uses_proofreader:      # bool
+  inferred:
+    style_guides:          # list, e.g., ["NCRA", "Louisiana custom"]
+
+# -----------------------------------------------------------------------
+# LAYER 2 — TRANSLATION ARTIFACTS
+# Deterministic machine defects. Steno output, software quirks.
+# These are facts — corrections that are mechanically right.
+# -----------------------------------------------------------------------
+translation_artifacts:
+  observed:
+    literal_leaks: []      # list of {pattern, raw_count, final_form}
+    malformed_briefs: []   # list of {raw, final, occurrences}
+    audio_placeholders: [] # list of {token, meaning, never_autocorrect}
+    colloquy_repairs: []   # list of {raw, final}
+    filler_artifacts: []   # list of {raw, final}
+  inferred:
+    correction_strategies: []  # list of typed strategies
+
+# -----------------------------------------------------------------------
+# LAYER 3 — STRUCTURAL FORMATTING
+# Q/A behavior, paragraphing, punctuation, capitalization habits.
+# -----------------------------------------------------------------------
+structural_formatting:
+  observed:
+    em_dash_count_in_raw:   # int. For MB this is 0.
+    em_dash_count_in_final: # int. For MB this is 0.
+    qa_continuation_q_freq: # float
+    qa_continuation_a_freq: # float
+  inferred:
+    forbidden_tokens: []   # list. For MB v0: ["--"]
+    # ^^^ THIS IS THE ONLY v0 ENFORCED FIELD ^^^
+
+# -----------------------------------------------------------------------
+# LAYER 4 — LEXICAL PREFERENCES (DEFINED, NOT ENFORCED IN v0)
+# -----------------------------------------------------------------------
+lexical_preferences:
+  observed: {}
+  inferred: {}
+
+# -----------------------------------------------------------------------
+# LAYER 5 — RISK & REVIEW (DEFINED, NOT ENFORCED IN v0)
+# -----------------------------------------------------------------------
+risk_and_review:
+  observed: {}
+  inferred: {}
+
+# -----------------------------------------------------------------------
+# LAYER 6 — DRIFT (DEFINED, NOT ENFORCED IN v0)
+# -----------------------------------------------------------------------
+drift:
+  observed: {}
+  inferred: {}

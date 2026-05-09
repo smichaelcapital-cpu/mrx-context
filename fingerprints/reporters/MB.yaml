@@ -1,200 +1,51 @@
 # reporters/MB.yaml
-# Court reporter fingerprint — personal layer
+# Court reporter fingerprint — personal layer (v0, observed/inferred structure)
 # Reporter: Mary Beth Muir
-# Version: v0
-# Last updated: 2026-05-09
+# Version: v0 (spec 2026-05-09)
 # Status: skeleton with verified data — incomplete, expanding as evidence accumulates
 
 identity:
-  reporter_id: MB
-  reporter_name: Mary Beth Muir
-  certifications:
-    - CCR
-    - RPR
-
-  software:
-    name: Case CATalyst
-    version: "22.13"
-    build: "45255"
-    vendor: Stenograph LLC
-
-  jurisdictions_observed:
-    primary:
-      - louisiana
-    secondary:
-      - delaware
-
-  contact_status:
-    available_until: 2026-05-13
-    notes: "Offline. M1 unverified against MB until she returns."
-
-corpus:
-  finalized_depos:
-    - id: brandl
-      jurisdiction: louisiana
-      raw_turns: 3603
-      finalized: true
-    - id: halprin
-      jurisdiction: louisiana
-      raw_turns: 3547
-      finalized: true
-    - id: easley
-      jurisdiction: louisiana
-      raw_turns: 2156
-      finalized: true
-
-  rough_only_depos:
-    - id: jp_042726
-      jurisdiction: delaware
-      raw_turns: # FILL after Stage 1 run
-      pages: 212
-      folios: 424
-      sgxml_save_history: 3
-      finalized: false
+  observed:
+    reporter_id: mb_louisiana_001
+    jurisdiction: LA
+    cat_software: CaseCATalyst
+    realtime_writer: true   # tentative — confirm with Scott
+    years_experience: null  # unknown
+    uses_scopist: false     # tentative
+    uses_proofreader: true  # tentative
+  inferred:
+    style_guides:
+      - NCRA
+      - Louisiana custom
 
 translation_artifacts:
-  # Per-turn pattern counts from cross-depo scan 2026-05-08.
-  # Source: io/analysis/_cross_depo_scan/cross_depo_pattern_table.md
-  # Counts are PER TURN (one hit per turn, not total occurrences).
-  # Classification (mb_specific vs jurisdictional) is PROVISIONAL — pending LA state guidelines.
-
-  q_label_s2:
-    description: "Q-label style — Q.- and A.- formatting in raw"
-    counts_by_depo:
-      brandl: 339
-      halprin: 232
-      easley: 200
-    classification: mb_specific_OR_louisiana
-    confidence: high
-    ad_control_counts:
-      wade: 0
-      fourman: 0
-      leon: 1
-    notes: "Strong signal in MB; near-zero in AD. Cannot isolate person vs jurisdiction without LA guidelines."
-
-  doubled_pure:
-    description: "Pure doubled words (e.g., 'the the')"
-    counts_by_depo:
-      brandl: 78
-      halprin: 54
-      easley: 51
-    classification: universal
-    confidence: high
-    ad_control_counts:
-      wade: 0
-      fourman: 7
-      leon: 2
-
-  uhhuh:
-    description: "'Uh-huh' / 'mm-hm' style verbal tics"
-    counts_by_depo:
-      brandl: 8
-      halprin: 26
-      easley: 1
-    classification: mb_specific_OR_louisiana
-    confidence: medium
-    ad_control_counts:
-      wade: 0
-      fourman: 0
-      leon: 0
-
-  objection_style:
-    description: "Objection formatting convention"
-    counts_by_depo:
-      brandl: 34
-      halprin: 18
-      easley: 19
-    classification: mb_specific_OR_louisiana
-    confidence: high
-    ad_control_counts:
-      wade: 0
-      fourman: 0
-      leon: 0
-
-  hyphen_fraction:
-    description: "Fraction hyphenation (e.g., 'two-thirds')"
-    counts_by_depo:
-      brandl: 5
-      halprin: 6
-      easley: 1
-    classification: mb_specific_OR_louisiana
-    confidence: medium
-    ad_control_counts:
-      wade: 0
-      fourman: 0
-      leon: 0
-
-  compound_solid:
-    description: "Compound-word solidification (e.g., 'paywall' vs 'pay wall')"
-    counts_by_depo:
-      brandl: 6
-      halprin: 20
-      easley: 4
-    classification: mb_specific_OR_louisiana
-    confidence: medium
-    ad_control_counts:
-      wade: 0
-      fourman: 0
-      leon: 0
-
-  number_style_raw:
-    description: "Number formatting in raw output"
-    counts_by_depo:
-      brandl: 59
-      halprin: 23
-      easley: 17
-    classification: mb_specific_OR_louisiana
-    confidence: high
-    ad_control_counts:
-      wade: 0
-      fourman: 1
-      leon: 0
-
-  speaker_in_body:
-    description: "Speaker label appearing in body text"
-    counts_by_depo:
-      brandl: 210
-      halprin: 295
-      easley: 264
-    classification: universal
-    confidence: high
-    ad_control_counts:
-      wade: 8
-      fourman: 12
-      leon: 7
-
-negative_fingerprint:
-  # Things MB DOES NOT do. Hard constraints at Stage 3 — hallucination suppressors.
-  # Higher leverage than positive entries: lets engine REJECT model output, not just match against patterns.
-
-  verified_absences:
-    em_dash_double_hyphen:
-      rule: "Never inject `--` (double hyphen as em-dash)"
-      evidence: "Zero occurrences across all 6 depos scanned (3 MB + 3 AD)"
-      confidence: very_high
-      application: "Stage 3 writer constrained to not output `--`. Post-process strip if generated."
-      related_to: TD-001
-
-  stylistic_prohibitions:
-    pending_evidence: true
-    notes: "Will populate from raw-vs-final diff analysis. Look for words/punctuation MB strips during scoping."
-
-  jurisdictional_prohibitions:
-    pending_state_guidelines: true
-
-  risk_tier_protections:
-    rule: "Engine NEVER alters content within protected zones, regardless of model confidence"
-    application: "Hard veto at Stage 3 and Stage 5"
-
-protected_zones:
-  # Untouchable content. Pending spec from fingerprint architecture review.
-  pending_spec: true
-  notes: "Anticipated categories — proper nouns, dates/timestamps, exhibit references, Bates numbers, sworn figures."
+  observed:
+    literal_leaks: []
+    malformed_briefs: []
+    audio_placeholders: []
+    colloquy_repairs: []
+    filler_artifacts: []
+  inferred:
+    correction_strategies: []
 
 structural_formatting:
-  pending_evidence: true
-  notes: "Page/line numbering, margins, header/footer conventions. Defer until structural diff data exists."
+  observed:
+    em_dash_count_in_raw: 0
+    em_dash_count_in_final: 0
+    sample_size_depos: 6
+    confidence: 0.97
+  inferred:
+    forbidden_tokens:
+      - "--"
+
+lexical_preferences:
+  observed: {}
+  inferred: {}
+
+risk_and_review:
+  observed: {}
+  inferred: {}
 
 drift:
-  pending_evidence: true
-  notes: "Style change over time. Requires multi-year corpus."
+  observed: {}
+  inferred: {}
