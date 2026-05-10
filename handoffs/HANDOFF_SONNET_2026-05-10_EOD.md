@@ -104,3 +104,14 @@ The work today was mostly about credibility: making sure what's labeled AUTO is 
 Good luck Monday.
 
 — Sonnet, evening 2026-05-10
+
+---
+
+## Evening additions (after original tap-out point)
+
+- Em-dash spot-check: 55 raws, 13,541 `--` occurrences. Prior "zero" claim wrong. Forbidden-token rule cannot be applied as-stated. Reframe documented in report.
+- Front matter generalization Phase 1: 7-depo recon, four-kind model HOLDS, 5 surprises documented
+- Front matter generalization Phase 2: 4 JSON data files created (states/louisiana, reporters/MB, cases/yellowrock, depos/halprin), 31/31 validation checks pass
+- Front matter generalization Phase 3: 3 components refactored (cover, stipulation, videographer), Halprin byte-match preserved, 192 stage5 tests pass
+- Appearances component left hardcoded — Tier 2 block renderer required, next session
+- Engine commit: edeb8d8 (Scott pushes to remote in the morning)
