@@ -18,6 +18,9 @@
 | 10 | jurisdiction_OR_personal classification | flag as mb_specific_OR_louisiana | flag as <reporter_id>_specific_OR_<jurisdiction> | Honest gap marker — forces resolution when guidelines arrive | 2026-05-09 | architecture call |
 | 11 | Pending-evidence slots | pending_evidence: true | pending_evidence: true (universal pattern) | Better than fake content. All deferred slots use this marker. | 2026-05-09 | architecture call |
 | 12 | Push discipline (one-time override) | Sonnet pushed today's docs commits per Scott | Standing rule resumes after one-shot override | Capture in comm rules later, not here | 2026-05-09 | session decision |
+| 13 | Front-matter renderer architecture | src/profiles/mb/data/<block>.json per depo | src/profiles/<reporter_id>/data/<block>.json; renderer code stays universal | 5 blocks — cover, index, appearances, stipulation, reporter cert. Renderer is data-driven. Next CR onboards by adding profile folder only. | 2026-05-11 | front_matter_dump + APPEARANCES spec + amendment 01 |
+| 14 | Stipulation read/sign vs waive | per-depo boolean in stipulation.json | stipulation block has a witness_reserves_signature: true/false field | Observed both variants across 6 MB depos. Halprin/Williams/Olsen reserve. Blanks/Butler waive. Not MB style — case-by-case. | 2026-05-11 | front_matter_dump + APPEARANCES spec + amendment 01 |
+| 15 | also_present separator field | omitted (default ", ") or explicit "," for no-space case | appearances JSON entry has optional separator field; renderer emits verbatim | From APPEARANCES_RENDERER_AMENDMENT_01. RULE-INPUT-IS-SACRED. Williams Soileau entry has no space after comma. | 2026-05-11 | front_matter_dump + APPEARANCES spec + amendment 01 |
 
 ## Generalization questions queued for resolution
 
