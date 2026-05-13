@@ -208,3 +208,38 @@ Tired but clear. Ran a long session. Maintained discipline through 3 near-misses
 Closing quote: "Good plumbing right there." The plumbing held.
 
 — End of Opus 2026-05-13 EOD handoff —
+
+---
+
+## ADDENDUM — INTAKE CLARITY (captured ~10 PM, before Scott slept)
+
+Scott pushed back hard on the framing that "MB has to fill out the intake form." That's wrong. We have 198 depos. The intake gets reverse-engineered from existing data, not surveyed from MB.
+
+**Key insight:** The intake form is NOT a 6-week research project. The 6 Halprin front matter JSON files already ARE the filled-out intake — they're just in JSON format instead of a form MB can read.
+
+Files at: C:\Users\scott\OneDrive\Documents\mrx_engine_v1\mrx_engine_v1\src\profiles\mb\data\front_matter\halprin\
+- cover.json
+- index.json
+- appearances.json
+- stipulation.json
+- reporter_cert.json
+- witness_cert.json
+
+**The actual deliverable is small:**
+1. Convert those 6 JSON files into ONE Word doc with field labels + Halprin's actual values
+2. That Word doc with values filled in = the SAMPLE for MB
+3. Same Word doc with empty fields = the BLANK TEMPLATE going forward
+4. Validate against other depos in the library to confirm fields are universal vs optional
+
+Half a day of Sonnet work. Not a research project.
+
+**The 198 depos question:** Inventory shows 4 MB depos with usable data + 5 AD raws + 7 oracle FINALs (16 total). Scott mentioned 198 — confirm with him in the morning whether there's a larger library elsewhere. The design path does NOT depend on having all 198 accessible. Halprin alone is sufficient for version 1.
+
+**On the job dictionary (.sgglb / .sgdct):** Scott showed the Brandl job dict opened in Cat4 — it's a labeled training set. Every row is steno strokes → raw output → MB's correction (e.g., "petropysicists" → "petro physicist", "James Kimball" → "James Kimbrell"). The job dict is per-depo NAMES_LOCK + per-depo case_dict + per-depo phonetic corrections, already structured. Per the 4/28 recon, the dictionary loader exists in code but was passed {} (empty dict) at every Halprin run. Wiring it in is a known gap that immediately gives the engine every case-specific term MB defined. **Worth discussing with Scott during the audio review tomorrow — this may change Stage A's primary training source.**
+
+**Tomorrow's intake task for Sonnet (parallel with audio design review):**
+- Build the Halprin intake Word doc from the 6 JSON files
+- Validate fields against other depos in mrx_depo_library
+- Output: one Word file at C:\Users\scott\OneDrive\Documents\mrx-context\intake\halprin_intake_sample.docx + blank version
+
+— End of addendum —
