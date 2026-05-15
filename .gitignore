@@ -1,1 +1,11 @@
 fingerprints/stage_a/mb_evidence_raw.json
+
+# Stage A cache contains raw and FINAL transcript content from MB depos.
+# Halprin and Brandl FINAL files never push to public repo (rule 16).
+fingerprints/stage_a/cache/
+
+# Stage A fingerprint output contains raw and derived Halprin/Brandl content.
+# Rule 16: FINAL transcript content never pushes to public repo.
+# Also exceeds GitHub 100MB file size limit.
+fingerprints/stage_a/v0.2/
+fingerprints/stage_a/mb_frequency_summary.json
