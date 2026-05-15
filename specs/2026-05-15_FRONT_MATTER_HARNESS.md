@@ -4,6 +4,7 @@
 **Author:** Opus (architect)
 **Builder:** Sonnet #2 (Lane B)
 **Branch:** feature/front-matter-runner (cut from main)
+**Amendment:** 2026-05-15 — case_info dropped; build_front_matter(stem) takes no case_info arg.
 
 ---
 
@@ -48,7 +49,7 @@ The harness uses the **front_matter folder name** as the canonical depo identifi
 | Black BP | `0525black_bp` |
 | Blanks | `101322blanks` |
 
-Rationale: it's the only identifier consistent across all 6 depos. `cover.json` has no `depo_stem` field. Only Halprin has a case_info fixture, and that fixture uses `halprin_full` (legacy naming to distinguish from the test-environment `halprin_mini` slice). The harness does not use case_info fixture naming.
+Rationale: it's the only identifier consistent across all 6 depos. `cover.json` has no `depo_stem` field. The harness does not load or use any case_info fixture.
 
 ---
 
@@ -61,36 +62,31 @@ python io/analysis/run_front_matter.py --depo <stem>
 
 1. Validate `--depo` arg. Reject if folder `src/profiles/mb/data/front_matter/<stem>/` does not exist.
 
-2. Locate the depo's front matter data folder: `src/profiles/mb/data/front_matter/<stem>/`. Confirm it contains at minimum: `cover.json`, `index.json`, `appearances.json`, `stipulation.json`. Reporter cert and witness cert are optional (per known data variance).
+2. Confirm the data folder contains at minimum: `cover.json`, `index.json`, `appearances.json`, `stipulation.json`. Reporter cert and witness cert are optional (per known data variance).
 
-3. Construct or load `case_info`:
-   - If `tests/stage5/fixtures/case_info_<stem>.json` exists, load it.
-   - Else, generate a minimal in-memory `case_info` dict using only the fields `build_front_matter()` actually requires (see Recon Requirement below for which fields these are).
-   - Use `cover.json` content as the primary source for generated fields.
+3. Call `build_front_matter(stem)` from `src/stage5/front_matter/orchestrator.py`. No case_info argument — the orchestrator loads all data internally from the depo's JSON files.
 
-4. Call `build_front_matter(case_info, stem)` from `src/stage5/front_matter/orchestrator.py`.
-
-5. Conditionally call `build_back_matter(case_info, stem)`:
+4. Conditionally call `build_back_matter(stem)`:
    - Read `stipulation.json` for the depo.
    - If `witness_reserves_signature` is `true`:
      - Check if `src/profiles/mb/data/front_matter/<stem>/witness_cert.json` exists.
-     - If yes: call `build_back_matter()`.
+     - If yes: call `build_back_matter(stem)`.
      - If no: emit warning to stderr ("WARN: <stem> claims read_and_sign but has no witness_cert.json — skipping back matter"), do NOT call `build_back_matter()`, continue.
    - If `witness_reserves_signature` is `false`: do not call `build_back_matter()`.
 
-6. Concatenate front matter and back matter (if produced). Use `\x0c` (form feed) as page separator — match Halprin's existing output convention.
+5. Concatenate front matter and back matter (if produced). Each page already ends in `\x0c` — harness does not insert additional separators.
 
-7. Create output dir if missing: `io/analysis/<stem>/_front_matter_out/`. Write output to: `io/analysis/<stem>/_front_matter_out/<stem>.front_matter.txt`.
+6. Create output dir if missing: `io/analysis/<stem>/_front_matter_out/`. Write output to: `io/analysis/<stem>/_front_matter_out/<stem>.front_matter.txt`.
 
-8. Print to stdout: input stem, output path, page count (count of `\x0c` plus 1), whether back matter was rendered, warnings if any. One block, clean format.
+7. Print to stdout: input stem, output path, page count (count of `\x0c`), whether back matter was rendered, warnings if any. One block, clean format.
 
-9. Exit code 0 on success, non-zero on validation failure or render exception.
+8. Exit code 0 on success, non-zero on validation failure or render exception.
 
 ---
 
 ## Olsen Data Gap — Handling
 
-Per Sonnet #2's recon: `032025olsen/stipulation.json` has `witness_reserves_signature: true` but the folder has no `witness_cert.json`. The harness skip-with-warning behavior in step 5 handles this without blocking. Olsen front matter renders. Olsen back matter is skipped with a warning.
+Per Sonnet #2's recon: `032025olsen/stipulation.json` has `witness_reserves_signature: true` but the folder has no `witness_cert.json`. The harness skip-with-warning behavior in step 4 handles this without blocking. Olsen front matter renders. Olsen back matter is skipped with a warning.
 
 The data gap itself (decide whether Olsen's stipulation value is wrong or whether her witness_cert.json was never extracted) is filed as a separate tile: **B1.7.2** — queued for tomorrow. Out of scope for this harness.
 
@@ -98,16 +94,16 @@ The data gap itself (decide whether Olsen's stipulation value is wrong or whethe
 
 ## Recon Requirement (RULE-RECON-FIRST)
 
-Before writing the harness, Sonnet #2 must report:
+Completed before build. Findings:
 
-1. `git branch --show-current`
-2. The exact signature of `build_front_matter()` and `build_back_matter()` in `src/stage5/front_matter/orchestrator.py` — argument names, types, return values.
-3. Every field in `case_info` that those functions actually read (grep the orchestrator + the renderers it calls). One list per function.
-4. Which of those required fields are present in each depo's `cover.json` (one table, 6 rows).
-5. For fields NOT in `cover.json`, the proposed source: hardcoded default, derived from `--depo` arg, derived from another JSON file in the depo folder, or flagged as a blocker.
-6. Confirm the form-feed convention used by `build_front_matter()` and `build_back_matter()` — does each page already end in `\x0c`, or does the harness need to insert separators?
+1. **Branch:** mrx-context `main`; engine `feature/front-matter-runner` cut from main.
 
-WAIT for Scott approval on the case_info generation plan before building.
+2. **Function signatures:**
+   - `build_front_matter(depo_stem: str) -> str` — loads all data internally, returns concatenated pages.
+   - `build_back_matter(depo_stem: str) -> str` — loads reporter_cert.json, stipulation.json, index.json, and conditionally witness_cert.json; returns concatenated pages.
+   - Neither function takes a case_info argument.
+
+6. **Form-feed convention:** Both functions return strings with each page already `\x0c`-terminated. Harness concatenates directly — no separator insertion needed.
 
 ---
 
@@ -182,17 +178,16 @@ WAIT for Scott approval on the case_info generation plan before building.
 
 ## Open Items Requiring Scott Sign-Off
 
-- None at spec time. case_info generation plan needs Scott approval after recon, before build (per Recon Requirement step).
+None. case_info generation plan dropped — not applicable.
 
 ---
 
 ## Prime Directive Check
 
 Could this reduce transcript accuracy or credibility?
-- Risk 1: Harness generates a bad case_info for non-Halprin depos, producing wrong cover or header data. MITIGATION: Recon Requirement forces explicit field-by-field plan reviewed by Scott BEFORE build. Verification gate against Halprin in Phase 1 catches harness-level errors.
-- Risk 2: Olsen back matter silently dropped without warning. MITIGATION: Explicit stderr warning required in step 5. Output stdout block also reports "back matter rendered: yes/no/skipped".
-- Risk 3: Harness output bytes diverge from existing Halprin pipeline output due to cover/stipulation renderer differences. MITIGATION: Phase 1 captures the diff explicitly. Scott decides whether to accept new baseline or hold until full orchestrator wire-in (A12 / B1.8) resolves the divergence. Either way the harness is not silently shipping a divergent render.
+- Risk 1: Olsen back matter silently dropped without warning. MITIGATION: Explicit stderr warning required in step 4. Output stdout block also reports "back matter rendered: yes/no/skipped".
+- Risk 2: Harness output bytes diverge from existing Halprin pipeline output due to cover/stipulation renderer differences. MITIGATION: Phase 1 captures the diff explicitly. Scott decides whether to accept new baseline or hold until full orchestrator wire-in (A12 / B1.8) resolves the divergence. Either way the harness is not silently shipping a divergent render.
 
-All risks have explicit mitigations. Recon Requirement is the primary safety gate.
+All risks have explicit mitigations. Phase 1 Halprin verification is the primary safety gate.
 
 — End of spec —
