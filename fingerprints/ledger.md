@@ -24,6 +24,7 @@
 | 16 | Appearances overflow rule | Halprin: defendant blocks keep-together across page break | KEEP-TOGETHER unit = full `FOR THE...` block; if won't fit, push whole block to next page and re-emit `A P P E A R A N C E S:` header | Discovered 2026-05-13 morning by Scott eyeball. Renderer was breaking mid-block, orphaning addresses with no firm name. Credibility issue. | 2026-05-13 | scott eyeball pass + opus spec |
 | 17 | Reported by: vertical anchor | Halprin: `Reported by:` block ends at line 21 on final appearances page (block spans lines 19-21) | Reporter block is bottom-anchored on final appearances page. Pad blank lines ABOVE the block, not below. | Currently MB-specific to Halprin shape. Re-derive on Williams/Olsen to confirm or generalize. | 2026-05-13 | scott eyeball pass + opus spec |
 | 18 | ALSO PRESENT: vertical position | Halprin: lands at line 13 on final appearances page | Falls out from Issue 16 fix. When defendant blocks page-break correctly, ALSO PRESENT: lands at the right line automatically. | If still off after Issue 16 fix, treat as separate tweak. | 2026-05-13 | scott eyeball pass + opus spec |
+| 19 | Appearances page renderer wiring | hardcoded template (appearances_page.py) drives live pipeline | appearances_renderer.py (data-driven) replaces hardcoded template when CR #2 onboards | DEBT: Thursday's KEEP-TOGETHER + "Reported by:" line-19 fixes live in appearances_renderer.py but are NOT in the live path. The hardcoded template byte-matches MB's oracle so output is correct for MB. WIRE-IN REQUIRED when CR #2 lands — track as Tile A12-prereq. | 2026-05-15 | Sonnet #1 recon + Scott + Opus call |
 
 ## Generalization questions queued for resolution
 
@@ -31,3 +32,4 @@
 2. **Universal layer extraction** — patterns currently classified `universal` (doubled_pure, speaker_in_body) should migrate from MB.yaml to jurisdictions/_universal.yaml when that file is built
 3. **Stylistic prohibitions extraction** — raw-vs-final diff analysis to populate negative_fingerprint.stylistic_prohibitions
 4. **Multi-CR validation** — em_dash absence is verified across MB + AD only. Confirm across additional CRs before promoting to universal-layer rule.
+5. Appearances renderer wiring — appearances_renderer.py needs to replace appearances_page.py hardcoded template before CR #2 onboards. Thursday's front-matter fixes (KEEP-TOGETHER, Reported by: line 19) are staged in the renderer and ready to go live the moment the swap happens.

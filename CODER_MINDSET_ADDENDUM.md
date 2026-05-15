@@ -223,6 +223,76 @@ If you are Claude Chat (Opus), your job is to write specs and interpret builder 
 
 ---
 
+## RULE-SPEC-SAVED-FIRST
+### Save the Spec Before Any Builder Work Starts
+
+**The rule:** Every spec gets saved to the repo BEFORE any builder
+work begins. Location: C:\Users\scott\OneDrive\Documents\mrx-context\specs\
+Naming: YYYY-MM-DD_<TILE>_<DESCRIPTION>.md
+
+No code change runs against a spec that does not exist as a file in
+the repo. If the spec is only in chat, it is not a spec — it is a
+suggestion.
+
+**Why this exists:** 2026-05-15 morning, both Lane A and Lane B
+specs (A1 differ v0.2, B1 audio sync recon) were written in chat
+only. Scott caught it before either Sonnet started building. Specs
+in chat alone die with the session. Specs in the repo survive
+session changes, agent changes, and crashes.
+
+**The test:** Before any builder writes a line of code, both the
+builder and the architect should be able to paste the path to the
+spec file. Not the spec text — the path.
+
+**Companion to RULE-SPEC-BEFORE-BUILD.** That rule said "write a
+spec." This rule says "and save it where the next agent can find it."
+
+**When this applies:** Every spec. Every time. No exceptions.
+
+---
+
+## RULE-TEST-CASE-FIRST
+### Design the Test Before Running the Model
+
+**The rule:** Before running any model (Whisper, Opus, Sonnet, MFA,
+Deepgram, anything) against real data for evaluation, build a
+designed test case FIRST. A test case has:
+
+1. A known input
+2. A known correct answer
+3. A measurement method that yields a binary or numeric result
+
+You do NOT run a model on real data and then read the output looking
+for errors. That is fishing, not testing. Fishing burns hours and
+yields anecdotes.
+
+**The pattern:**
+- Pull known-hard cases from existing defect inventories
+- Document each as (input, expected output, location)
+- Run the model
+- Score against the test case
+- Report binary or numeric result
+
+**Why this exists:** 2026-05-15 morning, Scott caught the architect
+about to spec a Whisper run on Halprin that would have required
+3 hours of human listening to evaluate. Halprin already has a known
+defect inventory from 5 weeks of work. Testing Whisper against those
+known defects is a 30-minute job. Listening to the full file is a
+3-hour job that yields anecdotes, not signal.
+
+**The test:** Before any model evaluation work begins, you should
+be able to point to a Test Case Sheet with rows of (input,
+expected, location). If you can't, you're fishing.
+
+**Companion rule:** Test cases get saved to the repo, same as specs.
+Location: C:\Users\scott\OneDrive\Documents\mrx-context\test_cases\
+Naming: YYYY-MM-DD_<MODEL>_<DESCRIPTION>.md
+
+**When this applies:** Every model evaluation. Every accuracy
+measurement. Every "let's see how it does" instinct. No exceptions.
+
+---
+
 ## Quick Reference: Rule Invocation Cheat Sheet
 
 | Rule ID | One-line summary |
@@ -236,6 +306,8 @@ If you are Claude Chat (Opus), your job is to write specs and interpret builder 
 | `RULE-PROOF-OF-WORK` | Every automatic change gets logged |
 | `RULE-MB-IS-THE-CUSTOMER` | Filter through the court reporter lens |
 | `RULE-SPEC-BEFORE-BUILD` | No multi-file changes without a written spec |
+| `RULE-SPEC-SAVED-FIRST` | Save spec to mrx-context/specs/ before any builder work |
+| `RULE-TEST-CASE-FIRST` | Design test cases before running any model |
 | `RULE-ARCHITECT-PM-BUILDER-SEPARATION` | Know your role this session |
 
 ---
