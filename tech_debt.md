@@ -38,3 +38,38 @@ win == 9). Quick fix — low effort. Verify no other e2e assertions depend on
 the miss count before editing.
 
 **Status:** LOGGED, NOT FIXED.
+
+---
+## 2026-05-16 — appearances reporter anchor: pending-row coupling is a structural gap
+
+**Status:** Surgical fix landing in B1.7.6. Real design fix deferred.
+**Severity:** Medium — affects any depo with an inline_label also_present (single-item tail) before the reporter block.
+
+**Context:**
+B1.7.6 needed two changes to land Olsen's reporter at oracle line 18:
+1. Make `reporter_anchor_line` a per-depo field (the original spec)
+2. Clear `pending=True` before the anchor padding loop in `_paginate_blocks` so the reporter starts a fresh main row instead of filling an open sub-row
+
+The 2nd fix surfaced because Olsen's `also_present.kind = "inline_label"` emits a single item, leaving `pending=True`. Halprin's `also_present.kind = "header_block"` emits two items, leaving `pending=False` — which is why anchor=19 always worked for Halprin and the bug stayed hidden.
+
+**The real problem:**
+The anchor target is computed in slot space (`(anchor-1)*2`), but the renderer's pending-row state can offset where `emit_item` actually lands by one half-slot. The fix in B1.7.6 force-closes pending before anchoring. This works for now, but the underlying design conflates two things:
+- Where the reporter block *should* anchor (a layout intent)
+- Where the renderer's current row state *happens to be* when anchoring (a render-loop side effect)
+
+**Future risk — without final files to byte-match:**
+When we onboard depos for which we don't have an MB-authored FINAL, we won't have ground truth to detect anchor-off-by-one issues. The current design needs the operator to spot the drift. That's fragile.
+
+**Better long-term design (candidates):**
+- (a) Make `reporter_anchor_line` semantic: "start reporter on line N main, regardless of current pending state." Implementation handles padding + row-state both.
+- (b) Replace anchor-by-line with anchor-by-event: "reporter follows N empty slots after the last also_present row." Decouples from absolute line numbers.
+- (c) Capture the also_present.kind → pending behavior as a typed contract; reporter anchoring knows the contract instead of hand-clearing pending.
+
+**Trigger to revisit:**
+- Any new depo where also_present is a different kind we haven't seen
+- Any new customer with different appearances tail patterns
+- Or when we onboard our first depo without an MB FINAL — we'll need anchor logic robust enough to trust without ground-truth comparison
+- Or when we have demo headroom and want to clean before scaling
+
+**Connection to fish-or-cut-bait question:**
+Scott raised this directly — when no final exists, how do we know we got it right? This ticket is exactly that scenario in miniature. The current answer is "operator-spotted diff against oracle." That doesn't scale.
