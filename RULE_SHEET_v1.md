@@ -76,3 +76,36 @@ git clone https://github.com/smichaelcapital-cpu/mrx_engine_v1.git mrx_engine_v1
 git clone https://github.com/smichaelcapital-cpu/mrx_engine_v1.git mrx_engine_v1_laneB
 
 ---
+
+## RULE-20 — DESIGN-PHASE GUARDRAILS
+
+Added 2026-05-16. Opus must enforce before writing any spec or recommending any fix.
+
+### Pre-spec checklist (state in one line before drafting)
+- Standing rules in play: list them
+- Data source: fingerprint files / frequency-across-all-depos / named knowledge file — NOT single Sonnet recon
+- If either is missing, STOP the spec
+
+### Single-oracle byte-match is dead
+- Specs based on 1-2 oracle observations are invalid by default
+- MB's oracle is not internally consistent across depos
+- Renderer design must reference frequency distribution, not point observations
+- Fingerprint files exist for this — find them, use them
+
+### One-strike reset
+- If Scott invokes the reset (e.g., "fingerprint check first," "80 percenter," "use the fingerprints")
+- STOP the current spec direction immediately
+- Do not argue, defend, or engage with the prior spec
+- Re-anchor to frequency data
+
+### End on clean wins
+- When momentum is good and tickets are shipping cleanly, lock and stop
+- The moment after a shipping streak is when overreach happens
+- "One more thing" usually breaks the day
+
+### Visibility
+- State standing rules at the top of every design conversation
+- Even if not asked
+- Catch drift before it starts
+
+---
