@@ -112,3 +112,43 @@ separators + witness cert, etc.). That count varies by depo.
 | Revisit trigger | Larger oracle sample shows SUB-first majority (>65%) |
 | Related defect | B1.9.x (INDEX page rendering, to be numbered) |
 | Related audit | `handoffs/SONNET1_D5_AUDIT_2026-05-16.md` |
+
+---
+
+## 12-Depo Cross-Check (2026-05-16)
+
+**Method:** Re-ran analyze_d5() from run_13depo_analysis.py across all 13
+parseable FINAL.txt files. Records only depos where a first exhibit entry
+was found. Depos with no EXHIBITS header or no exhibit entries after the
+header are excluded from the tally (they cannot vote on position).
+
+**Results:**
+
+| depo | exhibits_hdr_slot | exhibits_hdr_pos | first_ex_slot | first_exhibit_pos |
+|------|------------------|-----------------|--------------|-------------------|
+| halprin | 11 | MAIN | 12 | **MAIN** |
+| olsen | 9 | MAIN | 10 | **MAIN** |
+| williams | 11 | SUB | 12 | **SUB** |
+| butler | 10 | SUB | 11 | **SUB** |
+| blanks | 10 | SUB | 11 | **SUB** |
+| black_bp | 12 | MAIN | 13 | **MAIN** |
+| easley | 19 | MAIN | 21 | **MAIN** |
+| garcia | 10 | SUB | 11 | **SUB** |
+
+**Excluded (no exhibit data):**
+
+| depo | reason |
+|------|--------|
+| fountain | EXHIBITS header present (slot 7 MAIN) but no exhibit entries follow |
+| hebert | No EXHIBITS header |
+| simon | No EXHIBITS header |
+| griffin | No EXHIBITS header |
+| martin | No EXHIBITS header |
+
+**Summary: 4/8 MAIN, 4/8 SUB — still 50/50.**
+
+**Verdict: MAIN-first default holds.**
+
+The expanded 13-depo set (8 with exhibit data) does not break the tie.
+The MAIN-first default established in the original decision record stands.
+MB decides if the tie persists beyond this sample.
