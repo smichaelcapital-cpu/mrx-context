@@ -73,3 +73,27 @@ When we onboard depos for which we don't have an MB-authored FINAL, we won't hav
 
 **Connection to fish-or-cut-bait question:**
 Scott raised this directly — when no final exists, how do we know we got it right? This ticket is exactly that scenario in miniature. The current answer is "operator-spotted diff against oracle." That doesn't scale.
+
+---
+
+## TD-003 — fm_review.py 55-char SxS column too narrow (2026-05-16)
+
+**Symptom:** Two phantom defects (D-1, D-3) caused by display truncation.
+The SxS viewer clips renderer output at 55 chars, hiding real content
+that exists in the underlying _stage5_out. Content landing at column
+53–60 (exhibit page numbers, INDEX "Page" header) is invisible in the
+side-by-side view but present in the rendered file.
+
+**Evidence:**
+- D-3: Exhibit page numbers (Bates lines land at col 54–59) appeared missing.
+- D-1: INDEX slot 1 SUB "Page" (col 53–56) appeared missing.
+Both diagnosed by reading raw rendered output directly — content present.
+
+**Recommendation:** Widen the SxS column to at least 65 chars, OR add a
+"truncated content present" indicator (e.g., a `>` marker) at the column
+boundary so truncation is visually distinguishable from blank.
+
+**Priority:** Low (cosmetic, debug-only). Bumps to medium if it causes a
+third phantom defect false alarm.
+
+**Status:** LOGGED, NOT FIXED.

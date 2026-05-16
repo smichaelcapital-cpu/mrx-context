@@ -8,12 +8,7 @@
 
 ## Known defects
 
-### D-1 — Missing "Page" column header on INDEX page (UNIVERSAL)
-- **Observed:** Olsen page 2, Halprin page 2 — both index pages
-- **Oracle:** "Page" label appears at upper right of the index, above the page-number column
-- **Ours:** No "Page" label rendered
-- **Severity:** Cosmetic but visible on every depo with an index
-- **Likely module:** index renderer
+### D-1 — Missing "Page" column header on INDEX page (RESOLVED: phantom defect — see Closed section)
 
 ### D-2 — Firm-group blank separator missing on APPEARANCES pages (UNIVERSAL)
 - **Observed:** Olsen page 4, Halprin pages 6, 7, 8 — every appearances page checked
@@ -63,10 +58,21 @@
 ## Recommended fix priority for next session
 
 1. **D-2 (firm-group separator)** — universal, functional, compounds drift. Highest blast radius.
-2. **D-1 (Page header)** — universal but cosmetic. Quick win.
-3. **D-4 (Olsen reporter slot)** — single-depo, cosmetic.
-4. **D-5 (Olsen exhibits packing)** — may be universal but only seen on one depo; needs cross-check first.
+2. **D-4 (Olsen reporter slot)** — single-depo, cosmetic.
+3. **D-5 (Olsen exhibits packing)** — may be universal but only seen on one depo; needs cross-check first.
+4. ~~D-1~~ — closed, phantom defect.
 5. ~~D-3~~ — closed, no work needed.
+
+---
+
+## Closed
+
+### D-1 — Page column header (RESOLVED: phantom defect, display truncation only)
+- Verified 2026-05-16. Code emits "Page" correctly in slot 1 SUB.
+- The fm_review.py 55-char SxS column truncates _HEADING_SUB at
+  position 53-56, hiding "Page" in the side-by-side view.
+- Same root cause as D-3.
+- No code defect.
 
 ## Notes
 
