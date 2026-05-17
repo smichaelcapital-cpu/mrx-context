@@ -67,12 +67,16 @@
 
 ## Closed
 
-### D-1 — Page column header (RESOLVED: phantom defect, display truncation only)
+### D-1 — Page column header (CLOSED — PHANTOM, display truncation only)
 - Verified 2026-05-16. Code emits "Page" correctly in slot 1 SUB.
 - The fm_review.py 55-char SxS column truncates _HEADING_SUB at
   position 53-56, hiding "Page" in the side-by-side view.
 - Same root cause as D-3.
 - No code defect.
+- **Recon confirmed 2026-05-17:** `_HEADING_SUB` (56 chars, 52 spaces + "Page")
+  byte-matches oracle on 4/4 depos (halprin, olsen, williams, butler).
+  Slot 1 SUB is correct and complete. Root cause is TD-003 (fm_review.py
+  55-char column width). No code fix needed.
 
 ## Notes
 
