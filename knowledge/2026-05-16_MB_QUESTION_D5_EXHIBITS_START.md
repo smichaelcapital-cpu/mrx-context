@@ -11,6 +11,10 @@ determine position from document structure alone?
 
 **Locked default: MAIN-first.**
 
+> **2026-05-17 UPDATE:** MB did not respond within the window. Scott confirmed
+> MAIN-first as the locked default. If MB raises it later, we adjust then.
+> We do not hold the depo on this.
+
 ---
 
 ## Frequency Data (13-Depo Set)
@@ -106,10 +110,11 @@ separators + witness cert, etc.). That count varies by depo.
 |-------|-------|
 | Question ID | D-5 |
 | Decided | 2026-05-16 |
-| Decided by | Sonnet #1 laneA (operator instruction) |
+| Decided by | Sonnet #1 laneA (operator instruction) + Scott (2026-05-17 confirmation, no MB response received) |
+| Status | **LOCKED — final, not pending MB** |
 | Default | MAIN-first |
 | Rationale | 50/50 tie; MAIN is primary column; simplifies renderer logic |
-| Revisit trigger | Larger oracle sample shows SUB-first majority (>65%) |
+| Revisit trigger | Larger oracle sample shows SUB-first majority (>65%), OR MB provides correction in future. No active MB ping outstanding. |
 | Related defect | B1.9.x (INDEX page rendering, to be numbered) |
 | Related audit | `handoffs/SONNET1_D5_AUDIT_2026-05-16.md` |
 

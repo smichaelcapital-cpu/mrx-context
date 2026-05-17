@@ -54,11 +54,15 @@
 - **Severity:** Cosmetic on olsen/black_bp; affects slot alignment but not content.
 - **Module:** `src/stage5/front_matter/index.py` — `build_index_pages()`, no-witness branch.
 
-### D-5 — Olsen exhibits index packing tighter than oracle (possibly Olsen-specific)
-- **Observed:** Olsen page 3 — exhibits drift increases down the page; by bottom of page our list is 3-4 exhibits ahead of oracle
-- **Halprin:** Did not check Halprin exhibits page comparable drift — needs follow-up
-- **Severity:** Functional — affects exhibits index page count and where things sit
-- **Likely module:** index renderer
+### D-5 — Exhibits index start position / MAIN-first default (LOCKED)
+- **Observed:** Olsen page 3 — exhibits drift increases down the page; by bottom of page our list is 3-4 exhibits ahead of oracle. Root traced to EXHIBITS header landing in wrong column due to cert parity (D-4), not to start-position default.
+- **Design question:** When EXHIBITS header position cannot be determined statically, should first exhibit land in MAIN or SUB? Frequency data: 50/50 across 8 depos with exhibit data.
+- **Decision: LOCKED — MAIN-first default, no MB input received.**
+  - MB was pinged 2026-05-16; no response received by 2026-05-17.
+  - Scott confirmed MAIN-first as the final answer on 2026-05-17.
+  - If MB raises it later, we adjust then. We do not hold the depo on this.
+- **Revisit trigger:** Larger oracle sample shows SUB-first majority (>65%), or MB correction. No active ping outstanding.
+- **Status:** LOCKED. No further action needed on D-5 as a standalone defect.
 
 ## Not-yet-checked
 
@@ -78,7 +82,7 @@
 ## Recommended fix priority for next session
 
 1. **D-2 (firm-group separator)** — universal, functional, compounds drift. Highest blast radius.
-2. **D-5 (Olsen exhibits packing)** — may be universal but only seen on one depo; needs cross-check first.
+2. ~~D-5~~ — LOCKED 2026-05-17. MAIN-first default confirmed by Scott. No action.
 3. ~~D-4~~ — deferred as B1.9.4 Phase 3 (cert parity threading); see revisit list.
 4. ~~D-1~~ — closed, phantom defect.
 5. ~~D-3~~ — closed, no work needed.
@@ -87,7 +91,7 @@
 
 - B1.9.3 Phase 2B — exhibit parity threading (stashed on laneB/B1.9.3-cycle-continuity; ~15 lines)
 - B1.9.4 Phase 3 — cert parity threading (D-4 fix path)
-- D-5 cross-check — confirm exhibits packing drift on depo other than Olsen before fixing
+- ~~D-5~~ — LOCKED 2026-05-17, removed from revisit list
 - B1.7.7 — Olsen videographer cosmetic
 - Unread front matter pages: williams, butler, blanks, black_bp
 - Unread back matter pages: halprin, williams
